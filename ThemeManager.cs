@@ -104,7 +104,7 @@ namespace WpfThemer
         {
             BuildTheme("Default", "Default Theme", "Theme_Default.xaml");
             BuildTheme("Dark", "Dark Theme", "Theme_Dark.xaml");
-            BuildTheme("Goofy", "Goofy Theme", "Theme_Goofy.xaml");
+            BuildTheme("Light", "Light Theme", "Theme_Light.xaml");
             _ActiveTheme = Themes.First();
 
             BuildTemplate("Button.xaml");
@@ -116,6 +116,7 @@ namespace WpfThemer
             BuildTemplate("ListBoxItem.xaml");
             BuildTemplate("ListView.xaml");
             BuildTemplate("ListViewItem.xaml");
+            BuildTemplate("Menu.xaml");
             BuildTemplate("RadioButton.xaml");
             BuildTemplate("Separator.xaml");
             BuildTemplate("TabControl.xaml");
@@ -123,6 +124,7 @@ namespace WpfThemer
             BuildTemplate("TextBlock.xaml");
             BuildTemplate("TextBox.xaml");
             BuildTemplate("ToggleButton.xaml");
+            BuildTemplate("Toolbar.xaml");
         }
 
         public static void SetApplication(Application? application)
@@ -134,6 +136,18 @@ namespace WpfThemer
             foreach (var template in Templates)
             {
                 _Application.Resources.MergedDictionaries.Add(template);
+            }
+        }
+
+        public static void SetTheme(string themeName)
+        {
+            foreach (var theme in Themes)
+            {
+                if (theme.DisplayName.Equals(themeName, StringComparison.CurrentCultureIgnoreCase))
+                {
+                    ActiveTheme = theme;
+                    return;
+                }
             }
         }
     }

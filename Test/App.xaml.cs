@@ -15,6 +15,7 @@ namespace Test
             base.OnStartup(e);
 
             ThemeManager.SetApplication(this);
+            ThemeManager.SetTheme("dark");
         }
     }
 }

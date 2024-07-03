@@ -13,19 +13,6 @@
     <SolidColorBrush x:Key="HighlightBrushKey" Color="#2222FF"/>
     <SolidColorBrush x:Key="InactiveSelectionHighlightBrushKey" Color="#8888FF"/>
 
-    <!--Menu-->
-    <SolidColorBrush x:Key="Menu.Static.Background" Color="#F0F0F0"/>
-    <SolidColorBrush x:Key="Menu.Static.Border" Color="#999999"/>
-    <SolidColorBrush x:Key="Menu.Static.Foreground" Color="#212121"/>
-    <SolidColorBrush x:Key="Menu.Static.Separator" Color="#D7D7D7"/>
-    <SolidColorBrush x:Key="Menu.Disabled.Foreground" Color="#707070"/>
-    <SolidColorBrush x:Key="MenuItem.Selected.Background" Color="#26A0DA"/>
-    <SolidColorBrush x:Key="MenuItem.Selected.Border" Color="#26A0DA"/>
-    <SolidColorBrush x:Key="MenuItem.Highlight.Background" Color="#26A0DA"/>
-    <SolidColorBrush x:Key="MenuItem.Highlight.Border" Color="#26A0DA"/>
-    <SolidColorBrush x:Key="MenuItem.Highlight.Disabled.Background" Color="#000000"/>
-    <SolidColorBrush x:Key="MenuItem.Highlight.Disabled.Border" Color="#000000"/>
-
     <!--Control colors -->
     <Color x:Key="WindowColor">#FFE8EDF9</Color>
     <Color x:Key="ContentAreaColorLight">#FFC5CBF9</Color>
@@ -96,6 +83,19 @@
         </LinearGradientBrush.GradientStops>
     </LinearGradientBrush>
     
+    <!--Menu-->
+    <SolidColorBrush x:Key="Menu.Static.Background" Color="#FFF0F0F0"/>
+    <SolidColorBrush x:Key="Menu.Static.Border" Color="#FF999999"/>
+    <SolidColorBrush x:Key="Menu.Static.Foreground" Color="#FF212121"/>
+    <SolidColorBrush x:Key="Menu.Static.Separator" Color="#FFD7D7D7"/>
+    <SolidColorBrush x:Key="Menu.Disabled.Foreground" Color="#FF707070"/>
+    <SolidColorBrush x:Key="MenuItem.Selected.Background" Color="#3D26A0DA"/>
+    <SolidColorBrush x:Key="MenuItem.Selected.Border" Color="#FF26A0DA"/>
+    <SolidColorBrush x:Key="MenuItem.Highlight.Background" Color="#3D26A0DA"/>
+    <SolidColorBrush x:Key="MenuItem.Highlight.Border" Color="#FF26A0DA"/>
+    <SolidColorBrush x:Key="MenuItem.Highlight.Disabled.Background" Color="#0A000000"/>
+    <SolidColorBrush x:Key="MenuItem.Highlight.Disabled.Border" Color="#21000000"/>
+
     <!--TabControl-->
     <SolidColorBrush x:Key="TabControl.Background" Color="#FFFFFF"/>
     <SolidColorBrush x:Key="TabControl.Border" Color="#ACACAC"/>

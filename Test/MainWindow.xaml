@@ -7,10 +7,14 @@
         xmlns:local="clr-namespace:Test"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        
+    </Window.Resources>
     
     <Grid>
 
         <Grid.RowDefinitions>
+            <RowDefinition Height="24"/>
             <RowDefinition Height="24"/>
             <RowDefinition Height="24"/>
             <RowDefinition Height="24"/>
@@ -24,31 +28,56 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <ComboBox Grid.Row="0" Grid.Column="0" x:Name="cb_Theme" SelectionChanged="cb_Theme_SelectionChanged"
+        <Menu Grid.Row="0" Grid.ColumnSpan="2">
+            <MenuItem Header="File">
+                <MenuItem Header="Item 0"/>
+                <MenuItem Header="Item 1"/>
+                <MenuItem Header="Item 2"/>
+                <MenuItem Header="Item 3"/>
+                <MenuItem Header="Item 4"/>
+            </MenuItem>
+            <MenuItem Header="Edit">
+                <MenuItem Header="Item 0"/>
+                <MenuItem Header="Item 1"/>
+                <MenuItem Header="Item 2"/>
+                <MenuItem Header="Item 3"/>
+                <MenuItem Header="Item 4"/>
+            </MenuItem>
+        </Menu>
+
+        <ToolBar Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2">
+            <Button Content="Button"/>
+            <Button Content="Button"/>
+            <Button Content="Button"/>
+            <Button Content="Button"/>
+            <Button Content="Button"/>
+        </ToolBar>
+        
+        <ComboBox Grid.Row="1" Grid.Column="0" x:Name="cb_Theme" SelectionChanged="cb_Theme_SelectionChanged"
           IsEditable="True" StaysOpenOnEdit="True">
 
         </ComboBox>
 
-        <TextBox x:Name="tb_Description" Grid.Row="0" Grid.Column="1"/>
+        <TextBox x:Name="tb_Description" Grid.Row="1" Grid.Column="1"/>
 
-        <TextBlock Grid.Row="1" Grid.Column="0" Text="TextBlock"/>
-        <Button Grid.Row="1" Grid.Column="1" Content="Button"/>
-        <ToggleButton Grid.Row="1" Grid.Column="2" Content="ToggleButton"/>
-        <RadioButton Grid.Row="1" Grid.Column="3" Content="RadioButton"/>
-        <CheckBox Grid.Row="2" Grid.Column="0" Content="CheckBox"/>
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="TextBlock"/>
+        <Button Grid.Row="2" Grid.Column="1" Content="Button"/>
+        <ToggleButton Grid.Row="2" Grid.Column="2" Content="ToggleButton"/>
+        <RadioButton Grid.Row="2" Grid.Column="3" Content="RadioButton"/>
+        <CheckBox Grid.Row="3" Grid.Column="0" Content="CheckBox"/>
 
-        <TabControl Grid.Row="3" Grid.Column="0">
+        <TabControl Grid.Row="4" Grid.Column="0">
             <TabItem Header="Tab0"/>
             <TabItem Header="Tab1"/>
         </TabControl>
 
-        <ListBox Grid.Row="3" Grid.Column="1">
+        <ListBox Grid.Row="4" Grid.Column="1">
             <ListBoxItem Content="ListBoxItem"/>
             <ListBoxItem Content="ListBoxItem"/>
             <ListBoxItem Content="ListBoxItem"/>
         </ListBox>
 
-        <ListView Grid.Row="3" Grid.Column="2">
+        <ListView Grid.Row="4" Grid.Column="2">
             <ListViewItem Content="ListViewItem"/>
             <ListViewItem Content="ListViewItem"/>
             <ListViewItem Content="ListViewItem"/>

@@ -15,7 +15,12 @@ namespace Test
             base.OnStartup(e);
 
             ThemeManager.SetApplication(this);
-            ThemeManager.SetTheme("dark");
+            //ThemeManager.SetTheme("dark");
+
+            FrameworkElement.StyleProperty.OverrideMetadata(typeof(Window), new FrameworkPropertyMetadata
+            {
+                DefaultValue = FindResource(typeof(Window))
+            });
         }
     }
 }

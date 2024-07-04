@@ -121,10 +121,11 @@ namespace WpfThemer
             BuildTemplate("Separator.xaml");
             BuildTemplate("TabControl.xaml");
             BuildTemplate("TabItem.xaml");
-            BuildTemplate("TextBlock.xaml");
+            //BuildTemplate("TextBlock.xaml");
             BuildTemplate("TextBox.xaml");
             BuildTemplate("ToggleButton.xaml");
             BuildTemplate("Toolbar.xaml");
+            BuildTemplate("Window.xaml");
         }
 
         public static void SetApplication(Application? application)

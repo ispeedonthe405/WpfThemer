@@ -39,7 +39,7 @@
                                                 Storyboard.TargetProperty="(Panel.Background).
                     (GradientBrush.GradientStops)[1].(GradientStop.Color)">
                                             <EasingColorKeyFrame KeyTime="0"
-                                         Value="{DynamicResource ControlPressedColor}" />
+                                         Value="{DynamicResource BackgroundPressed}" />
                                         </ColorAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
@@ -49,7 +49,7 @@
                                                 Storyboard.TargetProperty="(Panel.Background).
                     (GradientBrush.GradientStops)[1].(GradientStop.Color)">
                                             <EasingColorKeyFrame KeyTime="0"
-                                         Value="{DynamicResource ControlMouseOverColor}" />
+                                         Value="{DynamicResource BackgroundMouseOver}" />
                                         </ColorAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
@@ -59,7 +59,7 @@
                                                 Storyboard.TargetProperty="(Panel.Background). 
                     (GradientBrush.GradientStops)[1].(GradientStop.Color)">
                                             <EasingColorKeyFrame KeyTime="0"
-                                         Value="{DynamicResource DisabledControlDarkColor}" />
+                                         Value="{DynamicResource BackgroundDisabled}" />
                                         </ColorAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
@@ -217,7 +217,7 @@
                                                 Storyboard.TargetProperty="(Panel.Background).    
                     (GradientBrush.GradientStops)[1].(GradientStop.Color)">
                                             <EasingColorKeyFrame KeyTime="0"
-                                         Value="{DynamicResource ControlPressedColor}" />
+                                         Value="{DynamicResource BackgroundPressed}" />
                                         </ColorAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
@@ -227,7 +227,7 @@
                                                 Storyboard.TargetProperty="(Panel.Background).     
                     (GradientBrush.GradientStops)[1].(GradientStop.Color)">
                                             <EasingColorKeyFrame KeyTime="0"
-                                         Value="{DynamicResource ControlMouseOverColor}" />
+                                         Value="{DynamicResource BackgroundMouseOver}" />
                                         </ColorAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
@@ -237,7 +237,7 @@
                                                 Storyboard.TargetProperty="(Panel.Background).   
                     (GradientBrush.GradientStops)[1].(GradientStop.Color)">
                                             <EasingColorKeyFrame KeyTime="0"
-                                         Value="{DynamicResource DisabledBorderLightColor}" />
+                                         Value="{DynamicResource BackgroundDisabled}" />
                                         </ColorAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>

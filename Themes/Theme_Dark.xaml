@@ -5,7 +5,7 @@
     <Color x:Key="ForegroundSelected">#D6D6D6</Color>
     <Color x:Key="ForegroundInactive">#A0A0A0</Color>
     <Color x:Key="ForegroundDisabled">#A0A0A0</Color>
-    <Color x:Key="ForegroundMouseOver">#1E1E1E</Color>
+    <Color x:Key="ForegroundMouseOver">#D6D6D6</Color>
     <Color x:Key="ForegroundPressed">#1E1E1E</Color>
 
     <Color x:Key="BorderNormal">#C0C0C0</Color>
@@ -13,7 +13,7 @@
     <Color x:Key="BorderInactive">#C0C0C0</Color>
     <Color x:Key="BorderDisabled">#C0C0C0</Color>
     <Color x:Key="BorderMouseOver">#E0E0E0</Color>
-    <Color x:Key="BorderPressed">#A0A0A0</Color>
+    <Color x:Key="BorderPressed">#E0E0E0</Color>
     <Color x:Key="BorderDark">#A0A0A0</Color>
 
     <Color x:Key="BackgroundNormal">#1E1E1E</Color>
@@ -21,7 +21,7 @@
     <Color x:Key="BackgroundInactive">#1E1E1E</Color>
     <Color x:Key="BackgroundDisabled">#1E1E1E</Color>
     <Color x:Key="BackgroundMouseOver">#3E3E3E</Color>
-    <Color x:Key="BackgroundPressed">#5E5E5E</Color>
+    <Color x:Key="BackgroundPressed">#7E7E7E</Color>
     <Color x:Key="BackgroundDark">#0D0D0D</Color>
 
     <SolidColorBrush x:Key="BackgroundBrushKey" Color="{DynamicResource BackgroundNormal}"/>
@@ -30,7 +30,10 @@
     <SolidColorBrush x:Key="BackgroundMouseOverBrushKey" Color="{DynamicResource BackgroundMouseOver}"/>
     <SolidColorBrush x:Key="BorderMouseOverBrushKey" Color="{DynamicResource BrushMouseOver}"/>
 
-
+    <SolidColorBrush x:Key="ForegroundStaticBrushKey" Color="{DynamicResource ForegroundNormal}"/>
+    <SolidColorBrush x:Key="ForegroundBrightKey" Color="{DynamicResource ForegroundSelected}"/>
+    
+    
     <!--WPF template overrides-->
     <!--Control colors -->
     <Color x:Key="WindowColor">#1E1E1E</Color>
@@ -44,9 +47,9 @@
     <Color x:Key="SelectedBackgroundColor">#1F1F1F</Color>
     <Color x:Key="SelectedUnfocusedColor">#1F1F1F</Color>
 
-    <Color x:Key="ControlLightColor">#1F1F1F</Color>
-    <Color x:Key="ControlMediumColor">#1F1F1F</Color>
-    <Color x:Key="ControlDarkColor">#1F1F1F</Color>
+    <Color x:Key="ControlLightColor">#2E2E2E</Color>
+    <Color x:Key="ControlMediumColor">#1E1E1E</Color>
+    <Color x:Key="ControlDarkColor">#0C0C0C</Color>
 
     <Color x:Key="ControlMouseOverColor">#303030</Color>
     <Color x:Key="ControlPressedColor">#606060</Color>

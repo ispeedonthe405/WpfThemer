@@ -16,6 +16,7 @@
             <RowDefinition Height="24"/>
             <RowDefinition Height="24"/>
             <RowDefinition Height="24"/>
+            <RowDefinition Height="100"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
@@ -81,6 +82,14 @@
             <ListViewItem Content="ListViewItem"/>
         </ListView>
 
+        <DataGrid Grid.Row="5" Grid.ColumnSpan="3">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Column0"/>
+                <DataGridTextColumn Header="Column1"/>
+                <DataGridTextColumn Header="Column2"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        
     </Grid>
 
 </Window>

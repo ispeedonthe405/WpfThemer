@@ -30,7 +30,10 @@
     <SolidColorBrush x:Key="BackgroundMouseOverBrushKey" Color="{DynamicResource BackgroundMouseOver}"/>
     <SolidColorBrush x:Key="BorderMouseOverBrushKey" Color="{DynamicResource BrushMouseOver}"/>
 
-
+    <SolidColorBrush x:Key="ForegroundStatic" Color="{DynamicResource ForegroundNormal}"/>
+    <SolidColorBrush x:Key="ForegroundBright" Color="{DynamicResource ForegroundSelected}"/>
+    
+    
     <!--WPF template overrides-->
     <!--Control colors -->
     <Color x:Key="WindowColor">#FFFFFF</Color>

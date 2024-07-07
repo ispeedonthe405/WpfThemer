@@ -13,21 +13,15 @@
                     <Border x:Name="Border"
                 BorderThickness="1">
                         <Border.BorderBrush>
-                            <LinearGradientBrush EndPoint="0.5,1"
-                                 StartPoint="0.5,0">
-                                <GradientStop Color="{DynamicResource BorderLightColor}"
-                            Offset="0" />
-                                <GradientStop Color="{DynamicResource BorderMediumColor}"
-                            Offset="1" />
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="{DynamicResource BorderLight}" Offset="0" />
+                                <GradientStop Color="{DynamicResource BorderDark}" Offset="1" />
                             </LinearGradientBrush>
                         </Border.BorderBrush>
                         <Border.Background>
-                            <LinearGradientBrush EndPoint="0.5,1"
-                                 StartPoint="0.5,0">
-                                <GradientStop Color="{DynamicResource ControlLightColor}"
-                            Offset="0" />
-                                <GradientStop Color="{DynamicResource ControlMediumColor}"
-                            Offset="1" />
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="{DynamicResource ControlLight}" Offset="0" />
+                                <GradientStop Color="{DynamicResource ControlDark}" Offset="1" />
                             </LinearGradientBrush>
                         </Border.Background>
                         <VisualStateManager.VisualStateGroups>
@@ -36,30 +30,24 @@
                                 <VisualState x:Name="Pressed">
                                     <Storyboard>
                                         <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border"
-                                                Storyboard.TargetProperty="(Panel.Background).
-                    (GradientBrush.GradientStops)[1].(GradientStop.Color)">
-                                            <EasingColorKeyFrame KeyTime="0"
-                                         Value="{DynamicResource BackgroundPressed}" />
+                                                Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
+                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource BackgroundPressed}" />
                                         </ColorAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState x:Name="MouseOver">
                                     <Storyboard>
                                         <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border"
-                                                Storyboard.TargetProperty="(Panel.Background).
-                    (GradientBrush.GradientStops)[1].(GradientStop.Color)">
-                                            <EasingColorKeyFrame KeyTime="0"
-                                         Value="{DynamicResource BackgroundMouseOver}" />
+                                                Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
+                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource BackgroundMouseOver}" />
                                         </ColorAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState x:Name="Disabled">
                                     <Storyboard>
                                         <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border"
-                                                Storyboard.TargetProperty="(Panel.Background). 
-                    (GradientBrush.GradientStops)[1].(GradientStop.Color)">
-                                            <EasingColorKeyFrame KeyTime="0"
-                                         Value="{DynamicResource BackgroundDisabled}" />
+                                                Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
+                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource BackgroundDisabled}" />
                                         </ColorAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
@@ -68,10 +56,8 @@
                                 <VisualState x:Name="Checked">
                                     <Storyboard>
                                         <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border"
-                                                Storyboard.TargetProperty="(Panel.Background).
-                    (GradientBrush.GradientStops)[1].(GradientStop.Color)">
-                                            <EasingColorKeyFrame KeyTime="0"
-                                         Value="{DynamicResource ControlPressedColor}" />
+                                                Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
+                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource ControlPressedColor}" />
                                         </ColorAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
@@ -132,16 +118,12 @@
                                 <VisualState x:Name="Disabled">
                                     <Storyboard>
                                         <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border"
-                                                Storyboard.TargetProperty="(Panel.Background).  
-                    (SolidColorBrush.Color)">
-                                            <EasingColorKeyFrame KeyTime="0"
-                                         Value="{DynamicResource DisabledControlDarkColor}" />
+                                                Storyboard.TargetProperty="(Panel.Background).(SolidColorBrush.Color)">
+                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource ControlDisabled}" />
                                         </ColorAnimationUsingKeyFrames>
                                         <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border"
-                                                Storyboard.TargetProperty="(Border.BorderBrush).  
-                    (SolidColorBrush.Color)">
-                                            <EasingColorKeyFrame KeyTime="0"
-                                         Value="{DynamicResource DisabledBorderLightColor}" />
+                                                Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)">
+                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource BorderDisabled}" />
                                         </ColorAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
@@ -214,30 +196,24 @@
                                 <VisualState x:Name="Pressed">
                                     <Storyboard>
                                         <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border"
-                                                Storyboard.TargetProperty="(Panel.Background).    
-                    (GradientBrush.GradientStops)[1].(GradientStop.Color)">
-                                            <EasingColorKeyFrame KeyTime="0"
-                                         Value="{DynamicResource BackgroundPressed}" />
+                                                Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
+                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource BackgroundPressed}" />
                                         </ColorAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState x:Name="MouseOver">
                                     <Storyboard>
                                         <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border"
-                                                Storyboard.TargetProperty="(Panel.Background).     
-                    (GradientBrush.GradientStops)[1].(GradientStop.Color)">
-                                            <EasingColorKeyFrame KeyTime="0"
-                                         Value="{DynamicResource BackgroundMouseOver}" />
+                                                Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
+                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource BackgroundMouseOver}" />
                                         </ColorAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState x:Name="Disabled">
                                     <Storyboard>
                                         <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border"
-                                                Storyboard.TargetProperty="(Panel.Background).   
-                    (GradientBrush.GradientStops)[1].(GradientStop.Color)">
-                                            <EasingColorKeyFrame KeyTime="0"
-                                         Value="{DynamicResource BackgroundDisabled}" />
+                                                Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
+                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource BackgroundDisabled}" />
                                         </ColorAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
@@ -270,77 +246,64 @@
                 CornerRadius="2"
                 BorderThickness="1">
                         <Border.BorderBrush>
-                            <LinearGradientBrush StartPoint="0,0"
-                                 EndPoint="0,1">
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
                                 <LinearGradientBrush.GradientStops>
                                     <GradientStopCollection>
-                                        <GradientStop Color="{DynamicResource BorderMediumColor}"
-                                Offset="0.0" />
-                                        <GradientStop Color="{DynamicResource BorderDarkColor}"
-                                Offset="1.0" />
+                                        <GradientStop Color="{DynamicResource BorderLight}" Offset="0.0" />
+                                        <GradientStop Color="{DynamicResource BorderDark}" Offset="1.0" />
                                     </GradientStopCollection>
                                 </LinearGradientBrush.GradientStops>
                             </LinearGradientBrush>
                         </Border.BorderBrush>
 
                         <Border.Background>
-                            <LinearGradientBrush StartPoint="0,0"
-                                 EndPoint="0,1">
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
                                 <LinearGradientBrush.GradientStops>
                                     <GradientStopCollection>
-                                        <GradientStop Color="#FFF"
-                                Offset="0.0" />
-                                        <GradientStop Color="{DynamicResource ControlMediumColor}"
-                                Offset="1.0" />
+                                        <GradientStop Color="#FFF" Offset="0.0" />
+                                        <GradientStop Color="{DynamicResource ControlNormal}" Offset="1.0" />
                                     </GradientStopCollection>
                                 </LinearGradientBrush.GradientStops>
                             </LinearGradientBrush>
                         </Border.Background>
                         <DockPanel>
                             <ToggleButton DockPanel.Dock="Right"
-                          IsEnabled="{TemplateBinding HasOverflowItems}"
-                          Style="{StaticResource ToolBarOverflowButtonStyle}"
-                          ClickMode="Press"
-                          IsChecked="{Binding IsOverflowOpen, Mode=TwoWay, 
-              RelativeSource={RelativeSource TemplatedParent}}">
+                                          IsEnabled="{TemplateBinding HasOverflowItems}"
+                                          Style="{StaticResource ToolBarOverflowButtonStyle}"
+                                          ClickMode="Press"
+                                          IsChecked="{Binding IsOverflowOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}">
                                 <Popup x:Name="OverflowPopup"
-                     AllowsTransparency="true"
-                     Placement="Bottom"
-                     StaysOpen="false"
-                     Focusable="false"
-                     PopupAnimation="Slide"
-                     IsOpen="{Binding IsOverflowOpen, 
-                RelativeSource={RelativeSource TemplatedParent}}">
-                                    <Border x:Name="DropDownBorder"
-                        BorderThickness="1">
+                                       AllowsTransparency="true"
+                                       Placement="Bottom"
+                                       StaysOpen="false"
+                                       Focusable="false"
+                                       PopupAnimation="Slide"
+                                       IsOpen="{Binding IsOverflowOpen, RelativeSource={RelativeSource TemplatedParent}}">
+                                    <Border x:Name="DropDownBorder" BorderThickness="1">
                                         <Border.BorderBrush>
                                             <SolidColorBrush Color="{DynamicResource BorderMediumColor}" />
                                         </Border.BorderBrush>
                                         <Border.Background>
-                                            <LinearGradientBrush EndPoint="0.5,1"
-                                         StartPoint="0.5,0">
-                                                <GradientStop Color="{DynamicResource ControlLightColor}" />
-                                                <GradientStop Color="{DynamicResource ControlMediumColor}"
-                                    Offset="1" />
+                                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                                <GradientStop Color="{DynamicResource ControlLight}" />
+                                                <GradientStop Color="{DynamicResource ControlDark}" Offset="1" />
                                             </LinearGradientBrush>
                                         </Border.Background>
                                         <ToolBarOverflowPanel x:Name="PART_ToolBarOverflowPanel"
-                                        Margin="2"
-                                        WrapWidth="200"
-                                        Focusable="true"
-                                        FocusVisualStyle="{x:Null}"
-                                        KeyboardNavigation.TabNavigation="Cycle"
-                                        KeyboardNavigation.DirectionalNavigation="Cycle" />
+                                                              Margin="2"
+                                                              WrapWidth="200"
+                                                              Focusable="true"
+                                                              FocusVisualStyle="{x:Null}"
+                                                              KeyboardNavigation.TabNavigation="Cycle"
+                                                              KeyboardNavigation.DirectionalNavigation="Cycle" />
                                     </Border>
                                 </Popup>
                             </ToggleButton>
 
-                            <Thumb x:Name="ToolBarThumb"
-                   Style="{StaticResource ToolBarThumbStyle}"
-                   Width="10" />
+                            <Thumb x:Name="ToolBarThumb" Style="{StaticResource ToolBarThumbStyle}" Width="10" />
                             <ToolBarPanel x:Name="PART_ToolBarPanel"
-                          IsItemsHost="true"
-                          Margin="0,1,2,2" />
+                                          IsItemsHost="true"
+                                          Margin="0,1,2,2" />
                         </DockPanel>
                     </Border>
                     <ControlTemplate.Triggers>
@@ -366,14 +329,11 @@
        TargetType="{x:Type ToolBarTray}">
         <Setter Property="Background">
             <Setter.Value>
-                <LinearGradientBrush StartPoint="0,0"
-                           EndPoint="1,0">
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
                     <LinearGradientBrush.GradientStops>
                         <GradientStopCollection>
-                            <GradientStop Color="#FFF"
-                          Offset="0.0" />
-                            <GradientStop Color="{DynamicResource WindowColor}"
-                          Offset="1.0" />
+                            <GradientStop Color="#FFF" Offset="0.0" />
+                            <GradientStop Color="{DynamicResource BackgroundColor}" Offset="1.0" />
                         </GradientStopCollection>
                     </LinearGradientBrush.GradientStops>
                 </LinearGradientBrush>

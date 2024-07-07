@@ -2,10 +2,8 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
     <Style x:Key="{x:Type Window}" TargetType="{x:Type Window}">
-        <Setter Property="Foreground"
-                Value="{DynamicResource WindowTextBrushKey}"/>
-        <Setter Property="Background"
-                Value="{DynamicResource WindowBrushKey}"/>
+        <Setter Property="Foreground" Value="{DynamicResource ForegroundNormalBrushKey}"/>
+        <Setter Property="Background" Value="{DynamicResource BackgroundNormalBrushKey}"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Window}">
@@ -20,10 +18,8 @@
             </Setter.Value>
         </Setter>
         <Style.Triggers>
-            <Trigger Property="Window.ResizeMode"
-                     Value="CanResizeWithGrip">
-                <Setter Property="Template"
-                        Value="{StaticResource WindowTemplateKey}"/>
+            <Trigger Property="Window.ResizeMode" Value="CanResizeWithGrip">
+                <Setter Property="Template" Value="{StaticResource WindowTemplateKey}"/>
             </Trigger>
         </Style.Triggers>
     </Style>

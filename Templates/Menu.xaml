@@ -4,7 +4,7 @@
 
 
     <Style TargetType="{x:Type Menu}">
-        <Setter Property="Background" Value="{DynamicResource Menu.Static.Background}"/>
+        <Setter Property="Background" Value="{DynamicResource ControlNormalBrushKey}"/>
         <Setter Property="FontFamily" Value="{DynamicResource {x:Static SystemFonts.MenuFontFamilyKey}}"/>
         <Setter Property="FontSize" Value="{DynamicResource {x:Static SystemFonts.MenuFontSizeKey}}"/>
         <Setter Property="FontStyle" Value="{DynamicResource {x:Static SystemFonts.MenuFontStyleKey}}"/>
@@ -106,20 +106,20 @@
                 <Setter Property="Visibility" TargetName="Icon" Value="Collapsed"/>
             </Trigger>
             <Trigger Property="IsHighlighted" Value="True">
-                <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource MenuItem.Highlight.Background}"/>
-                <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource MenuItem.Highlight.Border}"/>
+                <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource HighlightNormalBrushKey}"/>
+                <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource BorderSelectedBrushKey}"/>
             </Trigger>
             <Trigger Property="IsEnabled" Value="False">
-                <Setter Property="TextElement.Foreground" TargetName="templateRoot" Value="{DynamicResource Menu.Disabled.Foreground}"/>
-                <Setter Property="Fill" TargetName="GlyphPanel" Value="{DynamicResource Menu.Disabled.Foreground}"/>
+                <Setter Property="TextElement.Foreground" TargetName="templateRoot" Value="{DynamicResource ForegroundDisabledBrushKey}"/>
+                <Setter Property="Fill" TargetName="GlyphPanel" Value="{DynamicResource ForegroundDisabledBrushKey}"/>
             </Trigger>
             <MultiTrigger>
                 <MultiTrigger.Conditions>
                     <Condition Property="IsHighlighted" Value="True"/>
                     <Condition Property="IsEnabled" Value="False"/>
                 </MultiTrigger.Conditions>
-                <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource MenuItem.Highlight.Disabled.Background}"/>
-                <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource MenuItem.Highlight.Disabled.Border}"/>
+                <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource HighlightDisabledBrushKey}"/>
+                <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource BorderDisabledBrushKey}"/>
             </MultiTrigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
@@ -160,12 +160,12 @@
                 <Setter Property="Visibility" TargetName="Icon" Value="Collapsed"/>
             </Trigger>
             <Trigger Property="IsHighlighted" Value="True">
-                <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource MenuItem.Highlight.Background}"/>
-                <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource MenuItem.Highlight.Border}"/>
+                <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource HighlightNormalBrushKey}"/>
+                <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource BorderSelectedBrushKey}"/>
             </Trigger>
             <Trigger Property="IsEnabled" Value="False">
-                <Setter Property="TextElement.Foreground" TargetName="templateRoot" Value="{DynamicResource Menu.Disabled.Foreground}"/>
-                <Setter Property="Fill" TargetName="GlyphPanel" Value="{DynamicResource Menu.Disabled.Foreground}"/>
+                <Setter Property="TextElement.Foreground" TargetName="templateRoot" Value="{DynamicResource ForegroundDisabledBrushKey}"/>
+                <Setter Property="Fill" TargetName="GlyphPanel" Value="{DynamicResource ForegroundDisabledBrushKey}"/>
             </Trigger>
             <Trigger Property="ScrollViewer.CanContentScroll" SourceName="SubMenuScrollViewer" Value="false">
                 <Setter Property="Canvas.Top" TargetName="OpaqueRect" Value="{Binding VerticalOffset, ElementName=SubMenuScrollViewer}"/>
@@ -201,20 +201,20 @@
                 <Setter Property="Visibility" TargetName="Icon" Value="Collapsed"/>
             </Trigger>
             <Trigger Property="IsHighlighted" Value="True">
-                <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource MenuItem.Highlight.Background}"/>
-                <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource MenuItem.Highlight.Border}"/>
+                <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource HighlightNormalBrushKey}"/>
+                <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource BorderSelectedBrushKey}"/>
             </Trigger>
             <Trigger Property="IsEnabled" Value="False">
-                <Setter Property="TextElement.Foreground" TargetName="templateRoot" Value="{DynamicResource Menu.Disabled.Foreground}"/>
-                <Setter Property="Fill" TargetName="Glyph" Value="{DynamicResource Menu.Disabled.Foreground}"/>
+                <Setter Property="TextElement.Foreground" TargetName="templateRoot" Value="{DynamicResource ForegroundDisabledBrushKey}"/>
+                <Setter Property="Fill" TargetName="Glyph" Value="{DynamicResource ForegroundDisabledBrushKey}"/>
             </Trigger>
             <MultiTrigger>
                 <MultiTrigger.Conditions>
                     <Condition Property="IsHighlighted" Value="True"/>
                     <Condition Property="IsEnabled" Value="False"/>
                 </MultiTrigger.Conditions>
-                <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource MenuItem.Highlight.Disabled.Background}"/>
-                <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource MenuItem.Highlight.Disabled.Border}"/>
+                <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource HighlightDisabledBrushKey}"/>
+                <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource BorderDisabledBrushKey}"/>
             </MultiTrigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
@@ -230,12 +230,12 @@
                     <ColumnDefinition Width="20"/>
                 </Grid.ColumnDefinitions>
                 <ContentPresenter x:Name="Icon" ContentSource="Icon" HorizontalAlignment="Center" Height="16" Margin="3" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="Center" Width="16"/>
-                <Border x:Name="GlyphPanel" Background="{DynamicResource MenuItem.Highlight.Background}" BorderBrush="{DynamicResource MenuItem.Highlight.Border}" BorderThickness="1" Height="22" Margin="-1,0,0,0" VerticalAlignment="Center" Visibility="Hidden" Width="22">
+                <Border x:Name="GlyphPanel" Background="{DynamicResource HighlightNormalBrushKey}" BorderBrush="{DynamicResource BorderSelectedBrushKey}" BorderThickness="1" Height="22" Margin="-1,0,0,0" VerticalAlignment="Center" Visibility="Hidden" Width="22">
                     <Path x:Name="Glyph" Data="{DynamicResource Checkmark}" FlowDirection="LeftToRight" Fill="{DynamicResource Menu.Static.Foreground}" Height="11" Width="9"/>
                 </Border>
                 <ContentPresenter ContentSource="Header" Grid.Column="2" HorizontalAlignment="Left" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="Center"/>
                 <TextBlock Grid.Column="4" Margin="{TemplateBinding Padding}" Opacity="0.7" Text="{TemplateBinding InputGestureText}" VerticalAlignment="Center"/>
-                <Path x:Name="RightArrow" Grid.Column="5" Data="{StaticResource RightArrow}" Fill="{DynamicResource Menu.Static.Foreground}" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center"/>
+                <Path x:Name="RightArrow" Grid.Column="5" Data="{StaticResource RightArrow}" Fill="{DynamicResource ForegroundNormalBrushKey}" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center"/>
                 <Popup x:Name="PART_Popup" AllowsTransparency="true" Focusable="false" HorizontalOffset="-2" IsOpen="{Binding IsSubmenuOpen, RelativeSource={RelativeSource TemplatedParent}}" Placement="Right" PopupAnimation="{DynamicResource {x:Static SystemParameters.MenuPopupAnimationKey}}" VerticalOffset="-3">
                     <Border x:Name="SubMenuBorder" Background="{StaticResource Menu.Static.Background}" BorderBrush="{StaticResource Menu.Static.Border}" BorderThickness="1" Padding="2">
                         <ScrollViewer x:Name="SubMenuScrollViewer" Style="{DynamicResource {ComponentResourceKey ResourceId=MenuScrollViewer, TypeInTargetAssembly={x:Type FrameworkElement}}}">
@@ -264,12 +264,12 @@
             </Trigger>
             <Trigger Property="IsHighlighted" Value="True">
                 <Setter Property="Background" TargetName="templateRoot" Value="Transparent"/>
-                <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource MenuItem.Highlight.Border}"/>
+                <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource BorderSelectedBrushKey}"/>
             </Trigger>
             <Trigger Property="IsEnabled" Value="False">
-                <Setter Property="TextElement.Foreground" TargetName="templateRoot" Value="{DynamicResource Menu.Disabled.Foreground}"/>
-                <Setter Property="Fill" TargetName="Glyph" Value="{DynamicResource Menu.Disabled.Foreground}"/>
-                <Setter Property="Fill" TargetName="RightArrow" Value="{DynamicResource Menu.Disabled.Foreground}"/>
+                <Setter Property="TextElement.Foreground" TargetName="templateRoot" Value="{DynamicResource ForegroundDisabledBrushKey}"/>
+                <Setter Property="Fill" TargetName="Glyph" Value="{DynamicResource ForegroundDisabledBrushKey}"/>
+                <Setter Property="Fill" TargetName="RightArrow" Value="{DynamicResource ForegroundDisabledBrushKey}"/>
             </Trigger>
             <Trigger Property="ScrollViewer.CanContentScroll" SourceName="SubMenuScrollViewer" Value="false">
                 <Setter Property="Canvas.Top" TargetName="OpaqueRect" Value="{Binding VerticalOffset, ElementName=SubMenuScrollViewer}"/>
@@ -290,14 +290,14 @@
             <Trigger Property="Role" Value="TopLevelHeader">
                 <Setter Property="Background" Value="Transparent"/>
                 <Setter Property="BorderBrush" Value="Transparent"/>
-                <Setter Property="Foreground" Value="{DynamicResource Menu.Static.Foreground}"/>
+                <Setter Property="Foreground" Value="{DynamicResource ForegroundNormalBrushKey}"/>
                 <Setter Property="Template" Value="{DynamicResource {ComponentResourceKey ResourceId=TopLevelHeaderTemplateKey, TypeInTargetAssembly={x:Type MenuItem}}}"/>
                 <Setter Property="Padding" Value="6,0"/>
             </Trigger>
             <Trigger Property="Role" Value="TopLevelItem">
-                <Setter Property="Background" Value="{DynamicResource Menu.Static.Background}"/>
-                <Setter Property="BorderBrush" Value="{DynamicResource Menu.Static.Border}"/>
-                <Setter Property="Foreground" Value="{DynamicResource Menu.Static.Foreground}"/>
+                <Setter Property="Background" Value="{DynamicResource ControlNormalBrushKey}"/>
+                <Setter Property="BorderBrush" Value="{DynamicResource BorderNormalBrushKey}"/>
+                <Setter Property="Foreground" Value="{DynamicResource ForegroundNormalBrushKey}"/>
                 <Setter Property="Template" Value="{DynamicResource {ComponentResourceKey ResourceId=TopLevelItemTemplateKey, TypeInTargetAssembly={x:Type MenuItem}}}"/>
                 <Setter Property="Padding" Value="6,0"/>
             </Trigger>

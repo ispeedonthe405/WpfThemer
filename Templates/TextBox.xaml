@@ -3,9 +3,9 @@
     
     
     <Style TargetType="{x:Type TextBox}">
-        <Setter Property="Background" Value="{DynamicResource WindowBrushKey}"/>
-        <Setter Property="BorderBrush" Value="{DynamicResource TextBox.Static.Border}"/>
-        <Setter Property="Foreground" Value="{DynamicResource ControlTextBrushKey}"/>
+        <Setter Property="Background" Value="{DynamicResource ControlNormalBrushKey}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource BorderNormalBrushKey}"/>
+        <Setter Property="Foreground" Value="{DynamicResource ForegroundNormalBrushKey}"/>
         <Setter Property="BorderThickness" Value="1"/>
         <Setter Property="KeyboardNavigation.TabNavigation" Value="None"/>
         <Setter Property="HorizontalContentAlignment" Value="Left"/>
@@ -28,10 +28,10 @@
                             <Setter Property="Opacity" TargetName="border" Value="0.56"/>
                         </Trigger>
                         <Trigger Property="IsMouseOver" Value="true">
-                            <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource TextBox.MouseOver.Border}"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource BorderMouseOverBrushKey}"/>
                         </Trigger>
                         <Trigger Property="IsKeyboardFocused" Value="true">
-                            <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource TextBox.Focus.Border}"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource BorderSelectedBrushKey}"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>

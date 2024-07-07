@@ -5,7 +5,7 @@
         <Setter Property="Control.Template">
             <Setter.Value>
                 <ControlTemplate>
-                    <Rectangle Margin="2" StrokeDashArray="1 2" Stroke="{DynamicResource ControlTextBrushKey}" SnapsToDevicePixels="true" StrokeThickness="1"/>
+                    <Rectangle Margin="2" StrokeDashArray="1 2" Stroke="{DynamicResource ControlNormalBrushKey}" SnapsToDevicePixels="true" StrokeThickness="1"/>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
@@ -16,7 +16,7 @@
         <Setter Property="Control.Template">
             <Setter.Value>
                 <ControlTemplate>
-                    <Rectangle Margin="14,0,0,0" StrokeDashArray="1 2" Stroke="{DynamicResource ControlTextBrushKey}" SnapsToDevicePixels="true" StrokeThickness="1"/>
+                    <Rectangle Margin="14,0,0,0" StrokeDashArray="1 2" Stroke="{DynamicResource ControlNormalBrushKey}" SnapsToDevicePixels="true" StrokeThickness="1"/>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
@@ -24,9 +24,9 @@
 
     <Style TargetType="{x:Type CheckBox}">
         <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
-        <Setter Property="Background" Value="{DynamicResource OptionMark.Static.Background}"/>
-        <Setter Property="BorderBrush" Value="{DynamicResource OptionMark.Static.Border}"/>
-        <Setter Property="Foreground" Value="{DynamicResource ControlTextBrushKey}"/>
+        <Setter Property="Background" Value="{DynamicResource ControlNormalBrushKey}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource BorderNormalBrushKey}"/>
+        <Setter Property="Foreground" Value="{DynamicResource ForegroundNormalBrushKey}"/>
         <Setter Property="BorderThickness" Value="1"/>
         <Setter Property="Template">
             <Setter.Value>
@@ -43,8 +43,8 @@
                             <Grid x:Name="markGrid">
                                 <Path x:Name="optionMark" 
                                       Data="F1 M 9.97498,1.22334L 4.6983,9.09834L 4.52164,9.09834L 0,5.19331L 1.27664,3.52165L 4.255,6.08833L 8.33331,1.52588e-005L 9.97498,1.22334 Z " 
-                                      Fill="{DynamicResource OptionMark.Static.Glyph}" Margin="1" Opacity="0" Stretch="None"/>
-                                <Rectangle x:Name="indeterminateMark" Fill="{DynamicResource OptionMark.Static.Glyph}" Margin="2" Opacity="0"/>
+                                      Fill="{DynamicResource ForegroundNormalBrushKey}" Margin="1" Opacity="0" Stretch="None"/>
+                                <Rectangle x:Name="indeterminateMark" Fill="{DynamicResource ForegroundNormalBrushKey}" Margin="2" Opacity="0"/>
                             </Grid>
                         </Border>
                         <ContentPresenter x:Name="contentPresenter" Grid.Column="1" Focusable="False" 
@@ -58,22 +58,22 @@
                             <Setter Property="Padding" Value="4,-1,0,0"/>
                         </Trigger>
                         <Trigger Property="IsMouseOver" Value="true">
-                            <Setter Property="Background" TargetName="checkBoxBorder" Value="{DynamicResource OptionMark.MouseOver.Background}"/>
-                            <Setter Property="BorderBrush" TargetName="checkBoxBorder" Value="{DynamicResource OptionMark.MouseOver.Border}"/>
-                            <Setter Property="Fill" TargetName="optionMark" Value="{DynamicResource OptionMark.MouseOver.Glyph}"/>
-                            <Setter Property="Fill" TargetName="indeterminateMark" Value="{DynamicResource OptionMark.MouseOver.Glyph}"/>
+                            <Setter Property="Background" TargetName="checkBoxBorder" Value="{DynamicResource ControlMouseOverBrushKey}"/>
+                            <Setter Property="BorderBrush" TargetName="checkBoxBorder" Value="{DynamicResource BorderMouseOverBrushKey}"/>
+                            <Setter Property="Fill" TargetName="optionMark" Value="{DynamicResource ForegroundMouseOverBrushKey}"/>
+                            <Setter Property="Fill" TargetName="indeterminateMark" Value="{DynamicResource ForegroundMouseOverBrushKey}"/>
                         </Trigger>
                         <Trigger Property="IsEnabled" Value="false">
-                            <Setter Property="Background" TargetName="checkBoxBorder" Value="{DynamicResource OptionMark.Disabled.Background}"/>
-                            <Setter Property="BorderBrush" TargetName="checkBoxBorder" Value="{DynamicResource OptionMark.Disabled.Border}"/>
-                            <Setter Property="Fill" TargetName="optionMark" Value="{DynamicResource OptionMark.Disabled.Glyph}"/>
-                            <Setter Property="Fill" TargetName="indeterminateMark" Value="{DynamicResource OptionMark.Disabled.Glyph}"/>
+                            <Setter Property="Background" TargetName="checkBoxBorder" Value="{DynamicResource ControlDisabledBrushKey}"/>
+                            <Setter Property="BorderBrush" TargetName="checkBoxBorder" Value="{DynamicResource BorderDisabledBrushKey}"/>
+                            <Setter Property="Fill" TargetName="optionMark" Value="{DynamicResource ForegroundDisabledBrushKey}"/>
+                            <Setter Property="Fill" TargetName="indeterminateMark" Value="{DynamicResource ForegroundDisabledBrushKey}"/>
                         </Trigger>
                         <Trigger Property="IsPressed" Value="true">
-                            <Setter Property="Background" TargetName="checkBoxBorder" Value="{DynamicResource OptionMark.Pressed.Background}"/>
-                            <Setter Property="BorderBrush" TargetName="checkBoxBorder" Value="{DynamicResource OptionMark.Pressed.Border}"/>
-                            <Setter Property="Fill" TargetName="optionMark" Value="{DynamicResource OptionMark.Pressed.Glyph}"/>
-                            <Setter Property="Fill" TargetName="indeterminateMark" Value="{DynamicResource OptionMark.Pressed.Glyph}"/>
+                            <Setter Property="Background" TargetName="checkBoxBorder" Value="{DynamicResource ControlPressedBrushKey}"/>
+                            <Setter Property="BorderBrush" TargetName="checkBoxBorder" Value="{DynamicResource BorderPressedBrushKey}"/>
+                            <Setter Property="Fill" TargetName="optionMark" Value="{DynamicResource ForegroundPressedBrushKey}"/>
+                            <Setter Property="Fill" TargetName="indeterminateMark" Value="{DynamicResource ForegroundPressedBrushKey}"/>
                         </Trigger>
                         <Trigger Property="IsChecked" Value="true">
                             <Setter Property="Opacity" TargetName="optionMark" Value="1"/>

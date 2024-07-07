@@ -5,7 +5,7 @@
         <Setter Property="Control.Template">
             <Setter.Value>
                 <ControlTemplate>
-                    <Rectangle Margin="2" StrokeDashArray="1 2" Stroke="{DynamicResource ControlTextBrushKey}" 
+                    <Rectangle Margin="2" StrokeDashArray="1 2" Stroke="{DynamicResource ForegroundNormalBrushKey}" 
                                SnapsToDevicePixels="true" StrokeThickness="1"/>
                 </ControlTemplate>
             </Setter.Value>
@@ -14,9 +14,9 @@
     
     <Style TargetType="{x:Type ToggleButton}">
         <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
-        <Setter Property="Background" Value="{DynamicResource ToggleButton.Static.Background}"/>
-        <Setter Property="BorderBrush" Value="{DynamicResource ToggleButton.Static.Border}"/>
-        <Setter Property="Foreground" Value="{DynamicResource ControlTextBrushKey}"/>
+        <Setter Property="Background" Value="{DynamicResource ControlNormalBrushKey}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource BorderNormalBrushKey}"/>
+        <Setter Property="Foreground" Value="{DynamicResource ForegroundNormalBrushKey}"/>
         <Setter Property="BorderThickness" Value="1"/>
         <Setter Property="HorizontalContentAlignment" Value="Center"/>
         <Setter Property="VerticalContentAlignment" Value="Center"/>
@@ -40,22 +40,22 @@
                             <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource HighlightBrushKey}"/>
                         </Trigger>
                         <Trigger Property="IsMouseOver" Value="true">
-                            <Setter Property="Background" TargetName="border" Value="{DynamicResource ToggleButton.MouseOver.Background}"/>
-                            <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource ToggleButton.MouseOver.Border}"/>
+                            <Setter Property="Background" TargetName="border" Value="{DynamicResource ControlMouseOverBrushKey}"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource BorderMouseOverBrushKey}"/>
                         </Trigger>
                         <Trigger Property="IsPressed" Value="true">
-                            <Setter Property="Background" TargetName="border" Value="{DynamicResource ToggleButton.Pressed.Background}"/>
-                            <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource ToggleButton.Pressed.Border}"/>
+                            <Setter Property="Background" TargetName="border" Value="{DynamicResource ControlPressedBrushKey}"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource BorderPressedBrushKey}"/>
                         </Trigger>
                         <Trigger Property="IsChecked" Value="true">
-                            <Setter Property="Background" TargetName="border" Value="{DynamicResource ToggleButton.Pressed.Background}"/>
-                            <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource ToggleButton.Pressed.Border}"/>
+                            <Setter Property="Background" TargetName="border" Value="{DynamicResource ControlSelectedBrushKey}"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource BorderSelectedBrushKey}"/>
                         </Trigger>
                         <Trigger Property="IsEnabled" Value="false">
-                            <Setter Property="Background" TargetName="border" Value="{DynamicResource ToggleButton.Disabled.Background}"/>
-                            <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource ToggleButton.Disabled.Border}"/>
+                            <Setter Property="Background" TargetName="border" Value="{DynamicResource ControlDisabledBrushKey}"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource BorderDisabledBrushKey}"/>
                             <Setter Property="TextElement.Foreground" TargetName="contentPresenter" 
-                                    Value="{DynamicResource ToggleButton.Disabled.Foreground}"/>
+                                    Value="{DynamicResource ForegroundDisabledBrushKey}"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>

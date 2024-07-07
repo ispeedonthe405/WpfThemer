@@ -2,8 +2,8 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
     <Style TargetType="{x:Type ListView}">
-        <Setter Property="Background" Value="{DynamicResource ListView.Static.Background}"/>
-        <Setter Property="BorderBrush" Value="{DynamicResource ListView.Static.Border}"/>
+        <Setter Property="Background" Value="{DynamicResource ControlNormalBrushKey}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource BorderlNormalBrushKey}"/>
         <Setter Property="BorderThickness" Value="1"/>
         <Setter Property="Foreground" Value="{DynamicResource ControlTextBrushKey}"/>
         <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Auto"/>
@@ -25,8 +25,8 @@
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsEnabled" Value="false">
-                            <Setter Property="Background" TargetName="Bd" Value="{DynamicResource ListView.Disabled.Background}"/>
-                            <Setter Property="BorderBrush" TargetName="Bd" Value="{DynamicResource ListView.Disabled.Border}"/>
+                            <Setter Property="Background" TargetName="Bd" Value="{DynamicResource ControlDisabledBrushKey}"/>
+                            <Setter Property="BorderBrush" TargetName="Bd" Value="{DynamicResource BorderDisabledBrushKey}"/>
                         </Trigger>
                         <MultiTrigger>
                             <MultiTrigger.Conditions>

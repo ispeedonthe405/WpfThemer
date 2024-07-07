@@ -5,7 +5,7 @@
         <Setter Property="Control.Template">
             <Setter.Value>
                 <ControlTemplate>
-                    <Rectangle Margin="2" StrokeDashArray="1 2" Stroke="{DynamicResource ControlTextBrushKey}" 
+                    <Rectangle Margin="2" StrokeDashArray="1 2" Stroke="{DynamicResource ForegroundNormalBrushKey}" 
                                SnapsToDevicePixels="true" StrokeThickness="1"/>
                 </ControlTemplate>
             </Setter.Value>
@@ -39,27 +39,27 @@
                             <MultiTrigger.Conditions>
                                 <Condition Property="IsMouseOver" Value="True"/>
                             </MultiTrigger.Conditions>
-                            <Setter Property="Background" TargetName="Bd" Value="{DynamicResource ListViewItem.MouseOver.Background}"/>
-                            <Setter Property="BorderBrush" TargetName="Bd" Value="{DynamicResource ListViewItem.MouseOver.Border}"/>
+                            <Setter Property="Background" TargetName="Bd" Value="{DynamicResource ControlMouseOverBrushKey}"/>
+                            <Setter Property="BorderBrush" TargetName="Bd" Value="{DynamicResource BorderMouseOverBrushKey}"/>
                         </MultiTrigger>
                         <MultiTrigger>
                             <MultiTrigger.Conditions>
                                 <Condition Property="Selector.IsSelectionActive" Value="False"/>
                                 <Condition Property="IsSelected" Value="True"/>
                             </MultiTrigger.Conditions>
-                            <Setter Property="Background" TargetName="Bd" Value="{DynamicResource ListViewItem.SelectedInactive.Background}"/>
-                            <Setter Property="BorderBrush" TargetName="Bd" Value="{DynamicResource ListViewItem.SelectedInactive.Border}"/>
+                            <Setter Property="Background" TargetName="Bd" Value="{DynamicResource ControlSelectedBrushKey}"/>
+                            <Setter Property="BorderBrush" TargetName="Bd" Value="{DynamicResource BorderSelectedBrushKey}"/>
                         </MultiTrigger>
                         <MultiTrigger>
                             <MultiTrigger.Conditions>
                                 <Condition Property="Selector.IsSelectionActive" Value="True"/>
                                 <Condition Property="IsSelected" Value="True"/>
                             </MultiTrigger.Conditions>
-                            <Setter Property="Background" TargetName="Bd" Value="{DynamicResource ListViewItem.SelectedActive.Background}"/>
-                            <Setter Property="BorderBrush" TargetName="Bd" Value="{DynamicResource ListViewItem.SelectedActive.Border}"/>
+                            <Setter Property="Background" TargetName="Bd" Value="{DynamicResource ControlSelectedBrushKey}"/>
+                            <Setter Property="BorderBrush" TargetName="Bd" Value="{DynamicResource BorderSelectedBrushKey}"/>
                         </MultiTrigger>
                         <Trigger Property="IsEnabled" Value="False">
-                            <Setter Property="TextElement.Foreground" TargetName="Bd" Value="{DynamicResource GrayTextBrushKey}"/>
+                            <Setter Property="TextElement.Foreground" TargetName="Bd" Value="{DynamicResource ForegroundDisabledBrushKey}"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>

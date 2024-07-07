@@ -6,10 +6,10 @@
         <Setter Property="Padding" Value="2"/>
         <Setter Property="HorizontalContentAlignment" Value="Center"/>
         <Setter Property="VerticalContentAlignment" Value="Center"/>
-        <Setter Property="Background" Value="{DynamicResource TabControl.Background}"/>
-        <Setter Property="BorderBrush" Value="{DynamicResource TabControl.Border}"/>
+        <Setter Property="Background" Value="{DynamicResource ControlNromalBrushKey}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource BorderNormalBrushKey}"/>
         <Setter Property="BorderThickness" Value="1"/>
-        <Setter Property="Foreground" Value="{DynamicResource ControlTextBrushKey}"/>
+        <Setter Property="Foreground" Value="{DynamicResource ForegroundNormalBrushKey}"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type TabControl}">
@@ -65,7 +65,7 @@
                             <Setter Property="Margin" TargetName="headerPanel" Value="0,2,2,2"/>
                         </Trigger>
                         <Trigger Property="IsEnabled" Value="false">
-                            <Setter Property="TextElement.Foreground" TargetName="templateRoot" Value="{DynamicResource GrayTextBrushKey}"/>
+                            <Setter Property="TextElement.Foreground" TargetName="templateRoot" Value="{DynamicResource ForegroundDisabledBrushKey}"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>

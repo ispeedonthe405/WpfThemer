@@ -6,8 +6,8 @@
 
     <Application.Resources>
         <Style x:Key="{x:Type Window}" TargetType="{x:Type Window}">
-            <Setter Property="Foreground" Value="{DynamicResource WindowTextBrushKey}"/>
-            <Setter Property="Background" Value="{DynamicResource WindowBrushKey}"/>
+            <Setter Property="Foreground" Value="{DynamicResource ForegroundNormalBrushKey}"/>
+            <Setter Property="Background" Value="{DynamicResource BackgroundNormalBrushKey}"/>
         </Style>
     </Application.Resources>
 </Application>

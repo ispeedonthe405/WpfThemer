@@ -8,81 +8,89 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <!--Background="{DynamicResource WindowBrushKey}" Foreground="{DynamicResource WindowTextBrushKey}">-->
-    
-    <Grid>
 
+    <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="24"/>
-            <RowDefinition Height="24"/>
-            <RowDefinition Height="24"/>
-            <RowDefinition Height="24"/>
-            <RowDefinition Height="100"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="24"/>
         </Grid.RowDefinitions>
 
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="0" Margin="10">
 
-        <Menu Grid.Row="0" Grid.ColumnSpan="2">
-            <MenuItem Header="File">
-                <MenuItem Header="Item 0"/>
-                <MenuItem Header="Item 1"/>
-                <MenuItem Header="Item 2"/>
-                <MenuItem Header="Item 3"/>
-                <MenuItem Header="Item 4"/>
-            </MenuItem>
-            <MenuItem Header="Edit">
-                <MenuItem Header="Item 0"/>
-                <MenuItem Header="Item 1"/>
-                <MenuItem Header="Item 2"/>
-                <MenuItem Header="Item 3"/>
-                <MenuItem Header="Item 4"/>
-            </MenuItem>
-        </Menu>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="24"/>
+                <RowDefinition Height="24"/>
+                <RowDefinition Height="24"/>
+                <RowDefinition Height="24"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="24"/>
+            </Grid.RowDefinitions>
 
-        <ToolBar Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2">
-            <Button Content="Button"/>
-            <Button Content="Button"/>
-            <Button Content="Button"/>
-            <Button Content="Button"/>
-            <Button Content="Button"/>
-        </ToolBar>
-        
-        <ComboBox Grid.Row="1" Grid.Column="0" x:Name="cb_Theme" SelectionChanged="cb_Theme_SelectionChanged"
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Menu Grid.Row="0" Grid.ColumnSpan="2">
+                <MenuItem Header="File">
+                    <MenuItem Header="Item 0"/>
+                    <MenuItem Header="Item 1"/>
+                    <MenuItem Header="Item 2" IsEnabled="False"/>
+                    <MenuItem Header="Item 3" IsEnabled="False"/>
+                    <MenuItem Header="Item 4"/>
+                </MenuItem>
+                <MenuItem Header="Edit">
+                    <MenuItem Header="Item 0"/>
+                    <MenuItem Header="Item 1" IsCheckable="True"/>
+                    <MenuItem Header="Item 2" IsCheckable="True" IsEnabled="False"/>
+                    <MenuItem Header="Item 3"/>
+                    <MenuItem Header="Item 4"/>
+                </MenuItem>
+            </Menu>
+
+            <ToolBar Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2">
+                <Button Content="Default" IsDefault="True"/>
+                <Button Content="Disabled" IsEnabled="False"/>
+                <Button Content="Button"/>
+                <Button Content="Button"/>
+                <Button Content="Button"/>
+            </ToolBar>
+
+            <ComboBox Grid.Row="1" Grid.Column="0" x:Name="cb_Theme" SelectionChanged="cb_Theme_SelectionChanged"
           IsEditable="True" StaysOpenOnEdit="True">
 
-        </ComboBox>
+            </ComboBox>
 
-        <TextBox x:Name="tb_Description" Grid.Row="1" Grid.Column="1"/>
+            <TextBox x:Name="tb_Description" Grid.Row="1" Grid.Column="1"/>
 
-        <TextBlock Grid.Row="2" Grid.Column="0" Text="TextBlock"/>
-        <Button Grid.Row="2" Grid.Column="1" Content="Button"/>
-        <ToggleButton Grid.Row="2" Grid.Column="2" Content="ToggleButton"/>
-        <RadioButton Grid.Row="2" Grid.Column="3" Content="RadioButton"/>
-        <CheckBox Grid.Row="3" Grid.Column="0" Content="CheckBox"/>
+            <TextBlock Grid.Row="2" Grid.Column="0" Text="TextBlock"/>
+            <Button Grid.Row="2" Grid.Column="1" Content="Button"/>
+            <ToggleButton Grid.Row="2" Grid.Column="2" Content="ToggleButton"/>
+            <RadioButton Grid.Row="2" Grid.Column="3" Content="RadioButton"/>
+            <CheckBox Grid.Row="3" Grid.Column="0" Content="CheckBox"/>
 
-        <TabControl Grid.Row="4" Grid.Column="0">
-            <TabItem Header="Tab0"/>
-            <TabItem Header="Tab1"/>
-        </TabControl>
+            <TabControl Grid.Row="4" Grid.Column="0">
+                <TabItem Header="Tab0"/>
+                <TabItem Header="Tab1"/>
+            </TabControl>
 
-        <ListBox Grid.Row="4" Grid.Column="1">
-            <ListBoxItem Content="ListBoxItem"/>
-            <ListBoxItem Content="ListBoxItem"/>
-            <ListBoxItem Content="ListBoxItem"/>
-        </ListBox>
+            <ListBox Grid.Row="4" Grid.Column="1">
+                <ListBoxItem Content="ListBoxItem"/>
+                <ListBoxItem Content="ListBoxItem"/>
+                <ListBoxItem Content="ListBoxItem"/>
+            </ListBox>
 
-        <ListView Grid.Row="4" Grid.Column="2">
-            <ListViewItem Content="ListViewItem"/>
-            <ListViewItem Content="ListViewItem"/>
-            <ListViewItem Content="ListViewItem"/>
-        </ListView>
+            <ListView Grid.Row="4" Grid.Column="2">
+                <ListViewItem Content="ListViewItem"/>
+                <ListViewItem Content="ListViewItem"/>
+                <ListViewItem Content="ListViewItem"/>
+            </ListView>
 
-        <DataGrid   x:Name="datagrid" 
+            <DataGrid   x:Name="datagrid" 
                     Grid.Row="5" 
                     Grid.ColumnSpan="3"
                     AutoGenerateColumns="True"
@@ -92,7 +100,17 @@
                     CanUserDeleteRows="False"
                     CanUserSortColumns="True"
                     SelectionMode="Extended">
-        </DataGrid>
+            </DataGrid>
+
+            <Border Grid.Row="6" Grid.ColumnSpan="4"/>
+
+        </Grid>
+
+        <StatusBar Grid.Row="1">
+            <StatusBarItem Content="Statusitem 0"/>
+            <Separator/>
+            <StatusBarItem Content="Statusitem 1"/>
+        </StatusBar>
         
     </Grid>
 

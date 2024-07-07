@@ -94,6 +94,11 @@ namespace WpfThemer
                 new ResourceDictionary() { Source = new Uri(uri, UriKind.RelativeOrAbsolute) }));
         }
 
+        public static void AddExternalTheme(Theme theme)
+        {
+            Themes.Add(theme);
+        }
+
         private static void BuildTemplate(string filename)
         {
             string uri = string.Format("/WpfThemer;component/Templates/{0}", filename);
@@ -118,10 +123,12 @@ namespace WpfThemer
             BuildTemplate("ListViewItem.xaml");
             BuildTemplate("Menu.xaml");
             BuildTemplate("RadioButton.xaml");
+            BuildTemplate("ScrollBar.xaml");
             BuildTemplate("Separator.xaml");
+            BuildTemplate("StatusBar.xaml");
             BuildTemplate("TabControl.xaml");
             BuildTemplate("TabItem.xaml");
-            //BuildTemplate("TextBlock.xaml");
+            ////BuildTemplate("TextBlock.xaml");
             BuildTemplate("TextBox.xaml");
             BuildTemplate("ToggleButton.xaml");
             BuildTemplate("Toolbar.xaml");

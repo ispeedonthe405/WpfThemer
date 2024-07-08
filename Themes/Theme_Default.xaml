@@ -44,7 +44,8 @@
     <Color x:Key="BorderMouseOver">#555555</Color>
     <Color x:Key="BorderPressed">#000000</Color>
     <Color x:Key="BorderLight">#A0A0A0</Color>
-    <Color x:Key="BorderDark">#A0A0A0</Color>
+    <Color x:Key="BorderMedium">#808080</Color>
+    <Color x:Key="BorderDark">#606060</Color>
 
     <SolidColorBrush x:Key="BorderNormalBrushKey" Color="{DynamicResource BorderNormal}"/>
     <SolidColorBrush x:Key="BorderSelectedBrushKey" Color="{DynamicResource BorderSelected}"/>
@@ -53,6 +54,7 @@
     <SolidColorBrush x:Key="BorderMouseOverBrushKey" Color="{DynamicResource BorderMouseOver}"/>
     <SolidColorBrush x:Key="BorderPressedBrushKey" Color="{DynamicResource BorderPressed}"/>
     <SolidColorBrush x:Key="BorderLightBrushKey" Color="{DynamicResource BorderLight}"/>
+    <SolidColorBrush x:Key="BorderMediumBrushKey" Color="{DynamicResource BorderMedium}"/>
     <SolidColorBrush x:Key="BorderDarkBrushKey" Color="{DynamicResource BorderDark}"/>
 
     <Color x:Key="ControlNormal">#F0F0F0</Color>

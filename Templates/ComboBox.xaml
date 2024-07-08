@@ -43,7 +43,7 @@
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ToggleButton}">
                     <Border x:Name="templateRoot" Background="{DynamicResource ControlNormalBrushKey}" 
-                            BorderBrush="{DynamicResource ComboBox.Static.Border}" BorderThickness="{TemplateBinding BorderThickness}" 
+                            BorderBrush="{DynamicResource BorderNormalBrushKey}" BorderThickness="{TemplateBinding BorderThickness}" 
                             SnapsToDevicePixels="true">
                         <Border x:Name="splitBorder" BorderBrush="Transparent" BorderThickness="1" HorizontalAlignment="Right" Margin="0" 
                                 SnapsToDevicePixels="true" Width="{DynamicResource {x:Static SystemParameters.VerticalScrollBarWidthKey}}">
@@ -145,8 +145,8 @@
                    PopupAnimation="{DynamicResource {x:Static SystemParameters.ComboBoxPopupAnimationKey}}">
                 <theme:SystemDropShadowChrome x:Name="shadow" Color="Transparent" 
                                               MinWidth="{Binding ActualWidth, ElementName=templateRoot}" MaxHeight="{TemplateBinding MaxDropDownHeight}">
-                    <Border x:Name="dropDownBorder" Background="{DynamicResource WindowBrushKey}" 
-                            BorderBrush="{DynamicResource WindowFrameBrushKey}" BorderThickness="1">
+                    <Border x:Name="dropDownBorder" Background="{DynamicResource BackgroundNormalBrushKey}" 
+                            BorderBrush="{DynamicResource BorderNormalBrushKey}" BorderThickness="1">
                         <ScrollViewer x:Name="DropDownScrollViewer">
                             <Grid x:Name="grid" RenderOptions.ClearTypeHint="Enabled">
                                 <Canvas x:Name="canvas" HorizontalAlignment="Left" Height="0" VerticalAlignment="Top" Width="0">

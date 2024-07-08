@@ -36,7 +36,7 @@
                             <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource HighlightNormalBrushKey}"/>
                         </Trigger>
                         <Trigger Property="IsMouseOver" Value="true">
-                            <Setter Property="Background" TargetName="border" Value="{DynamicResource ControlMouseOverBurshKey}"/>
+                            <Setter Property="Background" TargetName="border" Value="{DynamicResource ControlMouseOverBrushKey}"/>
                             <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource BorderMouseOverBrushKey}"/>
                         </Trigger>
                         <Trigger Property="IsPressed" Value="true">

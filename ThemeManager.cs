@@ -76,6 +76,14 @@ namespace WpfThemer
                 if (_Application is null) return;
 
                 _Application.Resources.MergedDictionaries.Remove(ActiveTheme.Resource);
+
+                // Refresh system colors on selection of System theme
+                // (to account for changes the user might have made)
+                if(IsSystemTheme(value))
+                {
+                    SampleSystemColors();
+                }
+
                 _ActiveTheme = value;
                 _Application.Resources.MergedDictionaries.Add(ActiveTheme.Resource);
             }
@@ -85,6 +93,53 @@ namespace WpfThemer
         #endregion Properties
         ///////////////////////////////////////////////////////////
         
+        private static bool IsSystemTheme(Theme theme)
+        {
+            return theme.DisplayName.Equals("system", StringComparison.CurrentCultureIgnoreCase);
+        }
+
+        private static void SampleSystemColors()
+        {
+            Theme? theme = Themes.Where(t => t.DisplayName.Equals("system", StringComparison.CurrentCultureIgnoreCase)).FirstOrDefault();
+            if(theme is null) return;
+
+            theme.Resource["BackgroundNormal"] = SystemColors.ControlColor;
+            theme.Resource["BackgroundSelected"] = SystemColors.HighlightColor;
+            theme.Resource["BackgroundInactive"] = SystemColors.HighlightColor;
+            theme.Resource["BackgroundDisabled"] = SystemColors.ControlColor;
+            theme.Resource["BackgroundMouseOver"] = SystemColors.ControlLightColor;
+            theme.Resource["BackgroundPressed"] = SystemColors.ControlDarkColor;
+            theme.Resource["BackgroundLight"] = SystemColors.ControlDarkColor;
+            theme.Resource["BackgroundDark"] = SystemColors.ControlDarkColor;
+
+            theme.Resource["ForegroundNormal"] = SystemColors.ControlTextColor;
+            theme.Resource["ForegroundSelected"] = SystemColors.HighlightTextColor;
+            theme.Resource["ForegroundInactive"] = SystemColors.HighlightTextColor;
+            theme.Resource["ForegroundDisabled"] = SystemColors.GrayTextColor;
+            theme.Resource["ForegroundMouseOver"] = SystemColors.ControlTextColor;
+            theme.Resource["ForegroundPressed"] = SystemColors.ControlTextColor;
+            theme.Resource["ForegroundLight"] = SystemColors.ControlTextColor;
+            theme.Resource["ForegroundDark"] = SystemColors.ControlTextColor;
+
+            theme.Resource["BorderNormal"] = SystemColors.ControlDarkColor;
+            theme.Resource["BorderSelected"] = SystemColors.HighlightColor;
+            theme.Resource["BorderInactive"] = SystemColors.HighlightColor;
+            theme.Resource["BorderDisabled"] = SystemColors.ControlDarkColor;
+            theme.Resource["BorderMouseOver"] = SystemColors.ControlDarkColor;
+            theme.Resource["BorderPressed"] = SystemColors.ControlDarkColor;
+            theme.Resource["BorderLight"] = SystemColors.ControlDarkColor;
+            theme.Resource["BorderDark"] = SystemColors.ControlDarkColor;
+
+            theme.Resource["ControlNormal"] = SystemColors.ControlColor;
+            theme.Resource["ControlSelected"] = SystemColors.HighlightColor;
+            theme.Resource["ControlInactive"] = SystemColors.HighlightColor;
+            theme.Resource["ControlDisabled"] = SystemColors.ControlColor;
+            theme.Resource["ControlMouseOver"] = SystemColors.ControlLightColor;
+            theme.Resource["ControlPressed"] = SystemColors.ControlDarkColor;
+            theme.Resource["ControlLight"] = SystemColors.ControlDarkColor;
+            theme.Resource["ControlDark"] = SystemColors.ControlDarkColor;
+        }
+
         private static void BuildTheme(string name, string description, string filename)
         {
             string uri = string.Format("/WpfThemer;component/Themes/{0}", filename);
@@ -92,11 +147,6 @@ namespace WpfThemer
                 name,
                 description,
                 new ResourceDictionary() { Source = new Uri(uri, UriKind.RelativeOrAbsolute) }));
-        }
-
-        public static void AddExternalTheme(Theme theme)
-        {
-            Themes.Add(theme);
         }
 
         private static void BuildTemplate(string filename)
@@ -107,9 +157,10 @@ namespace WpfThemer
 
         static ThemeManager()
         {
-            BuildTheme("Default", "Default Theme", "Theme_Default.xaml");
+            //BuildTheme("Default", "Default Theme", "Theme_Default.xaml");
+            BuildTheme("System", "System Theme", "Theme_System.xaml");
             BuildTheme("Dark", "Dark Theme", "Theme_Dark.xaml");
-            BuildTheme("Light", "Light Theme", "Theme_Light.xaml");
+            BuildTheme("Light", "Light Theme", "Theme_Light.xaml");            
             _ActiveTheme = Themes.First();
 
             BuildTemplate("Button.xaml");
@@ -157,6 +208,15 @@ namespace WpfThemer
                     return;
                 }
             }
+        }
+
+        /// <summary>
+        /// Use this to add a theme from your own assembly
+        /// </summary>
+        /// <param name="theme"></param>
+        public static void AddExternalTheme(Theme theme)
+        {
+            Themes.Add(theme);
         }
     }
 }

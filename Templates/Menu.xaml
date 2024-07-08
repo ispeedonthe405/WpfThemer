@@ -21,8 +21,8 @@
             </Setter.Value>
         </Setter>
     </Style>
-    
-      
+
+
     <MenuScrollingVisibilityConverter x:Key="MenuScrollingVisibilityConverter"/>
     <Geometry x:Key="DownArrow">M 0,0 L 3.5,4 L 7,0 Z</Geometry>
     <Geometry x:Key="UpArrow">M 0,4 L 3.5,0 L 7,4 Z</Geometry>
@@ -106,7 +106,7 @@
                 <Setter Property="Visibility" TargetName="Icon" Value="Collapsed"/>
             </Trigger>
             <Trigger Property="IsHighlighted" Value="True">
-                <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource HighlightNormalBrushKey}"/>
+                <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource ControlMouseOverBrushKey}"/>
                 <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource BorderSelectedBrushKey}"/>
             </Trigger>
             <Trigger Property="IsEnabled" Value="False">
@@ -118,7 +118,7 @@
                     <Condition Property="IsHighlighted" Value="True"/>
                     <Condition Property="IsEnabled" Value="False"/>
                 </MultiTrigger.Conditions>
-                <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource HighlightDisabledBrushKey}"/>
+                <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource ControlDisabledBrushKey}"/>
                 <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource BorderDisabledBrushKey}"/>
             </MultiTrigger>
         </ControlTemplate.Triggers>
@@ -160,7 +160,7 @@
                 <Setter Property="Visibility" TargetName="Icon" Value="Collapsed"/>
             </Trigger>
             <Trigger Property="IsHighlighted" Value="True">
-                <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource HighlightNormalBrushKey}"/>
+                <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource ControlMouseOverBrushKey}"/>
                 <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource BorderSelectedBrushKey}"/>
             </Trigger>
             <Trigger Property="IsEnabled" Value="False">
@@ -201,7 +201,7 @@
                 <Setter Property="Visibility" TargetName="Icon" Value="Collapsed"/>
             </Trigger>
             <Trigger Property="IsHighlighted" Value="True">
-                <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource HighlightNormalBrushKey}"/>
+                <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource ControlMouseOverBrushKey}"/>
                 <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource BorderSelectedBrushKey}"/>
             </Trigger>
             <Trigger Property="IsEnabled" Value="False">
@@ -213,7 +213,7 @@
                     <Condition Property="IsHighlighted" Value="True"/>
                     <Condition Property="IsEnabled" Value="False"/>
                 </MultiTrigger.Conditions>
-                <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource HighlightDisabledBrushKey}"/>
+                <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource ControlDisabledBrushKey}"/>
                 <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource BorderDisabledBrushKey}"/>
             </MultiTrigger>
         </ControlTemplate.Triggers>
@@ -230,7 +230,7 @@
                     <ColumnDefinition Width="20"/>
                 </Grid.ColumnDefinitions>
                 <ContentPresenter x:Name="Icon" ContentSource="Icon" HorizontalAlignment="Center" Height="16" Margin="3" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="Center" Width="16"/>
-                <Border x:Name="GlyphPanel" Background="{DynamicResource HighlightNormalBrushKey}" BorderBrush="{DynamicResource BorderSelectedBrushKey}" BorderThickness="1" Height="22" Margin="-1,0,0,0" VerticalAlignment="Center" Visibility="Hidden" Width="22">
+                <Border x:Name="GlyphPanel" Background="{DynamicResource ControlMouseOverBrushKey}" BorderBrush="{DynamicResource BorderSelectedBrushKey}" BorderThickness="1" Height="22" Margin="-1,0,0,0" VerticalAlignment="Center" Visibility="Hidden" Width="22">
                     <Path x:Name="Glyph" Data="{DynamicResource Checkmark}" FlowDirection="LeftToRight" Fill="{DynamicResource ForegroundNormalBrushKey}" Height="11" Width="9"/>
                 </Border>
                 <ContentPresenter ContentSource="Header" Grid.Column="2" HorizontalAlignment="Left" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="Center"/>

@@ -39,8 +39,7 @@
                                 </VisualState>
                             </VisualStateGroup>
                         </VisualStateManager.VisualStateGroups>
-                        <Rectangle x:Name="Border"
-                     SnapsToDevicePixels="True">
+                        <Rectangle x:Name="Border" SnapsToDevicePixels="True">
                             <Rectangle.Stroke>
                                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                                     <GradientStop Color="{DynamicResource BorderLight}" Offset="0" />
@@ -82,16 +81,11 @@
                 </LinearGradientBrush>
             </Setter.Value>
         </Setter>
-        <Setter Property="BorderThickness"
-          Value="1" />
-        <Setter Property="RowDetailsVisibilityMode"
-          Value="VisibleWhenSelected" />
-        <Setter Property="ScrollViewer.CanContentScroll"
-          Value="true" />
-        <Setter Property="ScrollViewer.PanningMode"
-          Value="Both" />
-        <Setter Property="Stylus.IsFlicksEnabled"
-          Value="False" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="RowDetailsVisibilityMode" Value="VisibleWhenSelected" />
+        <Setter Property="ScrollViewer.CanContentScroll" Value="true" />
+        <Setter Property="ScrollViewer.PanningMode" Value="Both" />
+        <Setter Property="Stylus.IsFlicksEnabled" Value="False" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type DataGrid}">
@@ -223,8 +217,7 @@
                                                 Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)">
                                             <EasingColorKeyFrame KeyTime="0"
                                          Value="{DynamicResource BorderNormal}" />
-                                        </ColorAnimationUsingKeyFrames
-                                                >
+                                        </ColorAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
                             </VisualStateGroup>
@@ -243,17 +236,15 @@
                 <SolidColorBrush Color="{DynamicResource BackgroundNormal}" />
             </Setter.Value>
         </Setter>
-        <Setter Property="SnapsToDevicePixels"
-          Value="true" />
-        <Setter Property="Validation.ErrorTemplate"
-          Value="{x:Null}" />
+        <Setter Property="SnapsToDevicePixels" Value="true" />
+        <Setter Property="Validation.ErrorTemplate" Value="{x:Null}" />
         <Setter Property="ValidationErrorTemplate">
             <Setter.Value>
                 <ControlTemplate>
                     <TextBlock Foreground="Red"
-                   Margin="2,0,0,0"
-                   Text="!"
-                   VerticalAlignment="Center" />
+                               Margin="2,0,0,0"
+                               Text="!"
+                               VerticalAlignment="Center" />
                 </ControlTemplate>
             </Setter.Value>
         </Setter>

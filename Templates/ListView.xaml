@@ -3,9 +3,9 @@
 
     <Style TargetType="{x:Type ListView}">
         <Setter Property="Background" Value="{DynamicResource ControlNormalBrushKey}"/>
-        <Setter Property="BorderBrush" Value="{DynamicResource BorderlNormalBrushKey}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource BorderNormalBrushKey}"/>
         <Setter Property="BorderThickness" Value="1"/>
-        <Setter Property="Foreground" Value="{DynamicResource ControlTextBrushKey}"/>
+        <Setter Property="Foreground" Value="{DynamicResource ForegroundNormalBrushKey}"/>
         <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Auto"/>
         <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto"/>
         <Setter Property="ScrollViewer.CanContentScroll" Value="true"/>

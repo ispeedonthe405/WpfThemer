@@ -184,8 +184,7 @@
                         <Border.Background>
                             <LinearGradientBrush EndPoint="0.5,1"
                                  StartPoint="0.5,0">
-                                <GradientStop Color="#00000000"
-                            Offset="0" />
+                                <GradientStop Color="#00000000" Offset="0" />
                                 <GradientStop Offset="1" />
                             </LinearGradientBrush>
                         </Border.Background>
@@ -220,7 +219,7 @@
                         </VisualStateManager.VisualStateGroups>
                         <Grid>
                             <Path x:Name="Arrow"
-                                  Fill="Black"
+                                  Fill="{DynamicResource ForegroundNormalBrushKey}"
                                   VerticalAlignment="Bottom"
                                   Margin="2,3"
                                   Data="M -0.5 3 L 5.5 3 L 2.5 6 Z" />
@@ -232,38 +231,37 @@
         </Setter>
     </Style>
 
-    <Style x:Key="{x:Type ToolBar}"
-       TargetType="{x:Type ToolBar}">
-        <Setter Property="SnapsToDevicePixels"
-          Value="true" />
-        <Setter Property="OverridesDefaultStyle"
-          Value="true" />
+    <Style x:Key="{x:Type ToolBar}" TargetType="{x:Type ToolBar}">
+        <Setter Property="SnapsToDevicePixels" Value="true" />
+        <Setter Property="OverridesDefaultStyle" Value="true" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ToolBar}">
                     <Border x:Name="Border"
-                CornerRadius="2"
-                BorderThickness="1">
+                            CornerRadius="2"
+                            BorderThickness="1">
                         <Border.BorderBrush>
-                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                            <SolidColorBrush Color="{DynamicResource ControlNormal}" />
+                            <!--<LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
                                 <LinearGradientBrush.GradientStops>
                                     <GradientStopCollection>
                                         <GradientStop Color="{DynamicResource BorderLight}" Offset="0.0" />
                                         <GradientStop Color="{DynamicResource BorderDark}" Offset="1.0" />
                                     </GradientStopCollection>
                                 </LinearGradientBrush.GradientStops>
-                            </LinearGradientBrush>
+                            </LinearGradientBrush>-->
                         </Border.BorderBrush>
 
                         <Border.Background>
-                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                            <SolidColorBrush Color="{DynamicResource ControlNormal}" />
+                            <!--<LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
                                 <LinearGradientBrush.GradientStops>
                                     <GradientStopCollection>
                                         <GradientStop Color="#FFF" Offset="0.0" />
                                         <GradientStop Color="{DynamicResource ControlNormal}" Offset="1.0" />
                                     </GradientStopCollection>
                                 </LinearGradientBrush.GradientStops>
-                            </LinearGradientBrush>
+                            </LinearGradientBrush>-->
                         </Border.Background>
                         <DockPanel>
                             <ToggleButton DockPanel.Dock="Right"

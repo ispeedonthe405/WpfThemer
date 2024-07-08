@@ -75,17 +75,40 @@ namespace WpfThemer
                 if (_ActiveTheme == value) return;
                 if (_Application is null) return;
 
-                _Application.Resources.MergedDictionaries.Remove(ActiveTheme.Resource);
-
-                // Refresh system colors on selection of System theme
-                // (to account for changes the user might have made)
-                if(IsSystemTheme(value))
+                try
                 {
-                    SampleSystemColors();
+                    _Application.Resources.MergedDictionaries.Remove(ActiveTheme.Resource);
+                }
+                catch(Exception ex)
+                {
+                    Debug.WriteLine(ex.Message);
+                }
+
+
+                try
+                {
+                    // Refresh system colors on selection of System theme
+                    // (to account for changes the user might have made)
+                    if (IsSystemTheme(value))
+                    {
+                        SampleSystemColors();
+                    }
+                }
+                catch(Exception ex)
+                {
+                    Debug.WriteLine(ex.Message);
                 }
 
                 _ActiveTheme = value;
-                _Application.Resources.MergedDictionaries.Add(ActiveTheme.Resource);
+
+                try
+                {
+                    _Application.Resources.MergedDictionaries.Add(ActiveTheme.Resource);
+                }
+                catch(Exception ex)
+                {
+                    Debug.WriteLine(ex.Message);
+                }
             }
         }
 
@@ -127,8 +150,9 @@ namespace WpfThemer
             theme.Resource["BorderDisabled"] = SystemColors.ControlDarkColor;
             theme.Resource["BorderMouseOver"] = SystemColors.ControlDarkColor;
             theme.Resource["BorderPressed"] = SystemColors.ControlDarkColor;
-            theme.Resource["BorderLight"] = SystemColors.ControlDarkColor;
-            theme.Resource["BorderDark"] = SystemColors.ControlDarkColor;
+            theme.Resource["BorderLight"] = SystemColors.ControlLightColor;
+            theme.Resource["BorderMedium"] = SystemColors.ControlDarkColor;
+            theme.Resource["BorderDark"] = SystemColors.ActiveBorderBrush;
 
             theme.Resource["ControlNormal"] = SystemColors.ControlColor;
             theme.Resource["ControlSelected"] = SystemColors.HighlightColor;

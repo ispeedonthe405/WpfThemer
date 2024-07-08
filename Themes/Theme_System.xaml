@@ -12,6 +12,7 @@
     <Color x:Key="BackgroundMouseOver">#A0A0A0</Color>
     <Color x:Key="BackgroundPressed">#C0C0C0</Color>
     <Color x:Key="BackgroundLight">#3E3E3E</Color>
+    <Color x:Key="BackgroundMedium">#3E3E3E</Color>
     <Color x:Key="BackgroundDark">#0E0E0E</Color>
 
     <SolidColorBrush x:Key="BackgroundNormalBrushKey" Color="{DynamicResource BackgroundNormal}"/>
@@ -21,6 +22,7 @@
     <SolidColorBrush x:Key="BackgroundMouseOverBrushKey" Color="{DynamicResource BackgroundMouseOver}"/>
     <SolidColorBrush x:Key="BackgroundPressedBrushKey" Color="{DynamicResource BackgroundPressed}"/>
     <SolidColorBrush x:Key="BackgroundLightBrushKey" Color="{DynamicResource BackgroundLight}"/>
+    <SolidColorBrush x:Key="BackgroundMediumBrushKey" Color="{DynamicResource BackgroundMedium}"/>
     <SolidColorBrush x:Key="BackgroundDarkBrushKey" Color="{DynamicResource BackgroundDark}"/>
 
     <Color x:Key="ForegroundNormal">#000000</Color>

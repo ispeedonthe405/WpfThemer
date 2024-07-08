@@ -37,15 +37,15 @@
     <SolidColorBrush x:Key="ForegroundLightBrushKey" Color="{DynamicResource ForegroundLight}"/>
     <SolidColorBrush x:Key="ForegroundDarkBrushKey" Color="{DynamicResource ForegroundDark}"/>
 
-    <Color x:Key="BorderNormal">#C0C0C0</Color>
-    <Color x:Key="BorderSelected">#C0C0C0</Color>
-    <Color x:Key="BorderInactive">#C0C0C0</Color>
-    <Color x:Key="BorderDisabled">#C0C0C0</Color>
-    <Color x:Key="BorderMouseOver">#C0C0C0</Color>
-    <Color x:Key="BorderPressed">#C0C0C0</Color>
-    <Color x:Key="BorderLight">#C0C0C0</Color>
-    <Color x:Key="BorderMedium">#B0B0B0</Color>
-    <Color x:Key="BorderDark">#A0A0A0</Color>
+    <Color x:Key="BorderNormal">#B0B0B0</Color>
+    <Color x:Key="BorderSelected">#B0B0B0</Color>
+    <Color x:Key="BorderInactive">#B0B0B0</Color>
+    <Color x:Key="BorderDisabled">#B0B0B0</Color>
+    <Color x:Key="BorderMouseOver">#B0B0B0</Color>
+    <Color x:Key="BorderPressed">#707070</Color>
+    <Color x:Key="BorderLight">#B0B0B0</Color>
+    <Color x:Key="BorderMedium">#909090</Color>
+    <Color x:Key="BorderDark">#707070</Color>
 
     <SolidColorBrush x:Key="BorderNormalBrushKey" Color="{DynamicResource BorderNormal}"/>
     <SolidColorBrush x:Key="BorderSelectedBrushKey" Color="{DynamicResource BorderSelected}"/>

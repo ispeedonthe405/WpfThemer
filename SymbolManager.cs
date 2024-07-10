@@ -10,7 +10,7 @@ namespace WpfThemer
     public class DynamicSymbol
     {
         public string Name { get; set; } = string.Empty;
-        public Uri Value { get; set; } = new("");
+        public Uri Value { get; set; } = default;
         public Theme.eThemeType ThemeType { get; set; } = Theme.eThemeType.Undefined;
 
         public DynamicSymbol(string name, Uri value, Theme.eThemeType themeType)

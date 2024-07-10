@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows.Controls;
+using System.Diagnostics;
 
 namespace WpfThemer
 {
@@ -55,13 +56,18 @@ namespace WpfThemer
         {
             Theme.eThemeType themeType = ThemeManager.ActiveTheme.ThemeType;
 
-            DynamicSymbol? symbol = SymbolManager.Symbols.FirstOrDefault(s =>
+            DynamicSymbol? symbol = SymbolManager.Symbols.Where(s =>
                 (s.ThemeType == themeType) &&
-                (s.Name.Equals(SymbolName, System.StringComparison.CurrentCultureIgnoreCase)));
+                (s.Name.Equals(SymbolName, System.StringComparison.CurrentCultureIgnoreCase))).FirstOrDefault();
 
             if (symbol is not null)
             {
-                Source.SetValue(Image.SourceProperty, symbol.Value);
+                //Source.SetValue(Image.SourceProperty, symbol.Value);
+                Source = new System.Windows.Media.Imaging.BitmapImage(symbol.Value);
+            }
+            else
+            {
+                Debug.WriteLine("ThemeManager_ThemeChanged: Symbol not found");                
             }
         }
     }

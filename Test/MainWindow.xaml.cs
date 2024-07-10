@@ -1,14 +1,6 @@
 ﻿using System.Collections.ObjectModel;
-using System.Text;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using WpfThemer;
 
 namespace Test
@@ -38,6 +30,17 @@ namespace Test
     public partial class MainWindow : Window
     {
         ObservableCollection<DgridItem> GridItems { get; set; } = [];
+
+        private void BuildSymbols()
+        {
+            SymbolManager.AddSymbol("add", new("pack://application:,,,/images/light/add.png"), Theme.eThemeType.Light);
+            SymbolManager.AddSymbol("add", new("pack://application:,,,/images/dark/add.png"), Theme.eThemeType.Dark);
+            SymbolManager.AddSymbol("add", new("pack://application:,,,/images/dark/add.png"), Theme.eThemeType.Undefined);
+
+            SymbolManager.AddSymbol("cancel", new("pack://application:,,,/images/light/cancel.png"), Theme.eThemeType.Light);
+            SymbolManager.AddSymbol("cancel", new("pack://application:,,,/images/dark/cancel.png"), Theme.eThemeType.Dark);
+            SymbolManager.AddSymbol("cancel", new("pack://application:,,,/images/dark/cancel.png"), Theme.eThemeType.Undefined);
+        }
 
         public MainWindow()
         {

@@ -23,7 +23,7 @@ namespace WpfThemer
 
     public static class SymbolManager
     {
-        private static ObservableCollection<DynamicSymbol> Symbols = [];
+        public static ObservableCollection<DynamicSymbol> Symbols = [];
 
         public static void ClearSymbols()
         {

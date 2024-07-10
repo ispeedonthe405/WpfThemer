@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:themer="clr-namespace:WpfThemer;assembly=WpfThemer"
+        xmlns:shaders="clr-namespace:WpfThemer.Shaders;assembly=WpfThemer"
         xmlns:local="clr-namespace:Test"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
@@ -61,16 +62,45 @@
             </ToolBar>
 
             <ComboBox Grid.Row="1" Grid.Column="0" x:Name="cb_Theme" SelectionChanged="cb_Theme_SelectionChanged"
-          IsEditable="True" StaysOpenOnEdit="True">
-
+                      IsEditable="False">
             </ComboBox>
 
             <TextBox x:Name="tb_Description" Grid.Row="1" Grid.Column="1"/>
 
             <TextBlock Grid.Row="2" Grid.Column="0" Text="TextBlock"/>
-            <Button Grid.Row="2" Grid.Column="1" Content="Button"/>
-            <ToggleButton Grid.Row="2" Grid.Column="2" Content="ToggleButton"/>
+
+            <Button Grid.Row="2" Grid.Column="1">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <themer:DynamicImage SymbolName="add" Width="20" Height="20" VerticalAlignment="Center"
+                                             Source="pack://application:,,,/images/dark/add.png"/>
+                        <!--<Image Source="pack://application:,,,/images/cancel.png" Width="16" Height="16">
+                            <Image.Effect>
+                                <shaders:ColorInverterShader/>
+                            </Image.Effect>
+                        </Image>-->
+                        <TextBlock Text="Button" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+
+            <ToggleButton Grid.Row="2" Grid.Column="2">
+                <ToggleButton.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <themer:DynamicImage SymbolName="cancel" Width="20" Height="20" VerticalAlignment="Center"
+                                             Source="pack://application:,,,/images/dark/cancel.png"/>
+                        <!--<Image Source="pack://application:,,,/images/image.png" Width="16" Height="16">
+                            <Image.Effect>
+                                <shaders:ColorInverterShader/>
+                            </Image.Effect>
+                        </Image>-->
+                        <TextBlock Text="ToggleButton" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </ToggleButton.Content>
+            </ToggleButton>
+            
             <RadioButton Grid.Row="2" Grid.Column="3" Content="RadioButton"/>
+            
             <CheckBox Grid.Row="3" Grid.Column="0" Content="CheckBox"/>
 
             <TabControl Grid.Row="4" Grid.Column="0">

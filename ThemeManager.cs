@@ -2,6 +2,7 @@
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.DirectoryServices.ActiveDirectory;
 using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Controls;
@@ -16,6 +17,7 @@ namespace WpfThemer
         /////////////////////////////
 
         public event PropertyChangedEventHandler? PropertyChanged;
+        public static event PropertyChangedEventHandler? ThemeChanged;
 
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = "")
         {
@@ -31,6 +33,10 @@ namespace WpfThemer
 
             field = value;
             OnPropertyChanged(propertyName);
+            if(propertyName.Equals("ActiveTheme", StringComparison.CurrentCultureIgnoreCase))
+            {
+                ThemeChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+            }
         }
 
         /////////////////////////////
@@ -46,7 +52,7 @@ namespace WpfThemer
         private static ObservableCollection<Theme> _Themes = [];
         private static ObservableCollection<ResourceDictionary> _Templates = [];
         private static Theme _ActiveTheme = new();
-        private static Application? _Application;
+        private static Application? HostApp;
 
         /////////////////////////////
         #endregion Fields
@@ -73,7 +79,7 @@ namespace WpfThemer
             get => _ActiveTheme;
             set
             {
-                if (_Application is null) return;
+                if (HostApp is null) return;
 
                 // Special case for system theme: allow that one through to resample the system colors
                 if (_ActiveTheme == value && !IsSystemTheme(value)) return;
@@ -89,9 +95,13 @@ namespace WpfThemer
                         SampleSystemColors();
                     }
                     
-                    _Application.Resources.MergedDictionaries.Add(theme.Resource);
-                    _Application.Resources.MergedDictionaries.Remove(ActiveTheme.Resource);
+                    HostApp.Resources.MergedDictionaries.Remove(ActiveTheme.Resource);
                     _ActiveTheme = theme;
+                    HostApp.Resources.MergedDictionaries.Add(theme.Resource);
+
+                    ReloadTemplates();
+
+                    ThemeChanged?.Invoke(value, new PropertyChangedEventArgs("ActiveTheme"));
                 }
                 catch(Exception ex)
                 {
@@ -214,7 +224,7 @@ namespace WpfThemer
             BuildTheme(Theme.eThemeType.Undefined, "System", "System Theme", "Theme_System.xaml");
             BuildTheme(Theme.eThemeType.Dark, "Dark", "Dark Theme", "Theme_Dark.xaml");
             BuildTheme(Theme.eThemeType.Light, "Light", "Light Theme", "Theme_Light.xaml");            
-            _ActiveTheme = Themes.First();
+            ActiveTheme = Themes.First();
 
             BuildTemplate("Button.xaml");
             BuildTemplate("CheckBox.xaml");
@@ -243,15 +253,15 @@ namespace WpfThemer
         {
             foreach (var template in Templates)
             {
-                _Application?.Resources.MergedDictionaries.Remove(template);
-                _Application?.Resources.MergedDictionaries.Add(template);
+                HostApp?.Resources.MergedDictionaries.Remove(template);
+                HostApp?.Resources.MergedDictionaries.Add(template);
             }
         }
 
         public static void SetApplication(Application? application)
         {
-            _Application = application;
-            if (_Application is null) return;
+            HostApp = application;
+            if (HostApp is null) return;
 
             application?.Resources.MergedDictionaries.Add(ActiveTheme.Resource);
             ReloadTemplates();

@@ -9,7 +9,54 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="images\add.png" />
+    <None Remove="images\add_attachment.png" />
+    <None Remove="images\add_image.png" />
+    <None Remove="images\bookmark.png" />
+    <None Remove="images\bookmarks.png" />
+    <None Remove="images\cancel.png" />
+    <None Remove="images\close.png" />
+    <None Remove="images\copy.png" />
+    <None Remove="images\dark\add.png" />
+    <None Remove="images\dark\cancel.png" />
+    <None Remove="images\delete.png" />
+    <None Remove="images\done.png" />
+    <None Remove="images\edit.png" />
+    <None Remove="images\format_align_center.png" />
+    <None Remove="images\format_align_left.png" />
+    <None Remove="images\format_align_right.png" />
+    <None Remove="images\format_bold.png" />
+    <None Remove="images\format_italic.png" />
+    <None Remove="images\format_size.png" />
+    <None Remove="images\format_underlined.png" />
+    <None Remove="images\image.png" />
+    <None Remove="images\leftback.png" />
+    <None Remove="images\light\add.png" />
+    <None Remove="images\light\cancel.png" />
+    <None Remove="images\menu.png" />
+    <None Remove="images\refresh.png" />
+    <None Remove="images\rightnext.png" />
+    <None Remove="images\settings.png" />
+    <None Remove="images\star.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\WpfThemer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\dark\add.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\dark\cancel.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\light\add.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\light\cancel.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>

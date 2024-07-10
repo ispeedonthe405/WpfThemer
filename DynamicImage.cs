@@ -47,12 +47,7 @@ namespace WpfThemer
             }
         }
 
-        public DynamicImage() : base()
-        {
-            ThemeManager.ThemeChanged += ThemeManager_ThemeChanged;
-        }
-
-        private void ThemeManager_ThemeChanged(object? sender, System.ComponentModel.PropertyChangedEventArgs e)
+        private void ApplySourceToSymbol()
         {
             Theme.eThemeType themeType = ThemeManager.ActiveTheme.ThemeType;
 
@@ -62,13 +57,23 @@ namespace WpfThemer
 
             if (symbol is not null)
             {
-                //Source.SetValue(Image.SourceProperty, symbol.Value);
                 Source = new System.Windows.Media.Imaging.BitmapImage(symbol.Value);
             }
             else
             {
-                Debug.WriteLine("ThemeManager_ThemeChanged: Symbol not found");                
+                Debug.WriteLine($"ApplySourceToSymbol: Symbol {SymbolName} not found");
             }
+        }
+
+        public DynamicImage() : base()
+        {
+            ThemeManager.ThemeChanged += ThemeManager_ThemeChanged;
+            ApplySourceToSymbol();
+        }
+
+        private void ThemeManager_ThemeChanged(object? sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            ApplySourceToSymbol();
         }
     }
 }

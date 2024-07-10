@@ -226,11 +226,13 @@ namespace WpfThemer
             BuildTheme(Theme.eThemeType.Light, "Light", "Light Theme", "Theme_Light.xaml");            
             ActiveTheme = Themes.First();
 
+            BuildTemplate("Border.xaml");
             BuildTemplate("Button.xaml");
             BuildTemplate("CheckBox.xaml");
             BuildTemplate("ComboBox.xaml");
             BuildTemplate("ComboBoxItem.xaml");
             BuildTemplate("DataGrid.xaml");
+            BuildTemplate("Label.xaml");
             BuildTemplate("ListBox.xaml");
             BuildTemplate("ListBoxItem.xaml");
             BuildTemplate("ListView.xaml");
@@ -242,7 +244,7 @@ namespace WpfThemer
             BuildTemplate("StatusBar.xaml");
             BuildTemplate("TabControl.xaml");
             BuildTemplate("TabItem.xaml");
-            ////BuildTemplate("TextBlock.xaml");
+            BuildTemplate("TextBlock.xaml");
             BuildTemplate("TextBox.xaml");
             BuildTemplate("ToggleButton.xaml");
             BuildTemplate("Toolbar.xaml");

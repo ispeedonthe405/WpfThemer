@@ -1,4 +1,4 @@
-﻿using System.ComponentModel;
+﻿git ausing System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows.Controls;
 using System.Diagnostics;
@@ -56,7 +56,7 @@ namespace WpfThemer
         {
             Theme.eThemeType themeType = ThemeManager.ActiveTheme.ThemeType;
 
-            DynamicSymbol? symbol = SymbolManager.Symbols.Where(s =>
+            DynamicSymbol? symbol = ThemeSymbolManager.Symbols.Where(s =>
                 (s.ThemeType == themeType) &&
                 (s.Name.Equals(SymbolName, System.StringComparison.CurrentCultureIgnoreCase))).FirstOrDefault();
 

@@ -21,7 +21,7 @@ namespace WpfThemer
         }
     }
 
-    public static class SymbolManager
+    public static class ThemeSymbolManager
     {
         public static ObservableCollection<DynamicSymbol> Symbols = [];
 

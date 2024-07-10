@@ -8,6 +8,14 @@ namespace WpfThemer
         #region Fields
         /////////////////////////////
 
+        public enum eThemeType
+        {
+            Light,
+            Dark,
+            Undefined
+        }
+
+        private eThemeType _ThemeType = eThemeType.Undefined;
         private string _DisplayName = string.Empty;
         private string _Description = string.Empty;
         private ResourceDictionary _Resource = new();
@@ -20,6 +28,12 @@ namespace WpfThemer
         ///////////////////////////////////////////////////////////
         #region Properties
         /////////////////////////////
+
+        public eThemeType ThemeType
+        {
+            get => _ThemeType;
+            set => _ThemeType = value;
+        }
 
         public string DisplayName
         {
@@ -48,8 +62,9 @@ namespace WpfThemer
 
         }
 
-        public Theme(string displayName, string description, ResourceDictionary resource)
+        public Theme(eThemeType themeType, string displayName, string description, ResourceDictionary resource)
         {
+            ThemeType = themeType;
             DisplayName = displayName;
             Description = description;
             Resource = resource;

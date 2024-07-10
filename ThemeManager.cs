@@ -246,8 +246,10 @@ namespace WpfThemer
             BuildTemplate("TabItem.xaml");
             BuildTemplate("TextBlock.xaml");
             BuildTemplate("TextBox.xaml");
+            BuildTemplate("Thumb.xaml");
             BuildTemplate("ToggleButton.xaml");
             BuildTemplate("Toolbar.xaml");
+            BuildTemplate("ToolTip.xaml");
             BuildTemplate("Window.xaml");
         }
 

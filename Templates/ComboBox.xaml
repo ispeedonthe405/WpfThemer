@@ -8,7 +8,7 @@
         <Setter Property="Control.Template">
             <Setter.Value>
                 <ControlTemplate>
-                    <Rectangle Margin="2" StrokeDashArray="1 2" Stroke="{DynamicResource ControlTextBrushKey}" 
+                    <Rectangle Margin="2" StrokeDashArray="1 2" Stroke="{DynamicResource HighlightNormalBrushKey}" 
                                SnapsToDevicePixels="true" StrokeThickness="1"/>
                 </ControlTemplate>
             </Setter.Value>
@@ -63,7 +63,7 @@
                             </MultiDataTrigger.Conditions>
                             <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource ControlNormalBrushKey}"/>
                             <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource BorderNormalBrushKey}"/>
-                            <Setter Property="Background" TargetName="splitBorder" Value="{DynamicResource BackgroundNormalBrushKey}"/>
+                            <Setter Property="Background" TargetName="splitBorder" Value="{DynamicResource ControlNormalBrushKey}"/>
                             <Setter Property="BorderBrush" TargetName="splitBorder" Value="{DynamicResource BorderNormalBrushKey}"/>
                         </MultiDataTrigger>
                         <Trigger Property="IsMouseOver" Value="true">
@@ -134,6 +134,7 @@
             </Setter.Value>
         </Setter>
     </Style>
+    
     <ControlTemplate x:Key="ComboBoxEditableTemplate" TargetType="{x:Type ComboBox}">
         <Grid x:Name="templateRoot" SnapsToDevicePixels="true">
             <Grid.ColumnDefinitions>
@@ -174,7 +175,7 @@
         </Grid>
         <ControlTemplate.Triggers>
             <Trigger Property="IsEnabled" Value="false">
-                <Setter Property="Opacity" TargetName="border" Value="0.56"/>
+                <Setter Property="Opacity" TargetName="border" Value="1.0"/>
             </Trigger>
             <Trigger Property="IsKeyboardFocusWithin" Value="true">
                 <Setter Property="Foreground" Value="{DynamicResource ForegroundNormalBrushKey}"/>
@@ -199,19 +200,20 @@
             </Trigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
+    
     <ControlTemplate x:Key="ComboBoxTemplate" TargetType="{x:Type ComboBox}">
         <Grid x:Name="templateRoot" SnapsToDevicePixels="true">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition MinWidth="{DynamicResource {x:Static SystemParameters.VerticalScrollBarWidthKey}}" Width="0"/>
             </Grid.ColumnDefinitions>
-            <Popup x:Name="PART_Popup" AllowsTransparency="true" Grid.ColumnSpan="2" 
+            <Popup x:Name="PART_Popup" AllowsTransparency="false" Grid.ColumnSpan="2" 
                    IsOpen="{Binding IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource Mode=TemplatedParent}}" 
                    Margin="1" Placement="Bottom" PopupAnimation="{DynamicResource {x:Static SystemParameters.ComboBoxPopupAnimationKey}}">
                 <theme:SystemDropShadowChrome x:Name="shadow" Color="Transparent" 
                                               MinWidth="{Binding ActualWidth, ElementName=templateRoot}" 
                                               MaxHeight="{TemplateBinding MaxDropDownHeight}">
-                    <Border x:Name="dropDownBorder" Background="{DynamicResource WindowBrushKey}" 
+                    <Border x:Name="dropDownBorder" Background="{DynamicResource ControlNormalBrushKey}" 
                             BorderBrush="{DynamicResource BorderNormalBrushKey}" BorderThickness="1">
                         <ScrollViewer x:Name="DropDownScrollViewer">
                             <Grid x:Name="grid" RenderOptions.ClearTypeHint="Enabled">

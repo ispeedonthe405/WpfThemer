@@ -19,6 +19,9 @@
     <None Remove="images\copy.png" />
     <None Remove="images\dark\add.png" />
     <None Remove="images\dark\cancel.png" />
+    <None Remove="images\dark\format_align_center.png" />
+    <None Remove="images\dark\format_align_left.png" />
+    <None Remove="images\dark\format_align_right.png" />
     <None Remove="images\delete.png" />
     <None Remove="images\done.png" />
     <None Remove="images\edit.png" />
@@ -33,6 +36,9 @@
     <None Remove="images\leftback.png" />
     <None Remove="images\light\add.png" />
     <None Remove="images\light\cancel.png" />
+    <None Remove="images\light\format_align_center.png" />
+    <None Remove="images\light\format_align_left.png" />
+    <None Remove="images\light\format_align_right.png" />
     <None Remove="images\menu.png" />
     <None Remove="images\refresh.png" />
     <None Remove="images\rightnext.png" />
@@ -51,10 +57,28 @@
     <Resource Include="images\dark\cancel.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="images\dark\format_align_center.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\dark\format_align_left.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\dark\format_align_right.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="images\light\add.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="images\light\cancel.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\light\format_align_center.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\light\format_align_left.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\light\format_align_right.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

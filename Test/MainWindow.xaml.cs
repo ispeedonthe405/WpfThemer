@@ -40,6 +40,18 @@ namespace Test
             ThemeSymbolManager.AddSymbol("cancel", new("pack://application:,,,/images/dark/cancel.png"), Theme.eThemeType.Light);
             ThemeSymbolManager.AddSymbol("cancel", new("pack://application:,,,/images/light/cancel.png"), Theme.eThemeType.Dark);
             ThemeSymbolManager.AddSymbol("cancel", new("pack://application:,,,/images/dark/cancel.png"), Theme.eThemeType.Undefined);
+
+            ThemeSymbolManager.AddSymbol("format_align_left", new("pack://application:,,,/images/dark/format_align_left.png"), Theme.eThemeType.Light);
+            ThemeSymbolManager.AddSymbol("format_align_left", new("pack://application:,,,/images/light/format_align_left.png"), Theme.eThemeType.Dark);
+            ThemeSymbolManager.AddSymbol("format_align_left", new("pack://application:,,,/images/dark/format_align_left.png"), Theme.eThemeType.Undefined);
+
+            ThemeSymbolManager.AddSymbol("format_align_center", new("pack://application:,,,/images/dark/format_align_center.png"), Theme.eThemeType.Light);
+            ThemeSymbolManager.AddSymbol("format_align_center", new("pack://application:,,,/images/light/format_align_center.png"), Theme.eThemeType.Dark);
+            ThemeSymbolManager.AddSymbol("format_align_center", new("pack://application:,,,/images/dark/format_align_center.png"), Theme.eThemeType.Undefined);
+
+            ThemeSymbolManager.AddSymbol("format_align_right", new("pack://application:,,,/images/dark/format_align_right.png"), Theme.eThemeType.Light);
+            ThemeSymbolManager.AddSymbol("format_align_right", new("pack://application:,,,/images/light/format_align_right.png"), Theme.eThemeType.Dark);
+            ThemeSymbolManager.AddSymbol("format_align_right", new("pack://application:,,,/images/dark/format_align_right.png"), Theme.eThemeType.Undefined);
         }
 
         public MainWindow()
@@ -57,6 +69,8 @@ namespace Test
                 GridItems.Add(DgridItem.Generate());
             }
             datagrid.ItemsSource = GridItems;
+
+            ThemeManager.SetTheme("dark");
         }
 
         private void cb_Theme_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -66,6 +80,16 @@ namespace Test
                 ThemeManager.ActiveTheme = theme;
                 tb_Description.Text = theme.Description;
             }
+        }
+
+        private void New_UserControl_Click(object sender, RoutedEventArgs e)
+        {
+            uc_Test uc = new();
+            MainGrid.Children.Add(uc);
+            Grid.SetRow(uc, 4);
+            Grid.SetColumn(uc, 3);
+            Grid.SetRowSpan(uc, 2);
+            uc.Visibility = Visibility.Visible;
         }
     }
 }

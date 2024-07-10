@@ -24,9 +24,9 @@
     <Color x:Key="ForegroundInactive">#C0C0C0</Color>
     <Color x:Key="ForegroundDisabled">#C0C0C0</Color>
     <Color x:Key="ForegroundMouseOver">#C0C0C0</Color>
-    <Color x:Key="ForegroundPressed">#FFFFFF</Color>
-    <Color x:Key="ForegroundLight">#FFFFFF</Color>
-    <Color x:Key="ForegroundDark">#808080</Color>
+    <Color x:Key="ForegroundPressed">#C0C0C0</Color>
+    <Color x:Key="ForegroundLight">#C0C0C0</Color>
+    <Color x:Key="ForegroundDark">#C0C0C0</Color>
 
     <SolidColorBrush x:Key="ForegroundNormalBrushKey" Color="{DynamicResource ForegroundNormal}"/>
     <SolidColorBrush x:Key="ForegroundSelectedBrushKey" Color="{DynamicResource ForegroundSelected}"/>
@@ -74,7 +74,7 @@
     <SolidColorBrush x:Key="ControlMouseOverBrushKey" Color="{DynamicResource ControlMouseOver}"/>
     <SolidColorBrush x:Key="ControlPressedBrushKey" Color="{DynamicResource ControlPressed}"/>
     <SolidColorBrush x:Key="ControlLightBrushKey" Color="{DynamicResource ControlLight}"/>
-    <SolidColorBrush x:Key="ControlMediumBrushKey" Color="{DynamicResource ControlLight}"/>
+    <SolidColorBrush x:Key="ControlMediumBrushKey" Color="{DynamicResource ControlMedium}"/>
     <SolidColorBrush x:Key="ControlDarkBrushKey" Color="{DynamicResource ControlDark}"/>
 
     <Color x:Key="HighlightNormal">#AA0055FF</Color>

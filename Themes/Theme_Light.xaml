@@ -95,7 +95,8 @@
     <SolidColorBrush x:Key="HighlightPressedBrushKey" Color="{DynamicResource HighlightPressed}"/>
     <SolidColorBrush x:Key="HighlightDarkBrushKey" Color="{DynamicResource HighlightDark}"/>
 
-
+    <Color x:Key="UxImageMaskColor">#FFFFFFFF</Color>
+    <SolidColorBrush x:Key="UxImageMask" Color="#FFFFFFFF"/>
 
     <LinearGradientBrush x:Key="MenuPopupBrush"
           EndPoint="0.5,1"

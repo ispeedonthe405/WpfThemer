@@ -22,7 +22,7 @@
     <Color x:Key="ForegroundNormal">#C0C0C0</Color>
     <Color x:Key="ForegroundSelected">#C0C0C0</Color>
     <Color x:Key="ForegroundInactive">#C0C0C0</Color>
-    <Color x:Key="ForegroundDisabled">#C0C0C0</Color>
+    <Color x:Key="ForegroundDisabled">#A0A0A0</Color>
     <Color x:Key="ForegroundMouseOver">#C0C0C0</Color>
     <Color x:Key="ForegroundPressed">#C0C0C0</Color>
     <Color x:Key="ForegroundLight">#C0C0C0</Color>
@@ -40,7 +40,7 @@
     <Color x:Key="BorderNormal">#B0B0B0</Color>
     <Color x:Key="BorderSelected">#B0B0B0</Color>
     <Color x:Key="BorderInactive">#B0B0B0</Color>
-    <Color x:Key="BorderDisabled">#B0B0B0</Color>
+    <Color x:Key="BorderDisabled">#505050</Color>
     <Color x:Key="BorderMouseOver">#B0B0B0</Color>
     <Color x:Key="BorderPressed">#707070</Color>
     <Color x:Key="BorderLight">#B0B0B0</Color>

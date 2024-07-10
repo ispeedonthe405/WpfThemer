@@ -18,4 +18,14 @@
     <_GlobalJsonStartingDir Remove="Test\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Shaders\ColorInverter.ps" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Shaders\ColorInverter.ps">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
 </Project>

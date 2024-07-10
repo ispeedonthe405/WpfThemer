@@ -75,19 +75,10 @@ namespace WpfThemer
             {
                 if (_Application is null) return;
 
-                // Special case for system theme: allow that one through to resample
-                // the system colors
+                // Special case for system theme: allow that one through to resample the system colors
                 if (_ActiveTheme == value && !IsSystemTheme(value)) return;
 
-                try
-                {
-                    _Application.Resources.MergedDictionaries.Remove(ActiveTheme.Resource);
-                }
-                catch(Exception ex)
-                {
-                    Debug.WriteLine(ex.Message);
-                }
-
+                if (value is not Theme theme) return;
 
                 try
                 {
@@ -97,17 +88,10 @@ namespace WpfThemer
                     {
                         SampleSystemColors();
                     }
-                }
-                catch(Exception ex)
-                {
-                    Debug.WriteLine(ex.Message);
-                }
-
-                _ActiveTheme = value;
-
-                try
-                {
-                    _Application.Resources.MergedDictionaries.Add(ActiveTheme.Resource);
+                    
+                    _Application.Resources.MergedDictionaries.Add(theme.Resource);
+                    _Application.Resources.MergedDictionaries.Remove(ActiveTheme.Resource);
+                    _ActiveTheme = theme;
                 }
                 catch(Exception ex)
                 {
@@ -182,7 +166,7 @@ namespace WpfThemer
             theme.Resource["BorderSelectedBrushKey"] = SystemColors.ActiveBorderBrush;
             theme.Resource["BorderInactiveBrushKey"] = SystemColors.InactiveBorderBrush;
             theme.Resource["BorderDisabledBrushKey"] = SystemColors.InactiveBorderBrush;
-            theme.Resource["BorderMouseOverBrushKey"] = SystemColors.ActiveBorderBrush;
+            theme.Resource["BorderMouseOverBrushKey"] = SystemColors.ControlTextBrush;
             theme.Resource["BorderPressedBrushKey"] = SystemColors.ActiveBorderBrush;
             theme.Resource["BorderLightBrushKey"] = SystemColors.ActiveBorderBrush;
             theme.Resource["BorderMediumBrushKey"] = SystemColors.ActiveBorderBrush;
@@ -192,7 +176,7 @@ namespace WpfThemer
             theme.Resource["ControlSelected"] = SystemColors.HighlightColor;
             theme.Resource["ControlInactive"] = SystemColors.HighlightColor;
             theme.Resource["ControlDisabled"] = SystemColors.ControlColor;
-            theme.Resource["ControlMouseOver"] = SystemColors.ControlLightColor;
+            theme.Resource["ControlMouseOver"] = SystemColors.ControlLightLightColor;
             theme.Resource["ControlPressed"] = SystemColors.ControlDarkColor;
             theme.Resource["ControlLight"] = SystemColors.ControlDarkColor;
             theme.Resource["ControlDark"] = SystemColors.ControlDarkColor;
@@ -208,10 +192,11 @@ namespace WpfThemer
             theme.Resource["ControlDarkBrushKey"] = SystemColors.ControlDarkBrush;
         }
 
-        private static void BuildTheme(string name, string description, string filename)
+        private static void BuildTheme(Theme.eThemeType themeType, string name, string description, string filename)
         {
-            string uri = string.Format("/WpfThemer;component/Themes/{0}", filename);
+            string uri = $"/WpfThemer;component/Themes/{filename}";
             Themes.Add(new Theme(
+                themeType,
                 name,
                 description,
                 new ResourceDictionary() { Source = new Uri(uri, UriKind.RelativeOrAbsolute) }));
@@ -219,16 +204,16 @@ namespace WpfThemer
 
         private static void BuildTemplate(string filename)
         {
-            string uri = string.Format("/WpfThemer;component/Templates/{0}", filename);
+            string uri = $"/WpfThemer;component/Templates/{filename}";
             Templates.Add(new ResourceDictionary() { Source = new Uri(uri, UriKind.RelativeOrAbsolute) });
         }
 
         static ThemeManager()
         {
             //BuildTheme("Default", "Default Theme", "Theme_Default.xaml");
-            BuildTheme("System", "System Theme", "Theme_System.xaml");
-            BuildTheme("Dark", "Dark Theme", "Theme_Dark.xaml");
-            BuildTheme("Light", "Light Theme", "Theme_Light.xaml");            
+            BuildTheme(Theme.eThemeType.Undefined, "System", "System Theme", "Theme_System.xaml");
+            BuildTheme(Theme.eThemeType.Dark, "Dark", "Dark Theme", "Theme_Dark.xaml");
+            BuildTheme(Theme.eThemeType.Light, "Light", "Light Theme", "Theme_Light.xaml");            
             _ActiveTheme = Themes.First();
 
             BuildTemplate("Button.xaml");
@@ -254,16 +239,22 @@ namespace WpfThemer
             BuildTemplate("Window.xaml");
         }
 
+        private static void ReloadTemplates()
+        {
+            foreach (var template in Templates)
+            {
+                _Application?.Resources.MergedDictionaries.Remove(template);
+                _Application?.Resources.MergedDictionaries.Add(template);
+            }
+        }
+
         public static void SetApplication(Application? application)
         {
             _Application = application;
             if (_Application is null) return;
 
             application?.Resources.MergedDictionaries.Add(ActiveTheme.Resource);
-            foreach (var template in Templates)
-            {
-                _Application.Resources.MergedDictionaries.Add(template);
-            }
+            ReloadTemplates();
         }
 
         public static void SetTheme(string themeName)
@@ -273,6 +264,7 @@ namespace WpfThemer
                 if (theme.DisplayName.Equals(themeName, StringComparison.CurrentCultureIgnoreCase))
                 {
                     ActiveTheme = theme;
+                    ReloadTemplates();
                     return;
                 }
             }

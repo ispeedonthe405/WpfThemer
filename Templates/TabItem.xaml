@@ -5,7 +5,7 @@
         <Setter Property="Control.Template">
             <Setter.Value>
                 <ControlTemplate>
-                    <Rectangle Margin="2" StrokeDashArray="1 2" Stroke="{DynamicResource ControlTextBrushKey}" 
+                    <Rectangle Margin="2" StrokeDashArray="1 2" Stroke="{DynamicResource ForegroundNormalBrushKey}" 
                                SnapsToDevicePixels="true" StrokeThickness="1"/>
                 </ControlTemplate>
             </Setter.Value>

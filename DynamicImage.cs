@@ -2,6 +2,7 @@
 using System.Runtime.CompilerServices;
 using System.Windows.Controls;
 using System.Diagnostics;
+using System.Windows;
 
 namespace WpfThemer
 {
@@ -35,17 +36,41 @@ namespace WpfThemer
         /////////////////////////////
         #endregion INotifyPropertyChanged
         ///////////////////////////////////////////////////////////
-        
 
-        private string _SymbolName = string.Empty;
+
+
         public string SymbolName
         {
-            get => _SymbolName;
-            set
-            {
-                _SymbolName = value;
+            get { return (string)GetValue(SymbolNameProperty); }
+            set 
+            { 
+                SetValue(SymbolNameProperty, value);
+                ApplySourceToSymbol();
             }
         }
+
+        public static readonly DependencyProperty SymbolNameProperty =
+            DependencyProperty.Register(
+                "SymbolName", 
+                typeof(string), 
+                typeof(DynamicImage),
+                new PropertyMetadata("default", OnSymbolNameChanged),
+                SymbolNameValidationCallback);
+
+        private static void OnSymbolNameChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+            if(d is DynamicImage dynamicImage)
+            {
+                dynamicImage.ApplySourceToSymbol();
+            }
+        }
+
+        private static bool SymbolNameValidationCallback(object value)
+        {
+            if (value is not string) return false;
+            return true;
+        }
+
 
         private void ApplySourceToSymbol()
         {
@@ -59,10 +84,10 @@ namespace WpfThemer
             {
                 Source = new System.Windows.Media.Imaging.BitmapImage(symbol.Value);
             }
-            else
-            {
-                Debug.WriteLine($"ApplySourceToSymbol: Symbol {SymbolName} not found");
-            }
+            //else
+            //{
+            //    Debug.WriteLine($"ApplySourceToSymbol: Symbol {SymbolName} not found");
+            //}
         }
 
         public DynamicImage() : base()

@@ -54,11 +54,11 @@
             </Menu>
 
             <ToolBar Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2">
-                <Button Content="Default" IsDefault="True"/>
-                <Button Content="Disabled" IsEnabled="False"/>
-                <Button Content="Button"/>
-                <Button Content="Button"/>
-                <Button Content="Button"/>
+                <Button Content="Default" IsDefault="True" ToolTip="Button defaulted"/>
+                <Button Content="Disabled" IsEnabled="False" ToolTip="Button disabled"/>
+                <Button Content="Button" ToolTip="Button normal"/>
+                <Button Content="Button" ToolTip="Button normal"/>
+                <Button Content="Button" ToolTip="Button normal"/>
             </ToolBar>
 
             <ComboBox Grid.Row="1" Grid.Column="0" x:Name="cb_Theme" SelectionChanged="cb_Theme_SelectionChanged"
@@ -69,7 +69,8 @@
 
             <TextBlock Grid.Row="2" Grid.Column="0" Text="TextBlock"/>
 
-            <Button x:Name="New_UserControl" Grid.Row="2" Grid.Column="1" Click="New_UserControl_Click">
+            <Button x:Name="New_UserControl" Grid.Row="2" Grid.Column="1" Click="New_UserControl_Click"
+                    ToolTip="Click to create a new UserControl with a Label and DynamicImage controls">
                 <Button.Content>
                     <StackPanel Orientation="Horizontal">
                         <themer:DynamicImage SymbolName="add" Width="20" Height="20" VerticalAlignment="Center"/>
@@ -92,8 +93,12 @@
             <CheckBox Grid.Row="3" Grid.Column="0" Content="CheckBox"/>
 
             <TabControl Grid.Row="4" Grid.Column="0">
-                <TabItem Header="Tab0"/>
-                <TabItem Header="Tab1"/>
+                <TabItem Header="Tab Zero">
+                    <Label Content="I am a label"/>
+                </TabItem>
+                <TabItem Header="Tab One">
+                    <TextBlock Text="I am a TextBlock"/>
+                </TabItem>
             </TabControl>
 
             <ListBox Grid.Row="4" Grid.Column="1">

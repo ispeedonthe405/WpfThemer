@@ -29,6 +29,12 @@
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="CommonStates">
                                 <VisualState x:Name="Normal" />
+                                <Storyboard>
+                                    <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)"
+                                                                  Storyboard.TargetName="Ellipse">
+                                        <EasingColorKeyFrame KeyTime="0" Value="{StaticResource ControlNormal}" />
+                                    </ColorAnimationUsingKeyFrames>
+                                </Storyboard>
                                 <VisualState x:Name="MouseOver">
                                     <Storyboard>
                                         <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)"

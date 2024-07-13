@@ -45,9 +45,9 @@
     <Color x:Key="BorderDisabled">#A0A0A0</Color>
     <Color x:Key="BorderMouseOver">#F0F0F0</Color>
     <Color x:Key="BorderPressed">#A0A0A0</Color>
-    <Color x:Key="BorderLight">#A0A0A0</Color>
-    <Color x:Key="BorderMedium">#808080</Color>
-    <Color x:Key="BorderDark">#d2d3db</Color>
+    <Color x:Key="BorderLight">#fafafa</Color>
+    <Color x:Key="BorderMedium">#9394a5</Color>
+    <Color x:Key="BorderDark">#484b6a</Color>
 
     <SolidColorBrush x:Key="BorderNormalBrushKey" Color="{DynamicResource BorderNormal}"/>
     <SolidColorBrush x:Key="BorderSelectedBrushKey" Color="{DynamicResource BorderSelected}"/>
@@ -60,11 +60,11 @@
     <SolidColorBrush x:Key="BorderDarkBrushKey" Color="{DynamicResource BorderDark}"/>
 
     <Color x:Key="ControlNormal">#F5F5F5</Color>
-    <Color x:Key="ControlSelected">#d2d3db</Color>
+    <Color x:Key="ControlSelected">#e4e5f1</Color>
     <Color x:Key="ControlInactive">#F5F5F5</Color>
     <Color x:Key="ControlDisabled">#9394a5</Color>
-    <Color x:Key="ControlMouseOver">#d2d3db</Color>
-    <Color x:Key="ControlPressed">#e4e5f1</Color>
+    <Color x:Key="ControlMouseOver">#e4e5f1</Color>
+    <Color x:Key="ControlPressed">#9394a5</Color>
     <Color x:Key="ControlLight">#F5F5F5</Color>
     <Color x:Key="ControlMedium">#F3F3F3</Color>
     <Color x:Key="ControlDark">#F0F0F0</Color>
@@ -98,6 +98,12 @@
     <Color x:Key="UxImageMaskColor">#FFFFFFFF</Color>
     <SolidColorBrush x:Key="UxImageMask" Color="#FFFFFFFF"/>
 
+    <LinearGradientBrush x:Key="VertGradBrush1" StartPoint="0.0,0" EndPoint="0.0,1.0">
+        <GradientStop Color="{DynamicResource BorderLight}" Offset="0.0"/>
+        <GradientStop Color="{DynamicResource BorderDark}" Offset="0.5"/>
+        <GradientStop Color="{DynamicResource BorderLight}" Offset="1.0"/>
+    </LinearGradientBrush>
+    
     <LinearGradientBrush x:Key="MenuPopupBrush"
           EndPoint="0.5,1"
           StartPoint="0.5,0">

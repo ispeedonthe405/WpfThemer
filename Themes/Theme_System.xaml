@@ -102,6 +102,12 @@
     <Color x:Key="UxImageMaskColor">#FFFFFFFF</Color>
     <SolidColorBrush x:Key="UxImageMask" Color="#FFFFFFFF"/>
 
+    <LinearGradientBrush x:Key="VertGradBrush1" StartPoint="0.0,0" EndPoint="0.0,1.0">
+        <GradientStop Color="{DynamicResource BorderLight}" Offset="0.0"/>
+        <GradientStop Color="{DynamicResource BorderDark}" Offset="0.5"/>
+        <GradientStop Color="{DynamicResource BorderLight}" Offset="1.0"/>
+    </LinearGradientBrush>
+    
     <LinearGradientBrush x:Key="MenuPopupBrush"
           EndPoint="0.5,1"
           StartPoint="0.5,0">

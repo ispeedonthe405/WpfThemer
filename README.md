@@ -1,3 +1,8 @@
-Note: Default color schemes are currently a WIP. However, the color-theme system is functional. 
+Current status: Usable. Default color themes include:
+- Systwm Colors
+- Light
+- Dark
 
-See Test project for integration details.
+The hosting application can create and add its own theme(s).
+
+Lightweight integration. See Test project for an example.

@@ -15,7 +15,7 @@ namespace Test
             base.OnStartup(e);
 
             ThemeManager.SetApplication(this);
-            
+
 
             FrameworkElement.StyleProperty.OverrideMetadata(typeof(Window), new FrameworkPropertyMetadata
             {

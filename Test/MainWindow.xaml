@@ -8,6 +8,9 @@
         xmlns:local="clr-namespace:Test"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        
+    </Window.Resources>
     <!--Background="{DynamicResource WindowBrushKey}" Foreground="{DynamicResource WindowTextBrushKey}">-->
 
     <Grid>
@@ -34,7 +37,12 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
+                <ColumnDefinition Width="5"/>
+                <ColumnDefinition/>
             </Grid.ColumnDefinitions>
+
+            <GridSplitter Grid.Row="0" Grid.Column="4" Grid.RowSpan="8" 
+                           ResizeDirection="Auto" Width="5"/>
 
             <Menu Grid.Row="0" Grid.ColumnSpan="2">
                 <MenuItem Header="File">
@@ -124,6 +132,21 @@
                     CanUserSortColumns="True"
                     SelectionMode="Extended">
             </DataGrid>
+
+            <TreeView x:Name="treeview"
+                      Grid.Row="5"
+                      Grid.Column="3">
+                <TreeViewItem Header="TreeViewItem">
+                    <TreeViewItem Header="TreeViewItem"/>
+                    <TreeViewItem Header="TreeViewItem"/>
+                    <TreeViewItem Header="TreeViewItem"/>
+                </TreeViewItem>
+                <TreeViewItem Header="TreeViewItem">
+                    <TreeViewItem Header="TreeViewItem"/>
+                    <TreeViewItem Header="TreeViewItem"/>
+                    <TreeViewItem Header="TreeViewItem"/>
+                </TreeViewItem>
+            </TreeView>
 
             <Border Grid.Row="6" Grid.ColumnSpan="4"/>
 

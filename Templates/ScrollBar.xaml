@@ -5,6 +5,7 @@
         <Setter Property="SnapsToDevicePixels" Value="True" />
         <Setter Property="OverridesDefaultStyle" Value="true" />
         <Setter Property="Focusable" Value="false" />
+        <Setter Property="Foreground" Value="{DynamicResource ForegroundNormal}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type RepeatButton}">
@@ -83,12 +84,12 @@
         </Setter>
     </Style>
 
-    <Style x:Key="ScrollBarPageButton"
-       TargetType="{x:Type RepeatButton}">
+    <Style x:Key="ScrollBarPageButton" TargetType="{x:Type RepeatButton}">
         <Setter Property="SnapsToDevicePixels" Value="True" />
         <Setter Property="OverridesDefaultStyle" Value="true" />
         <Setter Property="IsTabStop" Value="false" />
         <Setter Property="Focusable" Value="false" />
+        <Setter Property="Foreground" Value="{DynamicResource ForegroundNormal}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type RepeatButton}">
@@ -98,8 +99,7 @@
         </Setter>
     </Style>
 
-    <Style x:Key="ScrollBarThumb"
-       TargetType="{x:Type Thumb}">
+    <Style x:Key="ScrollBarThumb" TargetType="{x:Type Thumb}">
         <Setter Property="SnapsToDevicePixels" Value="True" />
         <Setter Property="OverridesDefaultStyle" Value="true" />
         <Setter Property="IsTabStop" Value="false" />
@@ -124,16 +124,16 @@
                 <RowDefinition MaxHeight="18" />
             </Grid.RowDefinitions>
             <Border Grid.RowSpan="3"
-            CornerRadius="2"
-            Background="{DynamicResource ControlDarkBrushKey}" />
+                    CornerRadius="2"
+                    Background="{DynamicResource ControlDarkBrushKey}" />
             <RepeatButton Grid.Row="0"
-                  Style="{StaticResource ScrollBarLineButton}"
-                  Height="18"
-                  Command="ScrollBar.LineUpCommand"
-                  Content="M 0 4 L 8 4 L 4 0 Z" />
+                          Style="{StaticResource ScrollBarLineButton}"
+                          Height="18"
+                          Command="ScrollBar.LineUpCommand"
+                          Content="M 0 4 L 8 4 L 4 0 Z" />
             <Track x:Name="PART_Track"
-           Grid.Row="1"
-           IsDirectionReversed="true">
+                   Grid.Row="1"
+                   IsDirectionReversed="true">
                 <Track.DecreaseRepeatButton>
                     <RepeatButton Style="{StaticResource ScrollBarPageButton}" Command="ScrollBar.PageUpCommand" />
                 </Track.DecreaseRepeatButton>
@@ -148,10 +148,9 @@
                                     </GradientStopCollection>
                                 </LinearGradientBrush.GradientStops>
                             </LinearGradientBrush>
-
                         </Thumb.BorderBrush>
-                        <Thumb.Background>
 
+                        <Thumb.Background>
                             <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
                                 <LinearGradientBrush.GradientStops>
                                     <GradientStopCollection>
@@ -160,20 +159,18 @@
                                     </GradientStopCollection>
                                 </LinearGradientBrush.GradientStops>
                             </LinearGradientBrush>
-
                         </Thumb.Background>
                     </Thumb>
                 </Track.Thumb>
                 <Track.IncreaseRepeatButton>
-                    <RepeatButton Style="{StaticResource ScrollBarPageButton}"
-                      Command="ScrollBar.PageDownCommand" />
+                    <RepeatButton Style="{StaticResource ScrollBarPageButton}" Command="ScrollBar.PageDownCommand" />
                 </Track.IncreaseRepeatButton>
             </Track>
             <RepeatButton Grid.Row="2"
-                  Style="{StaticResource ScrollBarLineButton}"
-                  Height="18"
-                  Command="ScrollBar.LineDownCommand"
-                  Content="M 0 0 L 4 4 L 8 0 Z" />
+                          Style="{StaticResource ScrollBarLineButton}"
+                          Height="18"
+                          Command="ScrollBar.LineDownCommand"
+                          Content="M 0 0 L 4 4 L 8 0 Z" />
         </Grid>
     </ControlTemplate>
 
@@ -185,16 +182,16 @@
                 <ColumnDefinition MaxWidth="18" />
             </Grid.ColumnDefinitions>
             <Border Grid.ColumnSpan="3"
-            CornerRadius="2"
-            Background="{DynamicResource ControlSelectedBrushKey}" />
+                    CornerRadius="2"
+                    Background="{DynamicResource ControlSelectedBrushKey}" />
             <RepeatButton Grid.Column="0"
-                  Style="{StaticResource ScrollBarLineButton}"
-                  Width="18"
-                  Command="ScrollBar.LineLeftCommand"
-                  Content="M 4 0 L 4 8 L 0 4 Z" />
+                          Style="{StaticResource ScrollBarLineButton}"
+                          Width="18"
+                          Command="ScrollBar.LineLeftCommand"
+                          Content="M 4 0 L 4 8 L 0 4 Z" />
             <Track x:Name="PART_Track"
-           Grid.Column="1"
-           IsDirectionReversed="False">
+                   Grid.Column="1"
+                   IsDirectionReversed="False">
                 <Track.DecreaseRepeatButton>
                     <RepeatButton Style="{StaticResource ScrollBarPageButton}" Command="ScrollBar.PageLeftCommand" />
                 </Track.DecreaseRepeatButton>
@@ -202,7 +199,6 @@
                     <Thumb Style="{StaticResource ScrollBarThumb}" Margin="0,1,0,1">
 
                         <Thumb.BorderBrush>
-
                             <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
                                 <LinearGradientBrush.GradientStops>
                                     <GradientStopCollection>
@@ -211,10 +207,9 @@
                                     </GradientStopCollection>
                                 </LinearGradientBrush.GradientStops>
                             </LinearGradientBrush>
-
                         </Thumb.BorderBrush>
-                        <Thumb.Background>
 
+                        <Thumb.Background>
                             <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
                                 <LinearGradientBrush.GradientStops>
                                     <GradientStopCollection>
@@ -223,7 +218,6 @@
                                     </GradientStopCollection>
                                 </LinearGradientBrush.GradientStops>
                             </LinearGradientBrush>
-
                         </Thumb.Background>
                     </Thumb>
                 </Track.Thumb>
@@ -232,17 +226,18 @@
                 </Track.IncreaseRepeatButton>
             </Track>
             <RepeatButton Grid.Column="2"
-                  Style="{StaticResource ScrollBarLineButton}"
-                  Width="18"
-                  Command="ScrollBar.LineRightCommand"
-                  Content="M 0 0 L 4 4 L 0 8 Z" />
+                          Style="{StaticResource ScrollBarLineButton}"
+                          Width="18"
+                          Command="ScrollBar.LineRightCommand"
+                          Content="M 0 0 L 4 4 L 0 8 Z" />
         </Grid>
     </ControlTemplate>
 
-    <Style x:Key="{x:Type ScrollBar}"
-       TargetType="{x:Type ScrollBar}">
+    <Style x:Key="{x:Type ScrollBar}" TargetType="{x:Type ScrollBar}">
         <Setter Property="SnapsToDevicePixels" Value="True" />
         <Setter Property="OverridesDefaultStyle" Value="true" />
+        <Setter Property="Background" Value="Green"/>
+        <Setter Property="BorderBrush" Value="LightGoldenrodYellow"/>
         <Style.Triggers>
             <Trigger Property="Orientation" Value="Horizontal">
                 <Setter Property="Width" Value="Auto" />

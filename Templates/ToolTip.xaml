@@ -5,8 +5,9 @@
         <Setter Property="OverridesDefaultStyle" Value="true" />
         <Setter Property="HasDropShadow" Value="True" />
         <Setter Property="Background" Value="{DynamicResource ControlNormalBrushKey}"/>
+        <Setter Property="Foreground" Value="{DynamicResource ForegroundNormalBrushKey}"/>
         <Setter Property="BorderBrush" Value="{DynamicResource BorderNormalBrushKey}"/>
-        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="BorderThickness" Value="2"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="ToolTip">

@@ -18,7 +18,7 @@
                         <Trigger Property="IsEnabled" Value="false">
                             <Setter Property="Foreground">
                                 <Setter.Value>
-                                    <SolidColorBrush Color="{DynamicResource ForegroundDisabledBrushKey}" />
+                                    <SolidColorBrush Color="{DynamicResource ForegroundDisabled}" />
                                 </Setter.Value>
                             </Setter>
                         </Trigger>

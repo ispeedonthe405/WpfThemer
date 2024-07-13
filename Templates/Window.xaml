@@ -2,13 +2,14 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
     <Style x:Key="{x:Type Window}" TargetType="{x:Type Window}">
+        <Setter Property="OverridesDefaultStyle" Value="True"/>
         <Setter Property="Foreground" Value="{DynamicResource ForegroundNormalBrushKey}"/>
         <Setter Property="Background" Value="{DynamicResource BackgroundNormalBrushKey}"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Window}">
-                    <Border Background="{TemplateBinding Background}"
-                            BorderBrush="{TemplateBinding BorderBrush}"
+                    <Border Background="{DynamicResource BackgroundNormalBrushKey}"
+                            BorderBrush="{DynamicResource BorderNormalBrushKey}"
                             BorderThickness="{TemplateBinding BorderThickness}">
                         <AdornerDecorator>
                             <ContentPresenter/>

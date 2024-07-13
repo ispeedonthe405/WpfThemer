@@ -232,6 +232,7 @@ namespace WpfThemer
             BuildTemplate("ComboBox.xaml");
             BuildTemplate("ComboBoxItem.xaml");
             BuildTemplate("DataGrid.xaml");
+            BuildTemplate("GridSplitter.xaml");
             BuildTemplate("Label.xaml");
             BuildTemplate("ListBox.xaml");
             BuildTemplate("ListBoxItem.xaml");
@@ -250,7 +251,8 @@ namespace WpfThemer
             BuildTemplate("ToggleButton.xaml");
             BuildTemplate("Toolbar.xaml");
             BuildTemplate("ToolTip.xaml");
-            BuildTemplate("Window.xaml");
+            BuildTemplate("TreeView.xaml");
+            //BuildTemplate("Window.xaml");
         }
 
         private static void ReloadTemplates()

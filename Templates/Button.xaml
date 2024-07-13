@@ -15,7 +15,7 @@
     <Style TargetType="{x:Type Button}">
         <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
         <Setter Property="Background" Value="{DynamicResource ControlNormalBrushKey}"/>
-        <Setter Property="BorderBrush" Value="{DynamicResource BorderNormalBrushKey}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource ControlNormalBrushKey}"/>
         <Setter Property="Foreground" Value="{DynamicResource ForegroundNormalBrushKey}"/>
         <Setter Property="BorderThickness" Value="1"/>
         <Setter Property="HorizontalContentAlignment" Value="Center"/>
@@ -44,8 +44,9 @@
                             <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource BorderPressedBrushKey}"/>
                         </Trigger>
                         <Trigger Property="IsEnabled" Value="false">
+                            <Setter Property="Opacity" Value="0.5"/>
                             <Setter Property="Background" TargetName="border" Value="{DynamicResource ControlDisabledBrushKey}"/>
-                            <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource BorderDisabledBrushKey}"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource ControlNormalBrushKey}"/>
                             <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{DynamicResource ForegroundDisabledBrushKey}"/>
                         </Trigger>
                     </ControlTemplate.Triggers>

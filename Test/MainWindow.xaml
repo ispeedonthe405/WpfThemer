@@ -148,6 +148,11 @@
                 </TreeViewItem>
             </TreeView>
 
+            <TextBox x:Name="tb_BigText" Grid.Row="5" Grid.Column="5"
+                     TextWrapping="Wrap" AcceptsReturn="True" 
+                     VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+            </TextBox>
+
             <Border Grid.Row="6" Grid.ColumnSpan="4"/>
 
         </Grid>

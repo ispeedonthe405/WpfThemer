@@ -18,15 +18,15 @@
 
 
 
-    <Color x:Key="BackgroundNormal">#F3F3F3</Color>
-    <Color x:Key="BackgroundSelected">#d2d3db</Color>
-    <Color x:Key="BackgroundInactive">#F0F0F0</Color>
-    <Color x:Key="BackgroundDisabled">#9394a5</Color>
-    <Color x:Key="BackgroundMouseOver">#d2d3db</Color>
-    <Color x:Key="BackgroundPressed">#e4e5f1</Color>
-    <Color x:Key="BackgroundLight">#F3F3F3</Color>
-    <Color x:Key="BackgroundMedium">#F3F3F3</Color>
-    <Color x:Key="BackgroundDark">#F0F0F0</Color>
+    <Color x:Key="BackgroundNormal">#EEEEF2</Color>
+    <Color x:Key="BackgroundSelected">#EEEEF2</Color>
+    <Color x:Key="BackgroundInactive">#EEEEF2</Color>
+    <Color x:Key="BackgroundDisabled">#EEEEF2</Color>
+    <Color x:Key="BackgroundMouseOver">#EEEEF2</Color>
+    <Color x:Key="BackgroundPressed">#EEEEF2</Color>
+    <Color x:Key="BackgroundLight">#EEEEF2</Color>
+    <Color x:Key="BackgroundMedium">#E2E2E2</Color>
+    <Color x:Key="BackgroundDark">#C2C3C9</Color>
 
     <SolidColorBrush x:Key="BackgroundNormalBrushKey" Color="{DynamicResource BackgroundNormal}"/>
     <SolidColorBrush x:Key="BackgroundSelectedBrushKey" Color="{DynamicResource BackgroundSelected}"/>
@@ -56,15 +56,15 @@
     <SolidColorBrush x:Key="ForegroundLightBrushKey" Color="{DynamicResource ForegroundLight}"/>
     <SolidColorBrush x:Key="ForegroundDarkBrushKey" Color="{DynamicResource ForegroundDark}"/>
 
-    <Color x:Key="BorderNormal">#A0A0A0</Color>
-    <Color x:Key="BorderSelected">#A0A0A0</Color>
-    <Color x:Key="BorderInactive">#A0A0A0</Color>
-    <Color x:Key="BorderDisabled">#A0A0A0</Color>
-    <Color x:Key="BorderMouseOver">#F0F0F0</Color>
+    <Color x:Key="BorderNormal">#CCCEDB</Color>
+    <Color x:Key="BorderSelected">#C2C3C9</Color>
+    <Color x:Key="BorderInactive">#CCCEDB</Color>
+    <Color x:Key="BorderDisabled">#CCCEDB</Color>
+    <Color x:Key="BorderMouseOver">#CCCEDB</Color>
     <Color x:Key="BorderPressed">#A0A0A0</Color>
-    <Color x:Key="BorderLight">#fafafa</Color>
-    <Color x:Key="BorderMedium">#eaeaea</Color>
-    <Color x:Key="BorderDark">#bababa</Color>
+    <Color x:Key="BorderLight">#EEEEF2</Color>
+    <Color x:Key="BorderMedium">#E2E2E2</Color>
+    <Color x:Key="BorderDark">#C2C3C9</Color>
 
     <SolidColorBrush x:Key="BorderNormalBrushKey" Color="{DynamicResource BorderNormal}"/>
     <SolidColorBrush x:Key="BorderSelectedBrushKey" Color="{DynamicResource BorderSelected}"/>
@@ -76,15 +76,15 @@
     <SolidColorBrush x:Key="BorderMediumBrushKey" Color="{DynamicResource BorderMedium}"/>
     <SolidColorBrush x:Key="BorderDarkBrushKey" Color="{DynamicResource BorderDark}"/>
 
-    <Color x:Key="ControlNormal">#F5F5F5</Color>
-    <Color x:Key="ControlSelected">#e4e5f1</Color>
-    <Color x:Key="ControlInactive">#F5F5F5</Color>
-    <Color x:Key="ControlDisabled">#9394a5</Color>
-    <Color x:Key="ControlMouseOver">#e4e5f1</Color>
-    <Color x:Key="ControlPressed">#9394a5</Color>
-    <Color x:Key="ControlLight">#F5F5F5</Color>
-    <Color x:Key="ControlMedium">#F3F3F3</Color>
-    <Color x:Key="ControlDark">#F0F0F0</Color>
+    <Color x:Key="ControlNormal">#EEEEF2</Color>
+    <Color x:Key="ControlSelected">#EEEEF2</Color>
+    <Color x:Key="ControlInactive">#EEEEF2</Color>
+    <Color x:Key="ControlDisabled">#EEEEF2</Color>
+    <Color x:Key="ControlMouseOver">#E2E2E2</Color>
+    <Color x:Key="ControlPressed">#CCCEDB</Color>
+    <Color x:Key="ControlLight">#EEEEF2</Color>
+    <Color x:Key="ControlMedium">#E2E2E2</Color>
+    <Color x:Key="ControlDark">#C2C3C9</Color>
 
     <SolidColorBrush x:Key="ControlNormalBrushKey" Color="{DynamicResource ControlNormal}"/>
     <SolidColorBrush x:Key="ControlSelectedBrushKey" Color="{DynamicResource ControlSelected}"/>
@@ -96,13 +96,13 @@
     <SolidColorBrush x:Key="ControlMediumBrushKey" Color="{DynamicResource ControlMedium}"/>
     <SolidColorBrush x:Key="ControlDarkBrushKey" Color="{DynamicResource ControlDark}"/>
 
-    <Color x:Key="HighlightNormal">#AA0055FF</Color>
-    <Color x:Key="HighlightSelected">#AA0055FF</Color>
-    <Color x:Key="HighlightInactive">#550055FF</Color>
-    <Color x:Key="HighlightDisabled">#AA0055FF</Color>
-    <Color x:Key="HighlightMouseOver">#CC0055FF</Color>
-    <Color x:Key="HighlightPressed">#FF0055FF</Color>
-    <Color x:Key="HighlightDark">#AA0055FF</Color>
+    <Color x:Key="HighlightNormal">#880055AA</Color>
+    <Color x:Key="HighlightSelected">#880055AA</Color>
+    <Color x:Key="HighlightInactive">#770055AA</Color>
+    <Color x:Key="HighlightDisabled">#880055AA</Color>
+    <Color x:Key="HighlightMouseOver">#880055AA</Color>
+    <Color x:Key="HighlightPressed">#880055AA</Color>
+    <Color x:Key="HighlightDark">#880055AA</Color>
 
     <SolidColorBrush x:Key="HighlightNormalBrushKey" Color="{DynamicResource HighlightNormal}"/>
     <SolidColorBrush x:Key="HighlightSelectedBrushKey" Color="{DynamicResource HighlightSelected}"/>

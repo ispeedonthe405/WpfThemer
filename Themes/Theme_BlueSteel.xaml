@@ -84,7 +84,7 @@
     <Color x:Key="ControlInactive">#2C333A</Color>
     <Color x:Key="ControlDisabled">#2C333A</Color>
     <Color x:Key="ControlMouseOver">#454F59</Color>
-    <Color x:Key="ControlPressed">#38414A</Color>
+    <Color x:Key="ControlPressed">#596773</Color>
     <Color x:Key="ControlLight">#596773</Color>
     <Color x:Key="ControlMedium">#454F59</Color>
     <Color x:Key="ControlDark">#282E33</Color>

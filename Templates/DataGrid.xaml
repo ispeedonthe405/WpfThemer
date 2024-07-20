@@ -76,8 +76,8 @@
         <Setter Property="BorderBrush">
             <Setter.Value>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="{DynamicResource BorderNormal}" Offset="0" />
-                    <GradientStop Color="{DynamicResource BorderNormal}" Offset="1" />
+                    <GradientStop Color="{DynamicResource BorderLight}" Offset="0" />
+                    <GradientStop Color="{DynamicResource BorderMedium}" Offset="1" />
                 </LinearGradientBrush>
             </Setter.Value>
         </Setter>
@@ -91,11 +91,19 @@
                 <ControlTemplate TargetType="{x:Type DataGrid}">
                     <Border x:Name="border"
                             SnapsToDevicePixels="True"
-                            BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}"
                             Padding="{TemplateBinding Padding}">
+                        <Border.BorderBrush>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="{DynamicResource BorderLight}" Offset="0" />
+                                <GradientStop Color="{DynamicResource BorderDark}" Offset="1" />
+                            </LinearGradientBrush>
+                        </Border.BorderBrush>
                         <Border.Background>
-                            <SolidColorBrush Color="{DynamicResource BorderNormal}" />
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="{DynamicResource ControlLight}" Offset="0" />
+                                <GradientStop Color="{DynamicResource ControlDark}" Offset="1" />
+                            </LinearGradientBrush>
                         </Border.Background>
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="CommonStates">
@@ -633,8 +641,8 @@
         <Setter Property="Background">
             <Setter.Value>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="{DynamicResource BorderNormal}" Offset="0" />
-                    <GradientStop Color="{DynamicResource BorderNormal}" Offset="1" />
+                    <GradientStop Color="{DynamicResource ControlLight}" Offset="0" />
+                    <GradientStop Color="{DynamicResource ControlDark}" Offset="1" />
                 </LinearGradientBrush>
             </Setter.Value>
         </Setter>

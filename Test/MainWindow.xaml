@@ -59,6 +59,13 @@
                     <MenuItem Header="Item 3"/>
                     <MenuItem Header="Item 4"/>
                 </MenuItem>
+                <MenuItem Header="Disabled" IsEnabled="False">
+                    <MenuItem Header="Item 0"/>
+                    <MenuItem Header="Item 1" IsCheckable="True"/>
+                    <MenuItem Header="Item 2" IsCheckable="True" IsEnabled="False"/>
+                    <MenuItem Header="Item 3"/>
+                    <MenuItem Header="Item 4"/>
+                </MenuItem>
             </Menu>
 
             <ToolBar Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2">

@@ -70,7 +70,7 @@ namespace Test
             }
             datagrid.ItemsSource = GridItems;
 
-            ThemeManager.SetTheme("system");
+            ThemeManager.SetTheme("Blue Steel");
             cb_Theme.SelectedItem = ThemeManager.ActiveTheme;
         }
 

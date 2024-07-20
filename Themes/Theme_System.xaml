@@ -2,7 +2,7 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
     
-    <!--NOTE: System colors are set at runtime based on the current system theme.
+    <!--NOTE: System colors are set and resampled at runtime based on the current system theme.
     The colors below are only default values.-->
     
     <Color x:Key="BackgroundNormal">#A0A0A0</Color>

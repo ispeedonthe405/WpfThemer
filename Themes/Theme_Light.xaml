@@ -1,6 +1,23 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
+    <Color x:Key="Light0">#FFFFFF</Color>
+    <Color x:Key="Light100">#F7F8F9</Color>
+    <Color x:Key="Light200">#F1F2F4</Color>
+    <Color x:Key="Light300">#DCDFE4</Color>
+    <Color x:Key="Light400">#B3B9C4</Color>
+    <Color x:Key="Light500">#8590A2</Color>
+    <Color x:Key="Light600">#758195</Color>
+    <Color x:Key="Light700">#626F86</Color>
+    <Color x:Key="Light800">#44546F</Color>
+    <Color x:Key="Light900">#2C3E5D</Color>
+    <Color x:Key="Light1000">#172B4D</Color>
+    <Color x:Key="Light1100">#091E42</Color>
+
+
+
+
+
     <Color x:Key="BackgroundNormal">#F3F3F3</Color>
     <Color x:Key="BackgroundSelected">#d2d3db</Color>
     <Color x:Key="BackgroundInactive">#F0F0F0</Color>

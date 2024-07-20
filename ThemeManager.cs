@@ -223,10 +223,10 @@ namespace WpfThemer
 
         static ThemeManager()
         {
-            //BuildTheme("Default", "Default Theme", "Theme_Default.xaml");
             BuildTheme(Theme.eThemeType.Undefined, "System", "System Theme", "Theme_System.xaml");
+            BuildTheme(Theme.eThemeType.Light, "Light", "Light Theme", "Theme_Light.xaml");
             BuildTheme(Theme.eThemeType.Dark, "Dark", "Dark Theme", "Theme_Dark.xaml");
-            BuildTheme(Theme.eThemeType.Light, "Light", "Light Theme", "Theme_Light.xaml");            
+            BuildTheme(Theme.eThemeType.Dark, "Blue Steel", "Blue Steel Theme", "Theme_BlueSteel.xaml");
             ActiveTheme = Themes.First();
 
             BuildTemplate("Border.xaml");

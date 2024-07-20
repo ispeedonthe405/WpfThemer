@@ -48,8 +48,8 @@
                             <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource BorderPressedBrushKey}"/>
                         </Trigger>
                         <Trigger Property="IsChecked" Value="true">
-                            <Setter Property="Background" TargetName="border" Value="{DynamicResource ControlLightBrushKey}"/>
-                            <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource BorderLightBrushKey}"/>
+                            <Setter Property="Background" TargetName="border" Value="{DynamicResource ControlPressedBrushKey}"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource BorderPressedBrushKey}"/>
                         </Trigger>
                         <Trigger Property="IsEnabled" Value="false">
                             <Setter Property="Background" TargetName="border" Value="{DynamicResource ControlDisabledBrushKey}"/>

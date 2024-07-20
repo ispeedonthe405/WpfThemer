@@ -37,7 +37,7 @@
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="Button.IsDefaulted" Value="true">
-                            <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource HighlightBrushKey}"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource HighlightNormalBrushKey}"/>
                         </Trigger>
                         <Trigger Property="IsMouseOver" Value="true">
                             <Setter Property="Background" TargetName="border" Value="{DynamicResource ControlMouseOverBrushKey}"/>
@@ -48,12 +48,13 @@
                             <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource BorderPressedBrushKey}"/>
                         </Trigger>
                         <Trigger Property="IsChecked" Value="true">
-                            <Setter Property="Background" TargetName="border" Value="{DynamicResource ControlSelectedBrushKey}"/>
-                            <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource BorderSelectedBrushKey}"/>
+                            <Setter Property="Background" TargetName="border" Value="{DynamicResource ControlLightBrushKey}"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource BorderLightBrushKey}"/>
                         </Trigger>
                         <Trigger Property="IsEnabled" Value="false">
                             <Setter Property="Background" TargetName="border" Value="{DynamicResource ControlDisabledBrushKey}"/>
                             <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource BorderDisabledBrushKey}"/>
+                            <Setter Property="Opacity" TargetName="border" Value="0.5"/>
                             <Setter Property="TextElement.Foreground" TargetName="contentPresenter" 
                                     Value="{DynamicResource ForegroundDisabledBrushKey}"/>
                         </Trigger>

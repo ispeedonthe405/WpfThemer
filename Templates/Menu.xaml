@@ -106,7 +106,7 @@
                 <Setter Property="Visibility" TargetName="Icon" Value="Collapsed"/>
             </Trigger>
             <Trigger Property="IsHighlighted" Value="True">
-                <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource ControlMouseOverBrushKey}"/>
+                <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource HighlightNormalBrushKey}"/>
                 <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource BorderMouseOverBrushKey}"/>
             </Trigger>
             <Trigger Property="IsEnabled" Value="False">
@@ -121,7 +121,7 @@
                 </MultiTrigger.Conditions>
                 <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource ControlDisabledBrushKey}"/>
                 <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource BorderDisabledBrushKey}"/>
-                <Setter Property="TextElement.Foreground" Value="{DynamicResource ForegroundDisabledBrushKey}"/>
+                <Setter Property="TextElement.Foreground" TargetName="templateRoot" Value="{DynamicResource ForegroundDisabledBrushKey}"/>
                 <Setter Property="Opacity" Value="0.5"/>
             </MultiTrigger>
         </ControlTemplate.Triggers>
@@ -163,12 +163,13 @@
                 <Setter Property="Visibility" TargetName="Icon" Value="Collapsed"/>
             </Trigger>
             <Trigger Property="IsHighlighted" Value="True">
-                <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource ControlMouseOverBrushKey}"/>
-                <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource BorderSelectedBrushKey}"/>
+                <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource HighlightNormalBrushKey}"/>
+                <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource BorderNormalBrushKey}"/>
             </Trigger>
             <Trigger Property="IsEnabled" Value="False">
                 <Setter Property="TextElement.Foreground" TargetName="templateRoot" Value="{DynamicResource ForegroundDisabledBrushKey}"/>
                 <Setter Property="Fill" TargetName="GlyphPanel" Value="{DynamicResource ForegroundDisabledBrushKey}"/>
+                <Setter Property="Opacity" Value="0.5"/>
             </Trigger>
             <Trigger Property="ScrollViewer.CanContentScroll" SourceName="SubMenuScrollViewer" Value="false">
                 <Setter Property="Canvas.Top" TargetName="OpaqueRect" Value="{Binding VerticalOffset, ElementName=SubMenuScrollViewer}"/>
@@ -204,12 +205,13 @@
                 <Setter Property="Visibility" TargetName="Icon" Value="Collapsed"/>
             </Trigger>
             <Trigger Property="IsHighlighted" Value="True">
-                <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource ControlMouseOverBrushKey}"/>
-                <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource BorderSelectedBrushKey}"/>
+                <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource HighlightNormalBrushKey}"/>
+                <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource BorderNormalBrushKey}"/>
             </Trigger>
             <Trigger Property="IsEnabled" Value="False">
                 <Setter Property="TextElement.Foreground" TargetName="templateRoot" Value="{DynamicResource ForegroundDisabledBrushKey}"/>
                 <Setter Property="Fill" TargetName="Glyph" Value="{DynamicResource ForegroundDisabledBrushKey}"/>
+                <Setter Property="Opacity" Value="0.5"/>
             </Trigger>
             <MultiTrigger>
                 <MultiTrigger.Conditions>
@@ -218,6 +220,7 @@
                 </MultiTrigger.Conditions>
                 <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource ControlDisabledBrushKey}"/>
                 <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource BorderDisabledBrushKey}"/>
+                <Setter Property="Opacity" Value="0.5"/>
             </MultiTrigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
@@ -267,12 +270,13 @@
             </Trigger>
             <Trigger Property="IsHighlighted" Value="True">
                 <Setter Property="Background" TargetName="templateRoot" Value="Transparent"/>
-                <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource BorderSelectedBrushKey}"/>
+                <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource BorderNormalBrushKey}"/>
             </Trigger>
             <Trigger Property="IsEnabled" Value="False">
                 <Setter Property="TextElement.Foreground" TargetName="templateRoot" Value="{DynamicResource ForegroundDisabledBrushKey}"/>
                 <Setter Property="Fill" TargetName="Glyph" Value="{DynamicResource ForegroundDisabledBrushKey}"/>
                 <Setter Property="Fill" TargetName="RightArrow" Value="{DynamicResource ForegroundDisabledBrushKey}"/>
+                <Setter Property="Opacity" Value="0.5"/>
             </Trigger>
             <Trigger Property="ScrollViewer.CanContentScroll" SourceName="SubMenuScrollViewer" Value="false">
                 <Setter Property="Canvas.Top" TargetName="OpaqueRect" Value="{Binding VerticalOffset, ElementName=SubMenuScrollViewer}"/>
@@ -280,7 +284,7 @@
             </Trigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
-    <Style x:Key="MenuItemStyle1" TargetType="{x:Type MenuItem}">
+    <Style x:Key="{x:Type MenuItem}" TargetType="{x:Type MenuItem}">
         <Setter Property="HorizontalContentAlignment" Value="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
         <Setter Property="VerticalContentAlignment" Value="{Binding VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
         <Setter Property="Background" Value="Transparent"/>

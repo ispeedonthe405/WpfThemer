@@ -41,7 +41,7 @@
                             <MultiTrigger.Conditions>
                                 <Condition Property="IsMouseOver" Value="True"/>
                             </MultiTrigger.Conditions>
-                            <Setter Property="Background" TargetName="Bd" Value="{DynamicResource ControlMouseOverBrushKey}"/>
+                            <Setter Property="Background" TargetName="Bd" Value="{DynamicResource HighlightMouseOverBrushKey}"/>
                             <Setter Property="BorderBrush" TargetName="Bd" Value="{DynamicResource BorderMouseOverBrushKey}"/>
                         </MultiTrigger>
                         <MultiTrigger>
@@ -49,15 +49,15 @@
                                 <Condition Property="Selector.IsSelectionActive" Value="False"/>
                                 <Condition Property="IsSelected" Value="True"/>
                             </MultiTrigger.Conditions>
-                            <Setter Property="Background" TargetName="Bd" Value="{DynamicResource ControlSelectedBrushKey}"/>
-                            <Setter Property="BorderBrush" TargetName="Bd" Value="{DynamicResource BorderSelectedBrushKey}"/>
+                            <Setter Property="Background" TargetName="Bd" Value="{DynamicResource HighlightInactiveBrushKey}"/>
+                            <Setter Property="BorderBrush" TargetName="Bd" Value="{DynamicResource BorderInactiveBrushKey}"/>
                         </MultiTrigger>
                         <MultiTrigger>
                             <MultiTrigger.Conditions>
                                 <Condition Property="Selector.IsSelectionActive" Value="True"/>
                                 <Condition Property="IsSelected" Value="True"/>
                             </MultiTrigger.Conditions>
-                            <Setter Property="Background" TargetName="Bd" Value="{DynamicResource ControlSelectedBrushKey}"/>
+                            <Setter Property="Background" TargetName="Bd" Value="{DynamicResource HighlightSelectedBrushKey}"/>
                             <Setter Property="BorderBrush" TargetName="Bd" Value="{DynamicResource BorderSelectedBrushKey}"/>
                         </MultiTrigger>
                         <Trigger Property="IsEnabled" Value="False">

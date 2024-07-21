@@ -205,10 +205,10 @@
                 <ControlTemplate TargetType="ListView">
                     <Border Name="Border" BorderThickness="1">
                         <Border.Background>
-                            <SolidColorBrush Color="{DynamicResource ControlLight}" />
+                            <SolidColorBrush Color="{DynamicResource BackgroundNormal}" />
                         </Border.Background>
                         <Border.BorderBrush>
-                            <SolidColorBrush Color="{DynamicResource BorderMedium}" />
+                            <SolidColorBrush Color="{DynamicResource BorderNormal}" />
                         </Border.BorderBrush>
                         <ScrollViewer Style="{DynamicResource {x:Static GridView.GridViewScrollViewerStyleKey}}">
                             <ItemsPresenter />

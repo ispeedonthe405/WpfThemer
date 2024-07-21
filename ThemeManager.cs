@@ -240,7 +240,6 @@ namespace WpfThemer
             BuildTemplate("ListBox.xaml");
             BuildTemplate("ListBoxItem.xaml");
             BuildTemplate("ListView.xaml");
-            BuildTemplate("ListViewItem.xaml");
             BuildTemplate("Menu.xaml");
             BuildTemplate("RadioButton.xaml");
             BuildTemplate("ScrollBar.xaml");

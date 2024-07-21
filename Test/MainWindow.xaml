@@ -8,11 +8,7 @@
         xmlns:local="clr-namespace:Test"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Window.Resources>
-        
-    </Window.Resources>
-    <!--Background="{DynamicResource WindowBrushKey}" Foreground="{DynamicResource WindowTextBrushKey}">-->
-
+ 
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -122,10 +118,39 @@
                 <ListBoxItem Content="ListBoxItem"/>
             </ListBox>
 
-            <ListView Grid.Row="4" Grid.Column="2">
-                <ListViewItem Content="ListViewItem"/>
-                <ListViewItem Content="ListViewItem"/>
-                <ListViewItem Content="ListViewItem"/>
+            <ListView  x:Name="LogView" Grid.Row="4" Grid.Column="2"
+                       ScrollViewer.CanContentScroll="True"
+                       ScrollViewer.VerticalScrollBarVisibility="Visible"
+                       ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                       Height="Auto"
+                       ClipToBounds="True">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Time" DisplayMemberBinding="{Binding Path=Timestamp}"/>
+                        <GridViewColumn Header="Category">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Path=Category}">
+                                        <TextBlock.Foreground>
+                                            <SolidColorBrush Color="{Binding Path=BrushColor}"/>
+                                        </TextBlock.Foreground>
+                                    </TextBlock>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Message" Width="Auto">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Path=Message}">
+                                        <TextBlock.Foreground>
+                                            <SolidColorBrush Color="{Binding Path=BrushColor}"/>
+                                        </TextBlock.Foreground>
+                                    </TextBlock>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                    </GridView>
+                </ListView.View>
             </ListView>
 
             <DataGrid   x:Name="datagrid" 

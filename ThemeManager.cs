@@ -246,7 +246,6 @@ namespace WpfThemer
             BuildTemplate("Separator.xaml");
             BuildTemplate("StatusBar.xaml");
             BuildTemplate("TabControl.xaml");
-            BuildTemplate("TabItem.xaml");
             BuildTemplate("TextBlock.xaml");
             BuildTemplate("TextBox.xaml");
             //BuildTemplate("Thumb.xaml");

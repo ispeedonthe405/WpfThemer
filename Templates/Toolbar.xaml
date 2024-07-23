@@ -136,53 +136,39 @@
         </Setter>
     </Style>
 
-    <Style x:Key="{x:Static ToolBar.ButtonStyleKey}" BasedOn="{StaticResource ToolBarButtonBaseStyle}" TargetType="{x:Type Button}" />
-    <Style x:Key="{x:Static ToolBar.ToggleButtonStyleKey}" BasedOn="{StaticResource ToolBarButtonBaseStyle}" TargetType="{x:Type ToggleButton}" />
-    <Style x:Key="{x:Static ToolBar.CheckBoxStyleKey}" BasedOn="{StaticResource ToolBarButtonBaseStyle}" TargetType="{x:Type CheckBox}" />
-    <Style x:Key="{x:Static ToolBar.RadioButtonStyleKey}" BasedOn="{StaticResource ToolBarButtonBaseStyle}" TargetType="{x:Type RadioButton}" />
-    <Style x:Key="{x:Static ToolBar.TextBoxStyleKey}" TargetType="{x:Type TextBox}">
-        <Setter Property="SnapsToDevicePixels" Value="True" />
-        <Setter Property="OverridesDefaultStyle" Value="True" />
-        <Setter Property="KeyboardNavigation.TabNavigation" Value="None" />
-        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
-        <Setter Property="AllowDrop" Value="true" />
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="{x:Type TextBox}">
-                    <Border x:Name="Border"
-                            Padding="2"
-                            BorderThickness="1">
-                        <Border.Background>
-                            <SolidColorBrush Color="{DynamicResource ControlLight}" />
-                        </Border.Background>
-                        <Border.BorderBrush>
-                            <SolidColorBrush Color="{DynamicResource BorderMedium}" />
-                        </Border.BorderBrush>
-                        <VisualStateManager.VisualStateGroups>
-                            <VisualStateGroup x:Name="CommonStates">
-                                <VisualState x:Name="Normal" />
-                                <VisualState x:Name="Disabled">
-                                    <Storyboard>
-                                        <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border"
-                                                Storyboard.TargetProperty="(Panel.Background).(SolidColorBrush.Color)">
-                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource ControlDisabled}" />
-                                        </ColorAnimationUsingKeyFrames>
-                                        <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border"
-                                                Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)">
-                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource BorderDisabled}" />
-                                        </ColorAnimationUsingKeyFrames>
-                                    </Storyboard>
-                                </VisualState>
-                                <VisualState x:Name="ReadOnly" />
-                                <VisualState x:Name="MouseOver" />
-                            </VisualStateGroup>
-                        </VisualStateManager.VisualStateGroups>
-                        <ScrollViewer Margin="0" x:Name="PART_ContentHost" />
-                    </Border>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
+    <Style x:Key="{x:Static ToolBar.ButtonStyleKey}" BasedOn="{StaticResource ToolBarButtonBaseStyle}" TargetType="{x:Type Button}">
+        <Setter Property="Background" Value="{DynamicResource ControlNormalBrushKey}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource BorderNormalBrushKey}" />
+        <Setter Property="Foreground" Value="{DynamicResource ForegroundNormalBrushKey}" />
     </Style>
+    <Style x:Key="{x:Static ToolBar.ToggleButtonStyleKey}" BasedOn="{StaticResource {x:Type ToggleButton}}" TargetType="{x:Type ToggleButton}">
+        <Setter Property="Background" Value="{DynamicResource ControlNormalBrushKey}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource BorderNormalBrushKey}" />
+        <Setter Property="Foreground" Value="{DynamicResource ForegroundNormalBrushKey}" />
+    </Style>
+    <Style x:Key="{x:Static ToolBar.CheckBoxStyleKey}" BasedOn="{StaticResource {x:Type CheckBox}}" TargetType="{x:Type CheckBox}">
+        <Setter Property="Background" Value="{DynamicResource ControlNormalBrushKey}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource BorderNormalBrushKey}" />
+        <Setter Property="Foreground" Value="{DynamicResource ForegroundNormalBrushKey}" />
+    </Style>
+    <Style x:Key="{x:Static ToolBar.RadioButtonStyleKey}" BasedOn="{StaticResource {x:Type RadioButton}}" TargetType="{x:Type RadioButton}">
+        <Setter Property="Background" Value="{DynamicResource ControlNormalBrushKey}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource BorderNormalBrushKey}" />
+        <Setter Property="Foreground" Value="{DynamicResource ForegroundNormalBrushKey}" />
+    </Style>
+    <Style x:Key="{x:Static ToolBar.TextBoxStyleKey}"  BasedOn="{StaticResource {x:Type TextBox}}" TargetType="{x:Type TextBox}">
+        <Setter Property="Background" Value="{DynamicResource BackgroundNormalBrushKey}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource BorderNormalBrushKey}" />
+        <Setter Property="Foreground" Value="{DynamicResource ForegroundNormalBrushKey}" />
+    </Style>
+    <Style x:Key="{x:Static ToolBar.ComboBoxStyleKey}" BasedOn="{StaticResource {x:Type ComboBox}}" TargetType="{x:Type ComboBox}">
+        <Setter Property="Background" Value="{DynamicResource BackgroundNormalBrushKey}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource BorderNormalBrushKey}" />
+        <Setter Property="Foreground" Value="{DynamicResource ForegroundNormalBrushKey}" />
+    </Style>
+
+    
+
 
     <Style x:Key="ToolBarThumbStyle" TargetType="{x:Type Thumb}">
         <Setter Property="OverridesDefaultStyle" Value="true" />
@@ -214,6 +200,7 @@
 
     <Style x:Key="ToolBarOverflowButtonStyle" TargetType="{x:Type ToggleButton}">
         <Setter Property="OverridesDefaultStyle" Value="true" />
+        <Setter Property="Foreground" Value="{DynamicResource ForegroundNormalBrushKey}"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ToggleButton}">

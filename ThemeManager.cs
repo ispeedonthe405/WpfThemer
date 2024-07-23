@@ -227,13 +227,13 @@ namespace WpfThemer
             BuildTheme(Theme.eThemeType.Light, "Light", "Light Theme", "Theme_Light.xaml");
             BuildTheme(Theme.eThemeType.Dark, "Dark", "Dark Theme", "Theme_Dark.xaml");
             BuildTheme(Theme.eThemeType.Dark, "Blue Steel", "Blue Steel Theme", "Theme_BlueSteel.xaml");
+            BuildTheme(Theme.eThemeType.Dark, "Green", "Green Theme", "Theme_Green.xaml");
             ActiveTheme = Themes.First();
 
             BuildTemplate("Border.xaml");
             BuildTemplate("Button.xaml");
             BuildTemplate("CheckBox.xaml");
             BuildTemplate("ComboBox.xaml");
-            BuildTemplate("ComboBoxItem.xaml");
             BuildTemplate("DataGrid.xaml");
             BuildTemplate("GridSplitter.xaml");
             BuildTemplate("Label.xaml");
@@ -250,7 +250,7 @@ namespace WpfThemer
             BuildTemplate("TextBox.xaml");
             //BuildTemplate("Thumb.xaml");
             BuildTemplate("ToggleButton.xaml");
-            BuildTemplate("Toolbar.xaml");
+            //BuildTemplate("Toolbar.xaml");
             BuildTemplate("ToolTip.xaml");
             BuildTemplate("TreeView.xaml");
             //BuildTemplate("Window.xaml");

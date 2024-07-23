@@ -17,8 +17,8 @@
                             <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
                                 <LinearGradientBrush.GradientStops>
                                     <GradientStopCollection>
-                                        <GradientStop Color="{DynamicResource BorderDark}" Offset="0.0" />
-                                        <GradientStop Color="{DynamicResource BorderDark}" Offset="1.0" />
+                                        <GradientStop Color="{DynamicResource ControlDark}" Offset="0.0" />
+                                        <GradientStop Color="{DynamicResource ControlDark}" Offset="1.0" />
                                     </GradientStopCollection>
                                 </LinearGradientBrush.GradientStops>
                             </LinearGradientBrush>
@@ -27,8 +27,8 @@
                             <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
                                 <LinearGradientBrush.GradientStops>
                                     <GradientStopCollection>
-                                        <GradientStop Color="{DynamicResource BorderDark}" Offset="0.0"/>
-                                        <GradientStop Color="{DynamicResource BorderDark}" Offset="1.0" />
+                                        <GradientStop Color="{DynamicResource ControlDark}" Offset="0.0"/>
+                                        <GradientStop Color="{DynamicResource ControlDark}" Offset="1.0" />
                                     </GradientStopCollection>
                                 </LinearGradientBrush.GradientStops>
                             </LinearGradientBrush>
@@ -39,11 +39,11 @@
                                     <Storyboard>
                                         <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border"
                                                 Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[0].(GradientStop.Color)">
-                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource BorderDark}" />
+                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource ControlDark}" />
                                         </ColorAnimationUsingKeyFrames>
                                         <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border"
                                                 Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
-                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource BorderDark}" />
+                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource ControlDark}" />
                                         </ColorAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
@@ -51,11 +51,11 @@
                                     <Storyboard>
                                         <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border"
                                                 Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[0].(GradientStop.Color)">
-                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource BorderMedium}" />
+                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource ControlMedium}" />
                                         </ColorAnimationUsingKeyFrames>
                                         <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border"
                                                 Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
-                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource BorderMedium}" />
+                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource ControlMedium}" />
                                         </ColorAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
@@ -63,11 +63,11 @@
                                     <Storyboard>
                                         <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border"
                                                 Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[0].(GradientStop.Color)">
-                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource BorderLight}" />
+                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource ControlLight}" />
                                         </ColorAnimationUsingKeyFrames>
                                         <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border"
                                                 Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
-                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource BorderLight}" />
+                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource ControlLight}" />
                                         </ColorAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
@@ -125,8 +125,8 @@
                             <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
                                 <LinearGradientBrush.GradientStops>
                                     <GradientStopCollection>
-                                        <GradientStop Color="{DynamicResource BorderMedium}" Offset="0.0" />
-                                        <GradientStop Color="{DynamicResource BorderMedium}" Offset="1.0" />
+                                        <GradientStop Color="{DynamicResource ControlMedium}" Offset="0.0" />
+                                        <GradientStop Color="{DynamicResource ControlMedium}" Offset="1.0" />
                                     </GradientStopCollection>
                                 </LinearGradientBrush.GradientStops>
                             </LinearGradientBrush>
@@ -135,8 +135,8 @@
                             <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
                                 <LinearGradientBrush.GradientStops>
                                     <GradientStopCollection>
-                                        <GradientStop Color="{DynamicResource BorderMedium}" Offset="0.0"/>
-                                        <GradientStop Color="{DynamicResource BorderMedium}" Offset="1.0" />
+                                        <GradientStop Color="{DynamicResource ControlMedium}" Offset="0.0"/>
+                                        <GradientStop Color="{DynamicResource ControlMedium}" Offset="1.0" />
                                     </GradientStopCollection>
                                 </LinearGradientBrush.GradientStops>
                             </LinearGradientBrush>
@@ -147,11 +147,11 @@
                                     <Storyboard>
                                         <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border"
                                                                       Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[0].(GradientStop.Color)">
-                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource BorderMedium}" />
+                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource ControlMedium}" />
                                         </ColorAnimationUsingKeyFrames>
                                         <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border"
                                                                       Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
-                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource BorderMedium}" />
+                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource ControlMedium}" />
                                         </ColorAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
@@ -159,11 +159,11 @@
                                     <Storyboard>
                                         <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border"
                                                                       Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[0].(GradientStop.Color)">
-                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource BorderLight}" />
+                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource ControlLight}" />
                                         </ColorAnimationUsingKeyFrames>
                                         <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border"
                                                                       Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
-                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource BorderLight}" />
+                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource ControlLight}" />
                                         </ColorAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
@@ -171,11 +171,11 @@
                                     <Storyboard>
                                         <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border"
                                                                       Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[0].(GradientStop.Color)">
-                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource BorderLight}" />
+                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource ControlLight}" />
                                         </ColorAnimationUsingKeyFrames>
                                         <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border"
                                                                       Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
-                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource BorderLight}" />
+                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource ControlLight}" />
                                         </ColorAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
@@ -196,7 +196,7 @@
             </Grid.RowDefinitions>
             <Border Grid.RowSpan="3"
                     CornerRadius="2"
-                    Background="{DynamicResource BorderDarkBrushKey}" />
+                    Background="{DynamicResource ControlDarkBrushKey}" />
             <RepeatButton Grid.Row="0"
                           Style="{StaticResource ScrollBarLineButton}"
                           Height="18"
@@ -254,7 +254,7 @@
             </Grid.ColumnDefinitions>
             <Border Grid.ColumnSpan="3"
                     CornerRadius="2"
-                    Background="{DynamicResource BorderDarkBrushKey}" />
+                    Background="{DynamicResource ControlDarkBrushKey}" />
             <RepeatButton Grid.Column="0"
                           Style="{StaticResource ScrollBarLineButton}"
                           Width="18"

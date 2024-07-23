@@ -37,10 +37,10 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
-            <GridSplitter Grid.Row="0" Grid.Column="4" Grid.RowSpan="8" 
+            <GridSplitter Grid.Row="1" Grid.Column="4" Grid.RowSpan="7" 
                            ResizeDirection="Auto" Width="5"/>
 
-            <Menu Grid.Row="0" Grid.ColumnSpan="2">
+            <Menu Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="1">
                 <MenuItem Header="File">
                     <MenuItem Header="Item 0"/>
                     <MenuItem Header="Item 1"/>
@@ -64,12 +64,22 @@
                 </MenuItem>
             </Menu>
 
-            <ToolBar Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2">
-                <Button Content="Default" IsDefault="True" ToolTip="Button defaulted"/>
+            <ToolBar Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="5">
+                <ToolBar.Header>
+                    <TextBlock Text="ToolBar:"/>
+                </ToolBar.Header>
+                <Button Content="Defaulted" IsDefault="True" ToolTip="Button defaulted"/>
                 <Button Content="Disabled" IsEnabled="False" ToolTip="Button disabled"/>
-                <Button Content="Button" ToolTip="Button normal"/>
-                <Button Content="Button" ToolTip="Button normal"/>
-                <Button Content="Button" ToolTip="Button normal"/>
+                <ToggleButton Content="ToggleButton" ToolTip="ToggleButton"/>
+                <CheckBox Content="CheckBox" ToolTip="CheckBox"/>
+                <RadioButton Content="RadioButton" ToolTip="RadioButton"/>
+                <TextBox Text="TextBox" ToolTip="TextBox"/>
+                <ComboBox Width="100">
+                    <ComboBoxItem Content="ComboBox Item 0"/>
+                    <ComboBoxItem Content="ComboBox Item 1"/>
+                    <ComboBoxItem Content="ComboBox Item 2"/>
+                    <ComboBoxItem Content="ComboBox Item 3"/>
+                </ComboBox>
             </ToolBar>
 
             <ComboBox Grid.Row="1" Grid.Column="0" x:Name="cb_Theme" SelectionChanged="cb_Theme_SelectionChanged"
@@ -118,7 +128,7 @@
                 <ListBoxItem Content="ListBoxItem"/>
             </ListBox>
 
-            <ListView  x:Name="LogView" Grid.Row="4" Grid.Column="2"
+            <ListView  x:Name="LogView" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="4"
                        ScrollViewer.CanContentScroll="True"
                        ScrollViewer.VerticalScrollBarVisibility="Visible"
                        ScrollViewer.HorizontalScrollBarVisibility="Auto"

@@ -65,7 +65,7 @@
     <Color x:Key="BorderInactive">#2A382A</Color>
     <Color x:Key="BorderDisabled">#2A382A</Color>
     <Color x:Key="BorderMouseOver">#2A382A</Color>
-    <Color x:Key="BorderPressed">#2A382A</Color>
+    <Color x:Key="BorderPressed">#597259</Color>
     <Color x:Key="BorderLight">#719371</Color>
     <Color x:Key="BorderMedium">#2A382A</Color>
     <Color x:Key="BorderDark">#283328</Color>

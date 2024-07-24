@@ -105,9 +105,8 @@ namespace Test
         {
             uc_Test uc = new();
             MainGrid.Children.Add(uc);
-            Grid.SetRow(uc, 4);
-            Grid.SetColumn(uc, 3);
-            Grid.SetRowSpan(uc, 2);
+            Grid.SetRow(uc, 1);
+            Grid.SetColumn(uc, 5);
             uc.Visibility = Visibility.Visible;
         }
     }

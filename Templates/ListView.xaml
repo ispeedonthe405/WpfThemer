@@ -279,20 +279,20 @@
         </Setter>
     </Style>
 
-    <Style x:Key="{x:Type ListViewItem}"
-       TargetType="ListViewItem">
+    <Style x:Key="{x:Type ListViewItem}" TargetType="ListViewItem">
         <Setter Property="SnapsToDevicePixels" Value="true" />
         <Setter Property="OverridesDefaultStyle" Value="true" />
         <Setter Property="Background" Value="{DynamicResource ControlNormalBrushKey}"/>
         <Setter Property="Foreground" Value="{DynamicResource ForegroundNormalBrushKey}"/>
+        <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="ListBoxItem">
+                <ControlTemplate TargetType="ListViewItem">
 
-                    <Border x:Name="Border" Padding="2" SnapsToDevicePixels="true" Background="Transparent" BorderThickness="1">
+                    <Border x:Name="Border" Padding="2" SnapsToDevicePixels="true" Background="Transparent" BorderThickness="0">
                         <GridViewRowPresenter VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
                     </Border>
-                    
+
                     <ControlTemplate.Triggers>
                         <MultiTrigger>
                             <MultiTrigger.Conditions>
@@ -321,7 +321,7 @@
                             <Setter Property="TextElement.Foreground" Value="{DynamicResource ForegroundDisabledBrushKey}"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
-                        
+
                 </ControlTemplate>
             </Setter.Value>
         </Setter>

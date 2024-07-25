@@ -157,12 +157,13 @@
                                 <Condition Binding="{Binding TabStripPlacement, RelativeSource={RelativeSource AncestorType={x:Type TabControl}}}" Value="Bottom"/>
                             </MultiDataTrigger.Conditions>
                             <Setter Property="Panel.ZIndex" Value="1"/>
-                            <Setter Property="Margin" Value="-2,0,-2,-2"/>
+                            <Setter Property="Margin" Value="-2,-2,-2,0"/>
                             <Setter Property="Opacity" TargetName="innerBorder" Value="1"/>
-                            <Setter Property="BorderThickness" TargetName="innerBorder" Value="0,3,0,0"/>
-                            <Setter Property="BorderThickness" TargetName="mainBorder" Value="1,0,1,1"/>
-                            <Setter Property="BorderBrush" TargetName="mainBorder" Value="{DynamicResource BorderDarkBrushKey}"/>
-                            <Setter Property="BorderBrush" TargetName="innerBorder" Value="{DynamicResource HighlightNormalBrushKey}"/>
+                            <Setter Property="Opacity" TargetName="mainBorder" Value="1"/>
+                            <Setter Property="BorderThickness" TargetName="innerBorder" Value="1,0,1,0"/>
+                            <Setter Property="BorderThickness" TargetName="mainBorder" Value="1,4,1,0"/>
+                            <Setter Property="BorderBrush" TargetName="mainBorder" Value="{DynamicResource HighlightNormalBrushKey}"/>
+                            <Setter Property="BorderBrush" TargetName="innerBorder" Value="{DynamicResource BorderDarkBrushKey}"/>
                         </MultiDataTrigger>
                         <MultiDataTrigger>
                             <MultiDataTrigger.Conditions>
@@ -200,7 +201,6 @@
                             </MultiDataTrigger.Conditions>
                             <Setter Property="Panel.ZIndex" Value="1"/>
                             <Setter Property="Margin" Value="-2,-2,-2,0"/>
-                            <!--<Setter Property="Margin" Value="-2,-3,-2,0"/>-->
                             <Setter Property="Opacity" TargetName="innerBorder" Value="1"/>
                             <Setter Property="Opacity" TargetName="mainBorder" Value="1"/>
                             <Setter Property="BorderThickness" TargetName="innerBorder" Value="1,0,1,0"/>

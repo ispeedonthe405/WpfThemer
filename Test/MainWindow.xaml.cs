@@ -78,18 +78,12 @@ namespace Test
             LogView.ItemsSource = Logger.Events;
             for (int i = 0; i < 10; i++)
             {
-                try
-                {
-                    throw new Exception("This is a test exception.");
-                }
-                catch (Exception ex)
-                {
-                    Logger.LogException(ex);
-                }
+                Logger.NewEvent(LogEvent.EventCategory.Information, $"This is a test event {i}");
             }
 
-            ThemeManager.SetTheme("Green");
-            cb_Theme.SelectedItem = ThemeManager.ActiveTheme;
+            //ThemeManager.SetTheme("Green");
+            //cb_Theme.SelectedItem = ThemeManager.ActiveTheme;
+            cb_Theme.SelectedIndex = cb_Theme.Items.Count - 1;
         }
 
         private void cb_Theme_SelectionChanged(object sender, SelectionChangedEventArgs e)

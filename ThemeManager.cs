@@ -94,10 +94,10 @@ namespace WpfThemer
                     {
                         SampleSystemColors();
                     }
-                    
-                    HostApp.Resources.MergedDictionaries.Remove(ActiveTheme.Resource);
+
+                    HostApp.Resources.MergedDictionaries.Remove(_ActiveTheme.Resource);
                     _ActiveTheme = theme;
-                    HostApp.Resources.MergedDictionaries.Add(theme.Resource);
+                    HostApp.Resources.MergedDictionaries.Add(_ActiveTheme.Resource);
 
                     ReloadTemplates();
 
@@ -121,88 +121,92 @@ namespace WpfThemer
 
         private static void SampleSystemColors()
         {
-            Theme? theme = Themes.Where(t => t.DisplayName.Equals("system", StringComparison.CurrentCultureIgnoreCase)).FirstOrDefault();
-            if(theme is null) return;
+            //Theme? theme = Themes.Where(t => t.DisplayName.Equals("system", StringComparison.CurrentCultureIgnoreCase)).FirstOrDefault();
+            //if(theme is null) return;
 
-            theme.Resource["BackgroundNormal"] = SystemColors.WindowColor;
-            theme.Resource["ForegroundNormal"] = SystemColors.WindowTextColor;
-            theme.Resource["BorderNormal"] = SystemColors.ActiveBorderColor;
-            //theme.Resource["BackgroundNormal"] = SystemColors.ControlColor;
-            //theme.Resource["BackgroundSelected"] = SystemColors.HighlightColor;
-            //theme.Resource["BackgroundInactive"] = SystemColors.HighlightColor;
-            //theme.Resource["BackgroundDisabled"] = SystemColors.ControlColor;
-            //theme.Resource["BackgroundMouseOver"] = SystemColors.ControlLightColor;
-            //theme.Resource["BackgroundPressed"] = SystemColors.ControlDarkColor;
-            //theme.Resource["BackgroundLight"] = SystemColors.ControlDarkColor;
-            //theme.Resource["BackgroundMedium"] = SystemColors.ControlDarkColor;
-            //theme.Resource["BackgroundDark"] = SystemColors.ControlDarkColor;
+            Debug.WriteLine("Sampling system colors");
 
-            //theme.Resource["BackgroundNormalBrushKey"] = SystemColors.ControlBrush;
-            //theme.Resource["BackgroundSelectedBrushKey"] = SystemColors.MenuHighlightBrush;
-            //theme.Resource["BackgroundInactiveBrushKey"] = SystemColors.InactiveSelectionHighlightBrush;
-            //theme.Resource["BackgroundDisabledBrushKey"] = SystemColors.ControlBrush;
-            //theme.Resource["BackgroundMouseOverBrushKey"] = SystemColors.ControlLightColor;
-            //theme.Resource["BackgroundPressedBrushKey"] = SystemColors.ControlDarkColor;
-            //theme.Resource["BackgroundLightBrushKey"] = SystemColors.ControlDarkColor;
-            //theme.Resource["BackgroundMediumBrushKey"] = SystemColors.ControlDarkColor;
-            //theme.Resource["BackgroundDarkBrushKey"] = SystemColors.ControlDarkColor;
+            ActiveTheme.Resource["BackgroundNormal"] = SystemColors.WindowColor;
+            ActiveTheme.Resource["ForegroundNormal"] = SystemColors.WindowTextColor;
+            ActiveTheme.Resource["BorderNormal"] = SystemColors.ActiveBorderColor;
+            ActiveTheme.Resource["BackgroundNormal"] = SystemColors.ControlColor;
+            ActiveTheme.Resource["BackgroundSelected"] = SystemColors.HighlightColor;
+            ActiveTheme.Resource["BackgroundInactive"] = SystemColors.HighlightColor;
+            ActiveTheme.Resource["BackgroundDisabled"] = SystemColors.ControlColor;
+            ActiveTheme.Resource["BackgroundMouseOver"] = SystemColors.ControlLightColor;
+            ActiveTheme.Resource["BackgroundPressed"] = SystemColors.ControlDarkColor;
+            ActiveTheme.Resource["BackgroundLight"] = SystemColors.ControlDarkColor;
+            ActiveTheme.Resource["BackgroundMedium"] = SystemColors.ControlDarkColor;
+            ActiveTheme.Resource["BackgroundDark"] = SystemColors.ControlDarkColor;
 
-            //theme.Resource["ForegroundNormal"] = SystemColors.ControlTextColor;
-            //theme.Resource["ForegroundSelected"] = SystemColors.HighlightTextColor;
-            //theme.Resource["ForegroundInactive"] = SystemColors.HighlightTextColor;
-            //theme.Resource["ForegroundDisabled"] = SystemColors.GrayTextColor;
-            //theme.Resource["ForegroundMouseOver"] = SystemColors.ControlTextColor;
-            //theme.Resource["ForegroundPressed"] = SystemColors.ControlTextColor;
-            //theme.Resource["ForegroundLight"] = SystemColors.ControlTextColor;
-            //theme.Resource["ForegroundDark"] = SystemColors.ControlTextColor;
+            ActiveTheme.Resource["BackgroundNormalBrushKey"] = SystemColors.ControlBrush;
+            ActiveTheme.Resource["BackgroundSelectedBrushKey"] = SystemColors.MenuHighlightBrush;
+            ActiveTheme.Resource["BackgroundInactiveBrushKey"] = SystemColors.InactiveSelectionHighlightBrush;
+            ActiveTheme.Resource["BackgroundDisabledBrushKey"] = SystemColors.ControlBrush;
+            ActiveTheme.Resource["BackgroundMouseOverBrushKey"] = SystemColors.ControlLightColor;
+            ActiveTheme.Resource["BackgroundPressedBrushKey"] = SystemColors.ControlDarkColor;
+            ActiveTheme.Resource["BackgroundLightBrushKey"] = SystemColors.ControlDarkColor;
+            ActiveTheme.Resource["BackgroundMediumBrushKey"] = SystemColors.ControlDarkColor;
+            ActiveTheme.Resource["BackgroundDarkBrushKey"] = SystemColors.ControlDarkColor;
 
-            //theme.Resource["ForegroundNormalBrushKey"] = SystemColors.ControlTextBrush;
-            //theme.Resource["ForegroundSelectedBrushKey"] = SystemColors.ControlTextBrush;
-            //theme.Resource["ForegroundInactiveBrushKey"] = SystemColors.ControlTextBrush;
-            //theme.Resource["ForegroundDisabledBrushKey"] = SystemColors.GrayTextBrush;
-            //theme.Resource["ForegroundMouseOverBrushKey"] = SystemColors.ControlTextBrush;
-            //theme.Resource["ForegroundPressedBrushKey"] = SystemColors.ControlTextBrush;
-            //theme.Resource["ForegroundLightBrushKey"] = SystemColors.ControlTextBrush;
-            //theme.Resource["ForegroundDarkBrushKey"] = SystemColors.ControlTextBrush;
+            ActiveTheme.Resource["ForegroundNormal"] = SystemColors.ControlTextColor;
+            ActiveTheme.Resource["ForegroundSelected"] = SystemColors.HighlightTextColor;
+            ActiveTheme.Resource["ForegroundInactive"] = SystemColors.HighlightTextColor;
+            ActiveTheme.Resource["ForegroundDisabled"] = SystemColors.GrayTextColor;
+            ActiveTheme.Resource["ForegroundMouseOver"] = SystemColors.ControlTextColor;
+            ActiveTheme.Resource["ForegroundPressed"] = SystemColors.ControlTextColor;
+            ActiveTheme.Resource["ForegroundLight"] = SystemColors.ControlTextColor;
+            ActiveTheme.Resource["ForegroundDark"] = SystemColors.ControlTextColor;
 
-            //theme.Resource["BorderNormal"] = SystemColors.ActiveBorderColor;
-            //theme.Resource["BorderSelected"] = SystemColors.ActiveBorderColor;
-            //theme.Resource["BorderInactive"] = SystemColors.ActiveBorderColor;
-            //theme.Resource["BorderDisabled"] = SystemColors.InactiveBorderColor;
-            //theme.Resource["BorderMouseOver"] = SystemColors.ActiveBorderColor;
-            //theme.Resource["BorderPressed"] = SystemColors.ActiveBorderColor;
-            //theme.Resource["BorderLight"] = SystemColors.ControlLightColor;
-            //theme.Resource["BorderMedium"] = SystemColors.ControlDarkColor;
-            //theme.Resource["BorderDark"] = SystemColors.ControlDarkDarkColor;
+            ActiveTheme.Resource["ForegroundNormalBrushKey"] = SystemColors.ControlTextBrush;
+            ActiveTheme.Resource["ForegroundSelectedBrushKey"] = SystemColors.ControlTextBrush;
+            ActiveTheme.Resource["ForegroundInactiveBrushKey"] = SystemColors.ControlTextBrush;
+            ActiveTheme.Resource["ForegroundDisabledBrushKey"] = SystemColors.GrayTextBrush;
+            ActiveTheme.Resource["ForegroundMouseOverBrushKey"] = SystemColors.ControlTextBrush;
+            ActiveTheme.Resource["ForegroundPressedBrushKey"] = SystemColors.ControlTextBrush;
+            ActiveTheme.Resource["ForegroundLightBrushKey"] = SystemColors.ControlTextBrush;
+            ActiveTheme.Resource["ForegroundDarkBrushKey"] = SystemColors.ControlTextBrush;
 
-            //theme.Resource["BorderNormalBrushKey"] = SystemColors.ActiveBorderBrush;
-            //theme.Resource["BorderSelectedBrushKey"] = SystemColors.ActiveBorderBrush;
-            //theme.Resource["BorderInactiveBrushKey"] = SystemColors.InactiveBorderBrush;
-            //theme.Resource["BorderDisabledBrushKey"] = SystemColors.InactiveBorderBrush;
-            //theme.Resource["BorderMouseOverBrushKey"] = SystemColors.ControlTextBrush;
-            //theme.Resource["BorderPressedBrushKey"] = SystemColors.ActiveBorderBrush;
-            //theme.Resource["BorderLightBrushKey"] = SystemColors.ActiveBorderBrush;
-            //theme.Resource["BorderMediumBrushKey"] = SystemColors.ActiveBorderBrush;
-            //theme.Resource["BorderDarkBrushKey"] = SystemColors.ActiveBorderBrush;
+            ActiveTheme.Resource["BorderNormal"] = SystemColors.ActiveBorderColor;
+            ActiveTheme.Resource["BorderSelected"] = SystemColors.ActiveBorderColor;
+            ActiveTheme.Resource["BorderInactive"] = SystemColors.ActiveBorderColor;
+            ActiveTheme.Resource["BorderDisabled"] = SystemColors.InactiveBorderColor;
+            ActiveTheme.Resource["BorderMouseOver"] = SystemColors.ActiveBorderColor;
+            ActiveTheme.Resource["BorderPressed"] = SystemColors.ActiveBorderColor;
+            ActiveTheme.Resource["BorderLight"] = SystemColors.ControlLightColor;
+            ActiveTheme.Resource["BorderMedium"] = SystemColors.ControlDarkColor;
+            ActiveTheme.Resource["BorderDark"] = SystemColors.ControlDarkDarkColor;
 
-            //theme.Resource["ControlNormal"] = SystemColors.ControlColor;
-            //theme.Resource["ControlSelected"] = SystemColors.HighlightColor;
-            //theme.Resource["ControlInactive"] = SystemColors.HighlightColor;
-            //theme.Resource["ControlDisabled"] = SystemColors.ControlColor;
-            //theme.Resource["ControlMouseOver"] = SystemColors.ControlLightLightColor;
-            //theme.Resource["ControlPressed"] = SystemColors.ControlDarkColor;
-            //theme.Resource["ControlLight"] = SystemColors.ControlDarkColor;
-            //theme.Resource["ControlDark"] = SystemColors.ControlDarkColor;
+            ActiveTheme.Resource["BorderNormalBrushKey"] = SystemColors.ActiveBorderBrush;
+            ActiveTheme.Resource["BorderSelectedBrushKey"] = SystemColors.ActiveBorderBrush;
+            ActiveTheme.Resource["BorderInactiveBrushKey"] = SystemColors.InactiveBorderBrush;
+            ActiveTheme.Resource["BorderDisabledBrushKey"] = SystemColors.InactiveBorderBrush;
+            ActiveTheme.Resource["BorderMouseOverBrushKey"] = SystemColors.ControlTextBrush;
+            ActiveTheme.Resource["BorderPressedBrushKey"] = SystemColors.ActiveBorderBrush;
+            ActiveTheme.Resource["BorderLightBrushKey"] = SystemColors.ActiveBorderBrush;
+            ActiveTheme.Resource["BorderMediumBrushKey"] = SystemColors.ActiveBorderBrush;
+            ActiveTheme.Resource["BorderDarkBrushKey"] = SystemColors.ActiveBorderBrush;
 
-            //theme.Resource["ControlNormalBrushKey"] = SystemColors.ControlBrush;
-            //theme.Resource["ControlSelectedBrushKey"] = SystemColors.ControlDarkBrush;
-            //theme.Resource["ControlInactiveBrushKey"] = SystemColors.InactiveSelectionHighlightBrush;
-            //theme.Resource["ControlDisabledBrushKey"] = SystemColors.InactiveSelectionHighlightBrush;
-            //theme.Resource["ControlMouseOverBrushKey"] = SystemColors.ControlLightBrush;
-            //theme.Resource["ControlPressedBrushKey"] = SystemColors.ControlDarkBrush;
-            //theme.Resource["ControlLightBrushKey"] = SystemColors.ControlLightBrush;
-            //theme.Resource["ControlMediumBrushKey"] = SystemColors.ControlLightBrush;
-            //theme.Resource["ControlDarkBrushKey"] = SystemColors.ControlDarkBrush;
+            ActiveTheme.Resource["ControlNormal"] = SystemColors.ControlColor;
+            ActiveTheme.Resource["ControlSelected"] = SystemColors.HighlightColor;
+            ActiveTheme.Resource["ControlInactive"] = SystemColors.HighlightColor;
+            ActiveTheme.Resource["ControlDisabled"] = SystemColors.ControlColor;
+            ActiveTheme.Resource["ControlMouseOver"] = SystemColors.ControlLightLightColor;
+            ActiveTheme.Resource["ControlPressed"] = SystemColors.ControlDarkColor;
+            ActiveTheme.Resource["ControlLight"] = SystemColors.ControlDarkColor;
+            ActiveTheme.Resource["ControlDark"] = SystemColors.ControlDarkColor;
+
+            ActiveTheme.Resource["ControlNormalBrushKey"] = SystemColors.ControlBrush;
+            ActiveTheme.Resource["ControlSelectedBrushKey"] = SystemColors.ControlDarkBrush;
+            ActiveTheme.Resource["ControlInactiveBrushKey"] = SystemColors.InactiveSelectionHighlightBrush;
+            ActiveTheme.Resource["ControlDisabledBrushKey"] = SystemColors.InactiveSelectionHighlightBrush;
+            ActiveTheme.Resource["ControlMouseOverBrushKey"] = SystemColors.ControlLightBrush;
+            ActiveTheme.Resource["ControlPressedBrushKey"] = SystemColors.ControlDarkBrush;
+            ActiveTheme.Resource["ControlLightBrushKey"] = SystemColors.ControlLightBrush;
+            ActiveTheme.Resource["ControlMediumBrushKey"] = SystemColors.ControlLightBrush;
+            ActiveTheme.Resource["ControlDarkBrushKey"] = SystemColors.ControlDarkBrush;
+
+
         }
 
         private static void BuildTheme(Theme.eThemeType themeType, string name, string description, string filename)
@@ -223,12 +227,12 @@ namespace WpfThemer
 
         static ThemeManager()
         {
-            BuildTheme(Theme.eThemeType.Undefined, "System", "System Theme", "Theme_System.xaml");
+            //BuildTheme(Theme.eThemeType.Undefined, "System", "System Theme", "Theme_System.xaml");
             BuildTheme(Theme.eThemeType.Light, "Light", "Light Theme", "Theme_Light.xaml");
             BuildTheme(Theme.eThemeType.Dark, "Dark", "Dark Theme", "Theme_Dark.xaml");
             BuildTheme(Theme.eThemeType.Dark, "Blue Steel", "Blue Steel Theme", "Theme_BlueSteel.xaml");
             BuildTheme(Theme.eThemeType.Dark, "Green", "Green Theme", "Theme_Green.xaml");
-            ActiveTheme = Themes.First();
+            //_ActiveTheme = Themes.Last();
 
             BuildTemplate("Border.xaml");
             BuildTemplate("Button.xaml");
@@ -256,12 +260,21 @@ namespace WpfThemer
             //BuildTemplate("Window.xaml");
         }
 
+
+        private static void LoadTemplates()
+        {
+            foreach (var template in Templates)
+            {
+                HostApp?.Resources.MergedDictionaries.Add(template);
+            }
+        }
+
         private static void ReloadTemplates()
         {
             foreach (var template in Templates)
             {
                 HostApp?.Resources.MergedDictionaries.Remove(template);
-                if (!IsSystemTheme(ActiveTheme))
+                //if (!IsSystemTheme(ActiveTheme))
                 {
                     HostApp?.Resources.MergedDictionaries.Add(template);
                 }
@@ -274,7 +287,7 @@ namespace WpfThemer
             if (HostApp is null) return;
 
             application?.Resources.MergedDictionaries.Add(ActiveTheme.Resource);
-            ReloadTemplates();
+            LoadTemplates();
         }
 
         public static void SetTheme(string themeName)

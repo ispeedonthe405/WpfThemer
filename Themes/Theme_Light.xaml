@@ -16,9 +16,6 @@
     <Color x:Key="Spectrum12">#3E3E3E</Color>
 
 
-
-
-
     <Color x:Key="BackgroundNormal">#EEEEEE</Color>
     <Color x:Key="BackgroundSelected">#EEEEEE</Color>
     <Color x:Key="BackgroundInactive">#EEEEEE</Color>
@@ -67,7 +64,7 @@
     <Color x:Key="BorderPressed">#9E9E9E</Color>
     <Color x:Key="BorderLight">#AEAEAE</Color>
     <Color x:Key="BorderMedium">#9E9E9E</Color>
-    <Color x:Key="BorderDark">#8E8E8E</Color>
+    <Color x:Key="BorderDark">#9E9E9E</Color>
 
     <SolidColorBrush x:Key="BorderNormalBrushKey" Color="{DynamicResource BorderNormal}"/>
     <SolidColorBrush x:Key="BorderSelectedBrushKey" Color="{DynamicResource BorderSelected}"/>

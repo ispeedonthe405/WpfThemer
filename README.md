@@ -33,6 +33,7 @@ namespace Test
 ```
 
 
+
 Step 2: Populate a control with the list of themes:
 ``` C#
 
@@ -53,10 +54,14 @@ private void combobox_Theme_SelectionChanged(object sender, SelectionChangedEven
 }
 ```
 
+
+
 You can also set a theme by way of its display name. This might be useful if you don't want to offer theme selection and instead just want to use a particular theme; perhaps one that you added:
 ``` C#
 ThemeManager.SetTheme("green"); // case-insensitive
 ```
+
+
 
 Adding a theme you've defined is easy:
 ``` C#
@@ -67,6 +72,23 @@ var theme = new WpfThemer.Theme("Eudora Classic", "Eudora Classic", Theme.eSymbo
 });
 ThemeManager.AddExternalTheme(theme);
 ```
+
+Using the control symbols in your UX:
+``` .xaml
+
+<Window x:Class="Test.MainWindow"
+        xmlns:themer="clr-namespace:WpfThemer;assembly=WpfThemer">
+
+<Button>
+    <Button.Content>
+        <StackPanel Orientation="Horizontal">
+            <themer:DynamicImage SymbolName="add" Width="20" Height="20" VerticalAlignment="Center"/>
+            <TextBlock Text="Add" Margin="5,0,0,0" VerticalAlignment="Center"/>
+        </StackPanel>
+    </Button.Content>
+</Button>
+```
+
 
 That's all there is to it. Please see the Test project for a working example.
 

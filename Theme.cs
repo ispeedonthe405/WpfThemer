@@ -8,14 +8,16 @@ namespace WpfThemer
         #region Fields
         /////////////////////////////
 
-        public enum eThemeType
+        public enum eSymbolColor
         {
-            Light,
-            Dark,
-            Undefined
+            c111111,
+            c242424,
+            c434343,
+            cC0C0C0,
+            cEFEFEF
         }
 
-        private eThemeType _ThemeType = eThemeType.Undefined;
+        private eSymbolColor _SymbolColor = eSymbolColor.c434343;
         private string _DisplayName = string.Empty;
         private string _Description = string.Empty;
         private ResourceDictionary _Resource = new();
@@ -29,10 +31,10 @@ namespace WpfThemer
         #region Properties
         /////////////////////////////
 
-        public eThemeType ThemeType
+        public eSymbolColor SymbolColor
         {
-            get => _ThemeType;
-            set => _ThemeType = value;
+            get => _SymbolColor;
+            set => _SymbolColor = value;
         }
 
         public string DisplayName
@@ -62,11 +64,11 @@ namespace WpfThemer
 
         }
 
-        public Theme(eThemeType themeType, string displayName, string description, ResourceDictionary resource)
+        public Theme(string displayName, string description, eSymbolColor symbolColor, ResourceDictionary resource)
         {
-            ThemeType = themeType;
             DisplayName = displayName;
             Description = description;
+            SymbolColor = symbolColor;
             Resource = resource;
         }
     }

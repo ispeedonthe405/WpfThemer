@@ -54,7 +54,7 @@ namespace WpfThemer
                 "SymbolName", 
                 typeof(string), 
                 typeof(DynamicImage),
-                new PropertyMetadata("default", OnSymbolNameChanged),
+                new PropertyMetadata("add", OnSymbolNameChanged),
                 SymbolNameValidationCallback);
 
         private static void OnSymbolNameChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
@@ -71,33 +71,32 @@ namespace WpfThemer
             return true;
         }
 
-
         private void ApplySourceToSymbol()
         {
-            Theme.eThemeType themeType = ThemeManager.ActiveTheme.ThemeType;
 
-            DynamicSymbol? symbol = ThemeSymbolManager.Symbols.Where(s =>
-                (s.ThemeType == themeType) &&
+            DynamicSymbol? symbol = ThemeSymbolManager.ActiveSymbols.Where(s =>
                 (s.Name.Equals(SymbolName, System.StringComparison.CurrentCultureIgnoreCase))).FirstOrDefault();
 
             if (symbol is not null)
             {
-                Source = new System.Windows.Media.Imaging.BitmapImage(symbol.Value);
+                try
+                {
+                    Source = new System.Windows.Media.Imaging.BitmapImage(symbol.Value);
+                }
+                catch (System.Exception ex)
+                {
+                    Debug.WriteLine($"ApplySourceToSymbol: {ex.Message}");
+                }
             }
-            //else
-            //{
-            //    Debug.WriteLine($"ApplySourceToSymbol: Symbol {SymbolName} not found");
-            //}
+            else
+            {
+                Debug.WriteLine($"ApplySourceToSymbol: Symbol {SymbolName} not found");
+            }
         }
 
         public DynamicImage() : base()
         {
-            ThemeManager.ThemeChanged += ThemeManager_ThemeChanged;
-            ApplySourceToSymbol();
-        }
-
-        private void ThemeManager_ThemeChanged(object? sender, System.ComponentModel.PropertyChangedEventArgs e)
-        {
+            ThemeManager.ThemeChanged += (sender, e) => ApplySourceToSymbol();
             ApplySourceToSymbol();
         }
     }

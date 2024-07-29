@@ -21,10 +21,1610 @@
 
   <ItemGroup>
     <None Remove="Shaders\ColorInverter.ps" />
+    <None Remove="Symbols\111111\add.png" />
+    <None Remove="Symbols\111111\add_attachment.png" />
+    <None Remove="Symbols\111111\add_image.png" />
+    <None Remove="Symbols\111111\arrow_back.png" />
+    <None Remove="Symbols\111111\arrow_drop_down.png" />
+    <None Remove="Symbols\111111\arrow_forward.png" />
+    <None Remove="Symbols\111111\arrow_right.png" />
+    <None Remove="Symbols\111111\attach_email.png" />
+    <None Remove="Symbols\111111\attach_file.png" />
+    <None Remove="Symbols\111111\book.png" />
+    <None Remove="Symbols\111111\bookmark.png" />
+    <None Remove="Symbols\111111\bookmarks.png" />
+    <None Remove="Symbols\111111\bookmark_add.png" />
+    <None Remove="Symbols\111111\cancel.png" />
+    <None Remove="Symbols\111111\check.png" />
+    <None Remove="Symbols\111111\check_circle.png" />
+    <None Remove="Symbols\111111\chevron_left.png" />
+    <None Remove="Symbols\111111\chevron_right.png" />
+    <None Remove="Symbols\111111\close.png" />
+    <None Remove="Symbols\111111\contact.png" />
+    <None Remove="Symbols\111111\content_copy.png" />
+    <None Remove="Symbols\111111\content_cut.png" />
+    <None Remove="Symbols\111111\content_paste.png" />
+    <None Remove="Symbols\111111\delete.png" />
+    <None Remove="Symbols\111111\draft.png" />
+    <None Remove="Symbols\111111\drafts.png" />
+    <None Remove="Symbols\111111\edit.png" />
+    <None Remove="Symbols\111111\edit2.png" />
+    <None Remove="Symbols\111111\email.png" />
+    <None Remove="Symbols\111111\expand_circle.png" />
+    <None Remove="Symbols\111111\explore.png" />
+    <None Remove="Symbols\111111\favorite.png" />
+    <None Remove="Symbols\111111\file_open.png" />
+    <None Remove="Symbols\111111\find.png" />
+    <None Remove="Symbols\111111\folder.png" />
+    <None Remove="Symbols\111111\format_align_center.png" />
+    <None Remove="Symbols\111111\format_align_left.png" />
+    <None Remove="Symbols\111111\format_align_right.png" />
+    <None Remove="Symbols\111111\format_bold.png" />
+    <None Remove="Symbols\111111\format_italic.png" />
+    <None Remove="Symbols\111111\format_size.png" />
+    <None Remove="Symbols\111111\format_underlined.png" />
+    <None Remove="Symbols\111111\group.png" />
+    <None Remove="Symbols\111111\help.png" />
+    <None Remove="Symbols\111111\home.png" />
+    <None Remove="Symbols\111111\image.png" />
+    <None Remove="Symbols\111111\inbox.png" />
+    <None Remove="Symbols\111111\language.png" />
+    <None Remove="Symbols\111111\library_add.png" />
+    <None Remove="Symbols\111111\link.png" />
+    <None Remove="Symbols\111111\login.png" />
+    <None Remove="Symbols\111111\mail.png" />
+    <None Remove="Symbols\111111\mark_as_unread2.png" />
+    <None Remove="Symbols\111111\mark_email_unread.png" />
+    <None Remove="Symbols\111111\menu.png" />
+    <None Remove="Symbols\111111\menu_book.png" />
+    <None Remove="Symbols\111111\minimize.png" />
+    <None Remove="Symbols\111111\more_horiz.png" />
+    <None Remove="Symbols\111111\more_vert.png" />
+    <None Remove="Symbols\111111\outbox.png" />
+    <None Remove="Symbols\111111\person.png" />
+    <None Remove="Symbols\111111\person_add.png" />
+    <None Remove="Symbols\111111\question_mark.png" />
+    <None Remove="Symbols\111111\redo.png" />
+    <None Remove="Symbols\111111\refresh.png" />
+    <None Remove="Symbols\111111\remove.png" />
+    <None Remove="Symbols\111111\search.png" />
+    <None Remove="Symbols\111111\searchbox.png" />
+    <None Remove="Symbols\111111\send.png" />
+    <None Remove="Symbols\111111\settings.png" />
+    <None Remove="Symbols\111111\share.png" />
+    <None Remove="Symbols\111111\sort.png" />
+    <None Remove="Symbols\111111\star.png" />
+    <None Remove="Symbols\111111\sync.png" />
+    <None Remove="Symbols\111111\toggle_off.png" />
+    <None Remove="Symbols\111111\toggle_on.png" />
+    <None Remove="Symbols\111111\trash.png" />
+    <None Remove="Symbols\111111\undo.png" />
+    <None Remove="Symbols\111111\zoom_in.png" />
+    <None Remove="Symbols\111111\zoom_out.png" />
+    <None Remove="Symbols\242424\add.png" />
+    <None Remove="Symbols\242424\add_attachment.png" />
+    <None Remove="Symbols\242424\add_image.png" />
+    <None Remove="Symbols\242424\arrow_back.png" />
+    <None Remove="Symbols\242424\arrow_drop_down.png" />
+    <None Remove="Symbols\242424\arrow_forward.png" />
+    <None Remove="Symbols\242424\arrow_right.png" />
+    <None Remove="Symbols\242424\attach_email.png" />
+    <None Remove="Symbols\242424\attach_file.png" />
+    <None Remove="Symbols\242424\book.png" />
+    <None Remove="Symbols\242424\bookmark.png" />
+    <None Remove="Symbols\242424\bookmarks.png" />
+    <None Remove="Symbols\242424\bookmark_add.png" />
+    <None Remove="Symbols\242424\cancel.png" />
+    <None Remove="Symbols\242424\check.png" />
+    <None Remove="Symbols\242424\check_circle.png" />
+    <None Remove="Symbols\242424\chevron_left.png" />
+    <None Remove="Symbols\242424\chevron_right.png" />
+    <None Remove="Symbols\242424\close.png" />
+    <None Remove="Symbols\242424\contact.png" />
+    <None Remove="Symbols\242424\content_copy.png" />
+    <None Remove="Symbols\242424\content_cut.png" />
+    <None Remove="Symbols\242424\content_paste.png" />
+    <None Remove="Symbols\242424\delete.png" />
+    <None Remove="Symbols\242424\draft.png" />
+    <None Remove="Symbols\242424\drafts.png" />
+    <None Remove="Symbols\242424\edit.png" />
+    <None Remove="Symbols\242424\edit2.png" />
+    <None Remove="Symbols\242424\email.png" />
+    <None Remove="Symbols\242424\expand_circle.png" />
+    <None Remove="Symbols\242424\explore.png" />
+    <None Remove="Symbols\242424\favorite.png" />
+    <None Remove="Symbols\242424\file_open.png" />
+    <None Remove="Symbols\242424\find.png" />
+    <None Remove="Symbols\242424\folder.png" />
+    <None Remove="Symbols\242424\format_align_center.png" />
+    <None Remove="Symbols\242424\format_align_left.png" />
+    <None Remove="Symbols\242424\format_align_right.png" />
+    <None Remove="Symbols\242424\format_bold.png" />
+    <None Remove="Symbols\242424\format_italic.png" />
+    <None Remove="Symbols\242424\format_size.png" />
+    <None Remove="Symbols\242424\format_underlined.png" />
+    <None Remove="Symbols\242424\group.png" />
+    <None Remove="Symbols\242424\help.png" />
+    <None Remove="Symbols\242424\home.png" />
+    <None Remove="Symbols\242424\image.png" />
+    <None Remove="Symbols\242424\inbox.png" />
+    <None Remove="Symbols\242424\language.png" />
+    <None Remove="Symbols\242424\library_add.png" />
+    <None Remove="Symbols\242424\link.png" />
+    <None Remove="Symbols\242424\login.png" />
+    <None Remove="Symbols\242424\mail.png" />
+    <None Remove="Symbols\242424\mark_as_unread2.png" />
+    <None Remove="Symbols\242424\mark_email_unread.png" />
+    <None Remove="Symbols\242424\menu.png" />
+    <None Remove="Symbols\242424\menu_book.png" />
+    <None Remove="Symbols\242424\minimize.png" />
+    <None Remove="Symbols\242424\more_horiz.png" />
+    <None Remove="Symbols\242424\more_vert.png" />
+    <None Remove="Symbols\242424\outbox.png" />
+    <None Remove="Symbols\242424\person.png" />
+    <None Remove="Symbols\242424\person_add.png" />
+    <None Remove="Symbols\242424\question_mark.png" />
+    <None Remove="Symbols\242424\redo.png" />
+    <None Remove="Symbols\242424\refresh.png" />
+    <None Remove="Symbols\242424\remove.png" />
+    <None Remove="Symbols\242424\search.png" />
+    <None Remove="Symbols\242424\searchbox.png" />
+    <None Remove="Symbols\242424\send.png" />
+    <None Remove="Symbols\242424\settings.png" />
+    <None Remove="Symbols\242424\share.png" />
+    <None Remove="Symbols\242424\sort.png" />
+    <None Remove="Symbols\242424\star.png" />
+    <None Remove="Symbols\242424\sync.png" />
+    <None Remove="Symbols\242424\toggle_off.png" />
+    <None Remove="Symbols\242424\toggle_on.png" />
+    <None Remove="Symbols\242424\trash.png" />
+    <None Remove="Symbols\242424\undo.png" />
+    <None Remove="Symbols\242424\zoom_in.png" />
+    <None Remove="Symbols\242424\zoom_out.png" />
+    <None Remove="Symbols\434343\add.png" />
+    <None Remove="Symbols\434343\add_attachment.png" />
+    <None Remove="Symbols\434343\add_image.png" />
+    <None Remove="Symbols\434343\arrow_back.png" />
+    <None Remove="Symbols\434343\arrow_drop_down.png" />
+    <None Remove="Symbols\434343\arrow_forward.png" />
+    <None Remove="Symbols\434343\arrow_right.png" />
+    <None Remove="Symbols\434343\attach_email.png" />
+    <None Remove="Symbols\434343\attach_file.png" />
+    <None Remove="Symbols\434343\book.png" />
+    <None Remove="Symbols\434343\bookmark.png" />
+    <None Remove="Symbols\434343\bookmarks.png" />
+    <None Remove="Symbols\434343\bookmark_add.png" />
+    <None Remove="Symbols\434343\cancel.png" />
+    <None Remove="Symbols\434343\check.png" />
+    <None Remove="Symbols\434343\check_circle.png" />
+    <None Remove="Symbols\434343\chevron_left.png" />
+    <None Remove="Symbols\434343\chevron_right.png" />
+    <None Remove="Symbols\434343\close.png" />
+    <None Remove="Symbols\434343\contact.png" />
+    <None Remove="Symbols\434343\content_copy.png" />
+    <None Remove="Symbols\434343\content_cut.png" />
+    <None Remove="Symbols\434343\content_paste.png" />
+    <None Remove="Symbols\434343\delete.png" />
+    <None Remove="Symbols\434343\draft.png" />
+    <None Remove="Symbols\434343\drafts.png" />
+    <None Remove="Symbols\434343\edit.png" />
+    <None Remove="Symbols\434343\edit2.png" />
+    <None Remove="Symbols\434343\email.png" />
+    <None Remove="Symbols\434343\expand_circle.png" />
+    <None Remove="Symbols\434343\explore.png" />
+    <None Remove="Symbols\434343\favorite.png" />
+    <None Remove="Symbols\434343\file_open.png" />
+    <None Remove="Symbols\434343\find.png" />
+    <None Remove="Symbols\434343\folder.png" />
+    <None Remove="Symbols\434343\format_align_center.png" />
+    <None Remove="Symbols\434343\format_align_left.png" />
+    <None Remove="Symbols\434343\format_align_right.png" />
+    <None Remove="Symbols\434343\format_bold.png" />
+    <None Remove="Symbols\434343\format_italic.png" />
+    <None Remove="Symbols\434343\format_size.png" />
+    <None Remove="Symbols\434343\format_underlined.png" />
+    <None Remove="Symbols\434343\group.png" />
+    <None Remove="Symbols\434343\help.png" />
+    <None Remove="Symbols\434343\home.png" />
+    <None Remove="Symbols\434343\image.png" />
+    <None Remove="Symbols\434343\inbox.png" />
+    <None Remove="Symbols\434343\language.png" />
+    <None Remove="Symbols\434343\library_add.png" />
+    <None Remove="Symbols\434343\link.png" />
+    <None Remove="Symbols\434343\login.png" />
+    <None Remove="Symbols\434343\mail.png" />
+    <None Remove="Symbols\434343\mark_as_unread2.png" />
+    <None Remove="Symbols\434343\mark_email_unread.png" />
+    <None Remove="Symbols\434343\menu.png" />
+    <None Remove="Symbols\434343\menu_book.png" />
+    <None Remove="Symbols\434343\minimize.png" />
+    <None Remove="Symbols\434343\more_horiz.png" />
+    <None Remove="Symbols\434343\more_vert.png" />
+    <None Remove="Symbols\434343\outbox.png" />
+    <None Remove="Symbols\434343\person.png" />
+    <None Remove="Symbols\434343\person_add.png" />
+    <None Remove="Symbols\434343\question_mark.png" />
+    <None Remove="Symbols\434343\redo.png" />
+    <None Remove="Symbols\434343\refresh.png" />
+    <None Remove="Symbols\434343\remove.png" />
+    <None Remove="Symbols\434343\search.png" />
+    <None Remove="Symbols\434343\searchbox.png" />
+    <None Remove="Symbols\434343\send.png" />
+    <None Remove="Symbols\434343\settings.png" />
+    <None Remove="Symbols\434343\share.png" />
+    <None Remove="Symbols\434343\sort.png" />
+    <None Remove="Symbols\434343\star.png" />
+    <None Remove="Symbols\434343\sync.png" />
+    <None Remove="Symbols\434343\toggle_off.png" />
+    <None Remove="Symbols\434343\toggle_on.png" />
+    <None Remove="Symbols\434343\trash.png" />
+    <None Remove="Symbols\434343\undo.png" />
+    <None Remove="Symbols\434343\zoom_in.png" />
+    <None Remove="Symbols\434343\zoom_out.png" />
+    <None Remove="Symbols\C0C0C0\add.png" />
+    <None Remove="Symbols\C0C0C0\add_attachment.png" />
+    <None Remove="Symbols\C0C0C0\add_image.png" />
+    <None Remove="Symbols\C0C0C0\arrow_back.png" />
+    <None Remove="Symbols\C0C0C0\arrow_drop_down.png" />
+    <None Remove="Symbols\C0C0C0\arrow_forward.png" />
+    <None Remove="Symbols\C0C0C0\arrow_right.png" />
+    <None Remove="Symbols\C0C0C0\attach_email.png" />
+    <None Remove="Symbols\C0C0C0\attach_file.png" />
+    <None Remove="Symbols\C0C0C0\book.png" />
+    <None Remove="Symbols\C0C0C0\bookmark.png" />
+    <None Remove="Symbols\C0C0C0\bookmarks.png" />
+    <None Remove="Symbols\C0C0C0\bookmark_add.png" />
+    <None Remove="Symbols\C0C0C0\cancel.png" />
+    <None Remove="Symbols\C0C0C0\check.png" />
+    <None Remove="Symbols\C0C0C0\check_circle.png" />
+    <None Remove="Symbols\C0C0C0\chevron_left.png" />
+    <None Remove="Symbols\C0C0C0\chevron_right.png" />
+    <None Remove="Symbols\C0C0C0\close.png" />
+    <None Remove="Symbols\C0C0C0\contact.png" />
+    <None Remove="Symbols\C0C0C0\content_copy.png" />
+    <None Remove="Symbols\C0C0C0\content_cut.png" />
+    <None Remove="Symbols\C0C0C0\content_paste.png" />
+    <None Remove="Symbols\C0C0C0\delete.png" />
+    <None Remove="Symbols\C0C0C0\draft.png" />
+    <None Remove="Symbols\C0C0C0\drafts.png" />
+    <None Remove="Symbols\C0C0C0\edit.png" />
+    <None Remove="Symbols\C0C0C0\edit2.png" />
+    <None Remove="Symbols\C0C0C0\email.png" />
+    <None Remove="Symbols\C0C0C0\expand_circle.png" />
+    <None Remove="Symbols\C0C0C0\explore.png" />
+    <None Remove="Symbols\C0C0C0\favorite.png" />
+    <None Remove="Symbols\C0C0C0\file_open.png" />
+    <None Remove="Symbols\C0C0C0\find.png" />
+    <None Remove="Symbols\C0C0C0\folder.png" />
+    <None Remove="Symbols\C0C0C0\format_align_center.png" />
+    <None Remove="Symbols\C0C0C0\format_align_left.png" />
+    <None Remove="Symbols\C0C0C0\format_align_right.png" />
+    <None Remove="Symbols\C0C0C0\format_bold.png" />
+    <None Remove="Symbols\C0C0C0\format_italic.png" />
+    <None Remove="Symbols\C0C0C0\format_size.png" />
+    <None Remove="Symbols\C0C0C0\format_underlined.png" />
+    <None Remove="Symbols\C0C0C0\group.png" />
+    <None Remove="Symbols\C0C0C0\help.png" />
+    <None Remove="Symbols\C0C0C0\home.png" />
+    <None Remove="Symbols\C0C0C0\image.png" />
+    <None Remove="Symbols\C0C0C0\inbox.png" />
+    <None Remove="Symbols\C0C0C0\language.png" />
+    <None Remove="Symbols\C0C0C0\library_add.png" />
+    <None Remove="Symbols\C0C0C0\link.png" />
+    <None Remove="Symbols\C0C0C0\login.png" />
+    <None Remove="Symbols\C0C0C0\mail.png" />
+    <None Remove="Symbols\C0C0C0\mark_as_unread2.png" />
+    <None Remove="Symbols\C0C0C0\mark_email_unread.png" />
+    <None Remove="Symbols\C0C0C0\menu.png" />
+    <None Remove="Symbols\C0C0C0\menu_book.png" />
+    <None Remove="Symbols\C0C0C0\minimize.png" />
+    <None Remove="Symbols\C0C0C0\more_horiz.png" />
+    <None Remove="Symbols\C0C0C0\more_vert.png" />
+    <None Remove="Symbols\C0C0C0\outbox.png" />
+    <None Remove="Symbols\C0C0C0\person.png" />
+    <None Remove="Symbols\C0C0C0\person_add.png" />
+    <None Remove="Symbols\C0C0C0\question_mark.png" />
+    <None Remove="Symbols\C0C0C0\redo.png" />
+    <None Remove="Symbols\C0C0C0\refresh.png" />
+    <None Remove="Symbols\C0C0C0\remove.png" />
+    <None Remove="Symbols\C0C0C0\search.png" />
+    <None Remove="Symbols\C0C0C0\searchbox.png" />
+    <None Remove="Symbols\C0C0C0\send.png" />
+    <None Remove="Symbols\C0C0C0\settings.png" />
+    <None Remove="Symbols\C0C0C0\share.png" />
+    <None Remove="Symbols\C0C0C0\sort.png" />
+    <None Remove="Symbols\C0C0C0\star.png" />
+    <None Remove="Symbols\C0C0C0\sync.png" />
+    <None Remove="Symbols\C0C0C0\toggle_off.png" />
+    <None Remove="Symbols\C0C0C0\toggle_on.png" />
+    <None Remove="Symbols\C0C0C0\trash.png" />
+    <None Remove="Symbols\C0C0C0\undo.png" />
+    <None Remove="Symbols\C0C0C0\zoom_in.png" />
+    <None Remove="Symbols\C0C0C0\zoom_out.png" />
+    <None Remove="Symbols\EFEFEF\add.png" />
+    <None Remove="Symbols\EFEFEF\add_attachment.png" />
+    <None Remove="Symbols\EFEFEF\add_image.png" />
+    <None Remove="Symbols\EFEFEF\arrow_back.png" />
+    <None Remove="Symbols\EFEFEF\arrow_drop_down.png" />
+    <None Remove="Symbols\EFEFEF\arrow_forward.png" />
+    <None Remove="Symbols\EFEFEF\arrow_right.png" />
+    <None Remove="Symbols\EFEFEF\attach_email.png" />
+    <None Remove="Symbols\EFEFEF\attach_file.png" />
+    <None Remove="Symbols\EFEFEF\book.png" />
+    <None Remove="Symbols\EFEFEF\bookmark.png" />
+    <None Remove="Symbols\EFEFEF\bookmarks.png" />
+    <None Remove="Symbols\EFEFEF\bookmark_add.png" />
+    <None Remove="Symbols\EFEFEF\cancel.png" />
+    <None Remove="Symbols\EFEFEF\check.png" />
+    <None Remove="Symbols\EFEFEF\check_circle.png" />
+    <None Remove="Symbols\EFEFEF\chevron_left.png" />
+    <None Remove="Symbols\EFEFEF\chevron_right.png" />
+    <None Remove="Symbols\EFEFEF\close.png" />
+    <None Remove="Symbols\EFEFEF\contact.png" />
+    <None Remove="Symbols\EFEFEF\content_copy.png" />
+    <None Remove="Symbols\EFEFEF\content_cut.png" />
+    <None Remove="Symbols\EFEFEF\content_paste.png" />
+    <None Remove="Symbols\EFEFEF\delete.png" />
+    <None Remove="Symbols\EFEFEF\draft.png" />
+    <None Remove="Symbols\EFEFEF\drafts.png" />
+    <None Remove="Symbols\EFEFEF\edit.png" />
+    <None Remove="Symbols\EFEFEF\edit2.png" />
+    <None Remove="Symbols\EFEFEF\email.png" />
+    <None Remove="Symbols\EFEFEF\expand_circle.png" />
+    <None Remove="Symbols\EFEFEF\explore.png" />
+    <None Remove="Symbols\EFEFEF\favorite.png" />
+    <None Remove="Symbols\EFEFEF\file_open.png" />
+    <None Remove="Symbols\EFEFEF\find.png" />
+    <None Remove="Symbols\EFEFEF\folder.png" />
+    <None Remove="Symbols\EFEFEF\format_align_center.png" />
+    <None Remove="Symbols\EFEFEF\format_align_left.png" />
+    <None Remove="Symbols\EFEFEF\format_align_right.png" />
+    <None Remove="Symbols\EFEFEF\format_bold.png" />
+    <None Remove="Symbols\EFEFEF\format_italic.png" />
+    <None Remove="Symbols\EFEFEF\format_size.png" />
+    <None Remove="Symbols\EFEFEF\format_underlined.png" />
+    <None Remove="Symbols\EFEFEF\group.png" />
+    <None Remove="Symbols\EFEFEF\help.png" />
+    <None Remove="Symbols\EFEFEF\home.png" />
+    <None Remove="Symbols\EFEFEF\image.png" />
+    <None Remove="Symbols\EFEFEF\inbox.png" />
+    <None Remove="Symbols\EFEFEF\language.png" />
+    <None Remove="Symbols\EFEFEF\library_add.png" />
+    <None Remove="Symbols\EFEFEF\link.png" />
+    <None Remove="Symbols\EFEFEF\login.png" />
+    <None Remove="Symbols\EFEFEF\mail.png" />
+    <None Remove="Symbols\EFEFEF\mark_as_unread2.png" />
+    <None Remove="Symbols\EFEFEF\mark_email_unread.png" />
+    <None Remove="Symbols\EFEFEF\menu.png" />
+    <None Remove="Symbols\EFEFEF\menu_book.png" />
+    <None Remove="Symbols\EFEFEF\minimize.png" />
+    <None Remove="Symbols\EFEFEF\more_horiz.png" />
+    <None Remove="Symbols\EFEFEF\more_vert.png" />
+    <None Remove="Symbols\EFEFEF\outbox.png" />
+    <None Remove="Symbols\EFEFEF\person.png" />
+    <None Remove="Symbols\EFEFEF\person_add.png" />
+    <None Remove="Symbols\EFEFEF\question_mark.png" />
+    <None Remove="Symbols\EFEFEF\redo.png" />
+    <None Remove="Symbols\EFEFEF\refresh.png" />
+    <None Remove="Symbols\EFEFEF\remove.png" />
+    <None Remove="Symbols\EFEFEF\search.png" />
+    <None Remove="Symbols\EFEFEF\searchbox.png" />
+    <None Remove="Symbols\EFEFEF\send.png" />
+    <None Remove="Symbols\EFEFEF\settings.png" />
+    <None Remove="Symbols\EFEFEF\share.png" />
+    <None Remove="Symbols\EFEFEF\sort.png" />
+    <None Remove="Symbols\EFEFEF\star.png" />
+    <None Remove="Symbols\EFEFEF\sync.png" />
+    <None Remove="Symbols\EFEFEF\toggle_off.png" />
+    <None Remove="Symbols\EFEFEF\toggle_on.png" />
+    <None Remove="Symbols\EFEFEF\trash.png" />
+    <None Remove="Symbols\EFEFEF\undo.png" />
+    <None Remove="Symbols\EFEFEF\zoom_in.png" />
+    <None Remove="Symbols\EFEFEF\zoom_out.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Shaders\ColorInverter.ps">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\add.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\add_attachment.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\add_image.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\arrow_back.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\arrow_drop_down.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\arrow_forward.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\arrow_right.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\attach_email.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\attach_file.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\book.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\bookmark.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\bookmarks.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\bookmark_add.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\cancel.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\check.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\check_circle.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\chevron_left.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\chevron_right.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\close.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\contact.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\content_copy.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\content_cut.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\content_paste.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\delete.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\draft.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\drafts.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\edit.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\edit2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\email.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\expand_circle.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\explore.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\favorite.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\file_open.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\find.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\folder.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\format_align_center.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\format_align_left.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\format_align_right.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\format_bold.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\format_italic.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\format_size.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\format_underlined.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\group.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\help.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\home.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\image.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\inbox.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\language.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\library_add.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\link.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\login.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\mail.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\mark_as_unread2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\mark_email_unread.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\menu.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\menu_book.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\minimize.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\more_horiz.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\more_vert.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\outbox.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\person.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\person_add.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\question_mark.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\redo.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\refresh.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\remove.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\search.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\searchbox.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\send.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\settings.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\share.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\sort.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\star.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\sync.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\toggle_off.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\toggle_on.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\trash.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\undo.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\zoom_in.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\zoom_out.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\add.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\add_attachment.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\add_image.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\arrow_back.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\arrow_drop_down.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\arrow_forward.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\arrow_right.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\attach_email.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\attach_file.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\book.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\bookmark.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\bookmarks.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\bookmark_add.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\cancel.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\check.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\check_circle.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\chevron_left.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\chevron_right.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\close.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\contact.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\content_copy.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\content_cut.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\content_paste.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\delete.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\draft.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\drafts.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\edit.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\edit2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\email.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\expand_circle.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\explore.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\favorite.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\file_open.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\find.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\folder.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\format_align_center.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\format_align_left.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\format_align_right.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\format_bold.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\format_italic.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\format_size.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\format_underlined.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\group.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\help.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\home.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\image.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\inbox.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\language.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\library_add.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\link.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\login.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\mail.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\mark_as_unread2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\mark_email_unread.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\menu.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\menu_book.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\minimize.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\more_horiz.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\more_vert.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\outbox.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\person.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\person_add.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\question_mark.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\redo.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\refresh.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\remove.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\search.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\searchbox.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\send.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\settings.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\share.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\sort.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\star.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\sync.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\toggle_off.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\toggle_on.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\trash.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\undo.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\zoom_in.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\zoom_out.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\add.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\add_attachment.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\add_image.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\arrow_back.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\arrow_drop_down.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\arrow_forward.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\arrow_right.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\attach_email.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\attach_file.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\book.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\bookmark.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\bookmarks.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\bookmark_add.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\cancel.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\check.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\check_circle.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\chevron_left.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\chevron_right.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\close.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\contact.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\content_copy.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\content_cut.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\content_paste.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\delete.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\draft.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\drafts.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\edit.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\edit2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\email.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\expand_circle.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\explore.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\favorite.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\file_open.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\find.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\folder.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\format_align_center.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\format_align_left.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\format_align_right.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\format_bold.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\format_italic.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\format_size.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\format_underlined.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\group.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\help.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\home.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\image.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\inbox.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\language.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\library_add.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\link.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\login.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\mail.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\mark_as_unread2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\mark_email_unread.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\menu.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\menu_book.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\minimize.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\more_horiz.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\more_vert.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\outbox.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\person.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\person_add.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\question_mark.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\redo.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\refresh.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\remove.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\search.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\searchbox.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\send.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\settings.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\share.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\sort.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\star.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\sync.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\toggle_off.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\toggle_on.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\trash.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\undo.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\zoom_in.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\zoom_out.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\add.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\add_attachment.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\add_image.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\arrow_back.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\arrow_drop_down.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\arrow_forward.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\arrow_right.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\attach_email.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\attach_file.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\book.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\bookmark.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\bookmarks.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\bookmark_add.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\cancel.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\check.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\check_circle.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\chevron_left.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\chevron_right.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\close.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\contact.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\content_copy.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\content_cut.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\content_paste.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\delete.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\draft.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\drafts.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\edit.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\edit2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\email.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\expand_circle.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\explore.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\favorite.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\file_open.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\find.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\folder.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\format_align_center.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\format_align_left.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\format_align_right.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\format_bold.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\format_italic.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\format_size.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\format_underlined.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\group.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\help.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\home.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\image.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\inbox.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\language.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\library_add.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\link.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\login.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\mail.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\mark_as_unread2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\mark_email_unread.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\menu.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\menu_book.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\minimize.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\more_horiz.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\more_vert.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\outbox.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\person.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\person_add.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\question_mark.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\redo.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\refresh.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\remove.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\search.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\searchbox.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\send.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\settings.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\share.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\sort.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\star.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\sync.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\toggle_off.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\toggle_on.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\trash.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\undo.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\zoom_in.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\zoom_out.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\add.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\add_attachment.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\add_image.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\arrow_back.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\arrow_drop_down.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\arrow_forward.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\arrow_right.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\attach_email.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\attach_file.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\book.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\bookmark.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\bookmarks.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\bookmark_add.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\cancel.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\check.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\check_circle.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\chevron_left.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\chevron_right.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\close.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\contact.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\content_copy.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\content_cut.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\content_paste.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\delete.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\draft.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\drafts.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\edit.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\edit2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\email.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\expand_circle.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\explore.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\favorite.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\file_open.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\find.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\folder.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\format_align_center.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\format_align_left.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\format_align_right.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\format_bold.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\format_italic.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\format_size.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\format_underlined.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\group.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\help.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\home.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\image.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\inbox.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\language.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\library_add.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\link.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\login.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\mail.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\mark_as_unread2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\mark_email_unread.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\menu.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\menu_book.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\minimize.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\more_horiz.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\more_vert.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\outbox.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\person.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\person_add.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\question_mark.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\redo.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\refresh.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\remove.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\search.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\searchbox.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\send.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\settings.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\share.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\sort.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\star.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\sync.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\toggle_off.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\toggle_on.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\trash.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\undo.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\zoom_in.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\zoom_out.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

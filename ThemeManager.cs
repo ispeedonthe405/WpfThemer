@@ -209,13 +209,13 @@ namespace WpfThemer
 
         }
 
-        private static void BuildTheme(Theme.eThemeType themeType, string name, string description, string filename)
+        private static void BuildTheme(string name, string description, Theme.eSymbolColor symbolColor, string filename)
         {
             string uri = $"/WpfThemer;component/Themes/{filename}";
             Themes.Add(new Theme(
-                themeType,
                 name,
                 description,
+                symbolColor,
                 new ResourceDictionary() { Source = new Uri(uri, UriKind.RelativeOrAbsolute) }));
         }
 
@@ -225,14 +225,17 @@ namespace WpfThemer
             Templates.Add(new ResourceDictionary() { Source = new Uri(uri, UriKind.RelativeOrAbsolute) });
         }
 
-        static ThemeManager()
+        private static void Initialize()
         {
+            ThemeSymbolManager.Initialize();
+
             //BuildTheme(Theme.eThemeType.Undefined, "System", "System Theme", "Theme_System.xaml");
-            BuildTheme(Theme.eThemeType.Light, "Light", "Light Theme", "Theme_Light.xaml");
-            BuildTheme(Theme.eThemeType.Dark, "Dark", "Dark Theme", "Theme_Dark.xaml");
-            BuildTheme(Theme.eThemeType.Dark, "Green", "Green Theme", "Theme_Green.xaml");
-            BuildTheme(Theme.eThemeType.Dark, "Blue Steel", "Blue Steel Theme", "Theme_BlueSteel.xaml");
-            BuildTheme(Theme.eThemeType.Light, "Blue Light", "Blue Light", "Theme_BlueLight.xaml");
+            BuildTheme("Light", "Light Theme", Theme.eSymbolColor.c242424, "Theme_Light.xaml");
+            BuildTheme("Dark", "Dark Theme", Theme.eSymbolColor.cC0C0C0, "Theme_Dark.xaml");
+            BuildTheme("Green", "Green Theme", Theme.eSymbolColor.cC0C0C0, "Theme_Green.xaml");
+            BuildTheme("Blue Steel", "Blue Steel Theme", Theme.eSymbolColor.cC0C0C0, "Theme_BlueSteel.xaml");
+            BuildTheme("Pale Blue", "Pale Blue", Theme.eSymbolColor.c434343, "Theme_PaleBlue.xaml");
+
 
             //_ActiveTheme = Themes.Last();
 
@@ -260,6 +263,8 @@ namespace WpfThemer
             BuildTemplate("ToolTip.xaml");
             BuildTemplate("TreeView.xaml");
             //BuildTemplate("Window.xaml");
+
+            LoadTemplates();
         }
 
 
@@ -288,8 +293,9 @@ namespace WpfThemer
             HostApp = application;
             if (HostApp is null) return;
 
+            Initialize();
+            
             application?.Resources.MergedDictionaries.Add(ActiveTheme.Resource);
-            LoadTemplates();
         }
 
         public static void SetTheme(string themeName)

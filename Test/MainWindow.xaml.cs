@@ -35,34 +35,9 @@ namespace Test
         ObservableCollection<DgridItem> GridItems { get; set; } = [];
         Logger Logger { get; set; } = new();
 
-        private void BuildSymbols()
-        {
-            ThemeSymbolManager.AddSymbol("add", new("pack://application:,,,/images/dark/add.png"), Theme.eThemeType.Light);
-            ThemeSymbolManager.AddSymbol("add", new("pack://application:,,,/images/light/add.png"), Theme.eThemeType.Dark);
-            ThemeSymbolManager.AddSymbol("add", new("pack://application:,,,/images/dark/add.png"), Theme.eThemeType.Undefined);
-
-            ThemeSymbolManager.AddSymbol("cancel", new("pack://application:,,,/images/dark/cancel.png"), Theme.eThemeType.Light);
-            ThemeSymbolManager.AddSymbol("cancel", new("pack://application:,,,/images/light/cancel.png"), Theme.eThemeType.Dark);
-            ThemeSymbolManager.AddSymbol("cancel", new("pack://application:,,,/images/dark/cancel.png"), Theme.eThemeType.Undefined);
-
-            ThemeSymbolManager.AddSymbol("format_align_left", new("pack://application:,,,/images/dark/format_align_left.png"), Theme.eThemeType.Light);
-            ThemeSymbolManager.AddSymbol("format_align_left", new("pack://application:,,,/images/light/format_align_left.png"), Theme.eThemeType.Dark);
-            ThemeSymbolManager.AddSymbol("format_align_left", new("pack://application:,,,/images/dark/format_align_left.png"), Theme.eThemeType.Undefined);
-
-            ThemeSymbolManager.AddSymbol("format_align_center", new("pack://application:,,,/images/dark/format_align_center.png"), Theme.eThemeType.Light);
-            ThemeSymbolManager.AddSymbol("format_align_center", new("pack://application:,,,/images/light/format_align_center.png"), Theme.eThemeType.Dark);
-            ThemeSymbolManager.AddSymbol("format_align_center", new("pack://application:,,,/images/dark/format_align_center.png"), Theme.eThemeType.Undefined);
-
-            ThemeSymbolManager.AddSymbol("format_align_right", new("pack://application:,,,/images/dark/format_align_right.png"), Theme.eThemeType.Light);
-            ThemeSymbolManager.AddSymbol("format_align_right", new("pack://application:,,,/images/light/format_align_right.png"), Theme.eThemeType.Dark);
-            ThemeSymbolManager.AddSymbol("format_align_right", new("pack://application:,,,/images/dark/format_align_right.png"), Theme.eThemeType.Undefined);
-        }
-
         public MainWindow()
         {
             InitializeComponent();
-
-            BuildSymbols();
 
             cb_Theme.ItemsSource = ThemeManager.Themes;
             cb_Theme.DisplayMemberPath = "DisplayName";

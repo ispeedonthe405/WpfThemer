@@ -7,7 +7,7 @@
         xmlns:shaders="clr-namespace:WpfThemer.Shaders;assembly=WpfThemer"
         xmlns:local="clr-namespace:Test"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="WpfThemer Test App" Height="650" Width="900">
  
     <Grid>
         <Grid.RowDefinitions>

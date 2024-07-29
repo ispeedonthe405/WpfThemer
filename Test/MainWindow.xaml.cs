@@ -45,7 +45,7 @@ namespace Test
             for (int i = 0; i < 30; i++)
             {
                 GridItems.Add(DgridItem.Generate());
-                tb_BigText.Text += "This is a test of the emergency broadcast system. This is only a test. ";
+                tb_BigText.Text += "This is a test of the emergency theme system. This is only a test. ";
             }
             datagrid.ItemsSource = GridItems;
 

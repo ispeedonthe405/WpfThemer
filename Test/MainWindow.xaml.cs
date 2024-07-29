@@ -76,9 +76,12 @@ namespace Test
 
             LogView.DataContext = Logger.Events;
             LogView.ItemsSource = Logger.Events;
+            var rand = new Random();
             for (int i = 0; i < 10; i++)
             {
-                Logger.NewEvent(LogEvent.EventCategory.Information, $"This is a test event {i}");
+                int cat = rand.Next(0, 5);
+                LogEvent.EventCategory category = (LogEvent.EventCategory)cat;
+                Logger.NewEvent(category, $"This is test event {i}");
             }
 
             //ThemeManager.SetTheme("Green");

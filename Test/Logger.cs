@@ -71,7 +71,7 @@ namespace Test
                     break;
 
                 case LogEvent.EventCategory.Error:
-                    color = Colors.Crimson;
+                    color = Colors.OrangeRed;
                     break;
 
                 case LogEvent.EventCategory.Notify:

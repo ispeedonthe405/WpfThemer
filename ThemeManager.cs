@@ -230,8 +230,10 @@ namespace WpfThemer
             //BuildTheme(Theme.eThemeType.Undefined, "System", "System Theme", "Theme_System.xaml");
             BuildTheme(Theme.eThemeType.Light, "Light", "Light Theme", "Theme_Light.xaml");
             BuildTheme(Theme.eThemeType.Dark, "Dark", "Dark Theme", "Theme_Dark.xaml");
-            BuildTheme(Theme.eThemeType.Dark, "Blue Steel", "Blue Steel Theme", "Theme_BlueSteel.xaml");
             BuildTheme(Theme.eThemeType.Dark, "Green", "Green Theme", "Theme_Green.xaml");
+            BuildTheme(Theme.eThemeType.Dark, "Blue Steel", "Blue Steel Theme", "Theme_BlueSteel.xaml");
+            BuildTheme(Theme.eThemeType.Dark, "Blue Light", "Blue Light", "Theme_BlueLight.xaml");
+
             //_ActiveTheme = Themes.Last();
 
             BuildTemplate("Border.xaml");

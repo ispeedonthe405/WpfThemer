@@ -1,9 +1,17 @@
-Color-scheme module for WPF. Integration is lightweight. Adding application-specific themes to complement the WpfThemer color schemes is easy. Please see the Test project for details on integration.
+## Color-scheme module for WPF
 
-WpfThemer includes a subsystem for managing control symbols (i.e, images you would put on buttons and other controls) which change in color based on the theme. This is done by way of the WpfThemer.DynamicImage control. When a theme is selected, DynamicImage controls resample the theme type (light or dark) and choose the current symbol image to complement the theme. Currently this is somewhat labor intensive for the programmer-user. In the Test project you'll see how the symbol library is built at application startup. In the future I plan to make that step simpler. For now, manually building the symbol library and using DynamicImage to specify the symbol name is all that's required to make sure your control symbols remain legible regardless of theme.
+**Features Overview:**
+
+- Easy integration into your app
+- A built-in collection of themes, exposed to make it easy to offer theme selection in your app
+- Easy interface for adding more themes
+- A built-in collection of common control symbol images, which exist in sets of various colors. This is used by way of WpfThemer.DynamicImage (derived from Image control). You need only specify the symbol name, and the correct image resource for that symbol is automatically selected when the theme changes.
+
+
+**Integration:**
 
 Some technical notes:
 
-- Although WpfThemer includes a suite of control and style templates, only the brush and color fields are changed from the default system templates. This ensures consistency, in the sense that the physical composition of the controls remains as Microsoft defined them. In some cases you'll find that the template is expanded beyond what you will find in the Microsoft documentation. However, the modifications are limited to colors and the VisualState map. This exposes more dynamic response for states like MouseOver, Selected, and so on, without changing the geometry or composition of the control. Templates/ScrollBar.xaml is a good example of this.
+- Although WpfThemer includes a suite of control and style templates, only the brush and color fields are changed from the default system templates. This ensures consistency, in the sense that the physical composition of the standard controls remains as Microsoft defined them. In some cases you'll find that the template is expanded beyond what you will find in the Microsoft documentation. However, the modifications are limited to colors and the VisualState map. This exposes more dynamic response for states like MouseOver, Selected, and so on, without changing the geometry or composition of the control. Templates/ScrollBar.xaml is a good example of this.
 
-- When System is selected as the theme, the WpfThemer templates are dropped from the application's MergedDictionaries. Only the base colors for Window, Window Text, and Border remain, and are sampled from the system palette. The rest is handled by the OS. This occurs every time System is selected as the active theme. The result is, when the System theme is selected it's as though there's no themer package at all. Upon selection of a theme other than System, the templates are again integrated into the app's resources so that the theme colors are applied. 
+

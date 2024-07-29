@@ -40,10 +40,15 @@
         <Style.Triggers>
             <MultiTrigger>
                 <MultiTrigger.Conditions>
-                    <Condition Property="IsInactiveSelectionHighlightEnabled" Value="true"/>
+                    <Condition Property="IsSelectionActive" Value="True"/>
+                </MultiTrigger.Conditions>
+                <Setter Property="SelectionBrush" Value="{DynamicResource HighlightNormalBrushKey}"/>
+            </MultiTrigger>
+            <MultiTrigger>
+                <MultiTrigger.Conditions>
                     <Condition Property="IsSelectionActive" Value="false"/>
                 </MultiTrigger.Conditions>
-                <Setter Property="SelectionBrush" Value="{DynamicResource InactiveSelectionHighlightBrushKey}"/>
+                <Setter Property="SelectionBrush" Value="{DynamicResource HighlightNormalBrushKey}"/>
             </MultiTrigger>
         </Style.Triggers>
     </Style>

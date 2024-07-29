@@ -232,7 +232,7 @@ namespace WpfThemer
             BuildTheme(Theme.eThemeType.Dark, "Dark", "Dark Theme", "Theme_Dark.xaml");
             BuildTheme(Theme.eThemeType.Dark, "Green", "Green Theme", "Theme_Green.xaml");
             BuildTheme(Theme.eThemeType.Dark, "Blue Steel", "Blue Steel Theme", "Theme_BlueSteel.xaml");
-            BuildTheme(Theme.eThemeType.Dark, "Blue Light", "Blue Light", "Theme_BlueLight.xaml");
+            BuildTheme(Theme.eThemeType.Light, "Blue Light", "Blue Light", "Theme_BlueLight.xaml");
 
             //_ActiveTheme = Themes.Last();
 

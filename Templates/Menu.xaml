@@ -113,6 +113,8 @@
                 <Setter Property="TextElement.Foreground" TargetName="templateRoot" Value="{DynamicResource ForegroundDisabledBrushKey}"/>
                 <Setter Property="Fill" TargetName="GlyphPanel" Value="{DynamicResource ForegroundDisabledBrushKey}"/>
                 <Setter Property="Opacity" Value="0.5"/>
+                <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource ControlNormalBrushKey}"/>
+                <Setter Property="BorderBrush" TargetName="templateRoot" Value="Transparent"/>
             </Trigger>
             <MultiTrigger>
                 <MultiTrigger.Conditions>
@@ -120,7 +122,7 @@
                     <Condition Property="IsEnabled" Value="False"/>
                 </MultiTrigger.Conditions>
                 <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource ControlDisabledBrushKey}"/>
-                <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource BorderDisabledBrushKey}"/>
+                <Setter Property="BorderBrush" TargetName="templateRoot" Value="Transparent"/>
                 <Setter Property="TextElement.Foreground" TargetName="templateRoot" Value="{DynamicResource ForegroundDisabledBrushKey}"/>
                 <Setter Property="Opacity" Value="0.5"/>
             </MultiTrigger>
@@ -219,7 +221,7 @@
                     <Condition Property="IsEnabled" Value="False"/>
                 </MultiTrigger.Conditions>
                 <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource ControlDisabledBrushKey}"/>
-                <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource BorderDisabledBrushKey}"/>
+                <Setter Property="BorderBrush" TargetName="templateRoot" Value="Transparent"/>
                 <Setter Property="Opacity" Value="0.5"/>
             </MultiTrigger>
         </ControlTemplate.Triggers>

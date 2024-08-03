@@ -97,7 +97,7 @@
                             </MultiDataTrigger.Conditions>
                             <Setter Property="Opacity" TargetName="contentPresenter" Value="0.56"/>
                             <Setter Property="Background" TargetName="mainBorder" Value="{DynamicResource ControlDisabledBrushKey}"/>
-                            <Setter Property="BorderBrush" TargetName="mainBorder" Value="{DynamicResource DisabledBrushKey}"/>
+                            <Setter Property="BorderBrush" TargetName="mainBorder" Value="{DynamicResource BorderDisabledBrushKey}"/>
                             <Setter Property="BorderThickness" TargetName="innerBorder" Value="1,0,1,1"/>
                             <Setter Property="BorderThickness" TargetName="mainBorder" Value="1,0,1,1"/>
                         </MultiDataTrigger>
@@ -108,7 +108,7 @@
                             </MultiDataTrigger.Conditions>
                             <Setter Property="Opacity" TargetName="contentPresenter" Value="0.56"/>
                             <Setter Property="Background" TargetName="mainBorder" Value="{DynamicResource ControlDisabledBrushKey}"/>
-                            <Setter Property="BorderBrush" TargetName="mainBorder" Value="{DynamicResource DisabledBrushKey}"/>
+                            <Setter Property="BorderBrush" TargetName="mainBorder" Value="{DynamicResource BorderDisabledBrushKey}"/>
                             <Setter Property="BorderThickness" TargetName="innerBorder" Value="0,1,1,1"/>
                             <Setter Property="BorderThickness" TargetName="mainBorder" Value="0,1,1,1"/>
                         </MultiDataTrigger>
@@ -119,7 +119,7 @@
                             </MultiDataTrigger.Conditions>
                             <Setter Property="Opacity" TargetName="contentPresenter" Value="0.56"/>
                             <Setter Property="Background" TargetName="mainBorder" Value="{DynamicResource ControlDisabledBrushKey}"/>
-                            <Setter Property="BorderBrush" TargetName="mainBorder" Value="{DynamicResource DisabledBrushKey}"/>
+                            <Setter Property="BorderBrush" TargetName="mainBorder" Value="{DynamicResource BorderDisabledBrushKey}"/>
                             <Setter Property="BorderThickness" TargetName="innerBorder" Value="1,1,1,0"/>
                             <Setter Property="BorderThickness" TargetName="mainBorder" Value="1,1,1,0"/>
                         </MultiDataTrigger>
